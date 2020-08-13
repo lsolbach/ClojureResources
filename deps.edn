@@ -1,0 +1,128 @@
+;; The deps.edn file describes the information needed to build a classpath.
+;;
+;; When using the `clojure` or `clj` script, there are several deps.edn files
+;; that are combined:
+;; - install-level
+;; - user level (this file)
+;; - project level (current directory when invoked)
+;;
+;; For all attributes other than :paths, these config files are merged left to right.
+;; Only the last :paths is kept and others are dropped.
+
+{
+  ;; Paths
+  ;;   Directories in the current project to include in the classpath
+
+  :paths ["src"]
+
+  ;; External dependencies
+ 
+  ;; :deps {
+  ;;   org.clojure/clojure {:mvn/version "1.10.1"}
+  ;; }
+
+  ;; Aliases
+    ;;   resolve-deps aliases (-R) affect dependency resolution, options:
+    ;;     :extra-deps - specifies extra deps to add to :deps
+    ;;     :override-deps - specifies a coordinate to use instead of that in :deps
+    ;;     :default-deps - specifies a coordinate to use for a lib if one isn't found
+    ;;   make-classpath aliases (-C) affect the classpath generation, options:
+    ;;     :extra-paths - vector of additional paths to add to the classpath
+    ;;     :classpath-overrides - map of lib to path that overrides the result of resolving deps
+
+  :aliases {
+    ;; pull in specific versions of Clojure:
+    :1.0 {:override-deps {org.clojure/clojure {:mvn/version "1.0.0"}}}
+    :1.1 {:override-deps {org.clojure/clojure {:mvn/version "1.1.0"}}}
+    :1.2 {:override-deps {org.clojure/clojure {:mvn/version "1.2.1"}}}
+    :1.3 {:override-deps {org.clojure/clojure {:mvn/version "1.3.0"}}}
+    :1.4 {:override-deps {org.clojure/clojure {:mvn/version "1.4.0"}}}
+    :1.5 {:override-deps {org.clojure/clojure {:mvn/version "1.5.1"}}}
+    :1.6 {:override-deps {org.clojure/clojure {:mvn/version "1.6.0"}}}
+    :1.7 {:override-deps {org.clojure/clojure {:mvn/version "1.7.0"}}}
+    :1.8 {:override-deps {org.clojure/clojure {:mvn/version "1.8.0"}}}
+    :1.9 {:override-deps {org.clojure/clojure {:mvn/version "1.9.0"}}}
+    :1.10 {:override-deps {org.clojure/clojure {:mvn/version "1.10.0"}}}
+    :1.10.1 {:override-deps {org.clojure/clojure {:mvn/version "1.10.1"}}}
+    :master {:override-deps {org.clojure/clojure {:mvn/version "1.11.0-master-SNAPSHOT"}}}
+
+    :deps {:extra-deps {org.clojure/tools.deps.alpha {:mvn/version "0.8.677"}}}
+
+    :test {:extra-paths ["test" "unittest"]
+           :extra-deps {org.clojure/test.check {:mvn/version "RELEASE"}}}
+
+    ;; - see https://github.com/cognitect-labs/test-runner
+    ;; - run your tests: clj -A:test:runner
+    :runner {:extra-deps {com.cognitect/test-runner
+                          {:git/url "https://github.com/cognitect-labs/test-runner"
+                           :sha "3cb0a9daf1cb746259dc8309b218f9211ad3b33b"}}
+             :main-opts ["-m" "cognitect.test-runner"
+                         "-d" "test"
+                         "-d" "src/test/clojure"]}
+
+    ;; New Project Generation
+    ;;
+    ;; - https://github.com/seancorfield/clj-new
+    ;; - clj -A:new app myname/myapp
+    :new {:extra-deps {seancorfield/clj-new {:mvn/version "1.0.211"}}
+          :main-opts ["-m" "clj-new.create"]}
+
+    ;; Benchmarking
+    ;; - see https://github.com/hugoduncan/criterium/
+    ;; - (require '[criterium.core :refer [bench]])
+    ;; - (bench (your-expression))
+    :bench {:extra-deps {criterium {:mvn/version "RELEASE"}}}
+
+    ;; Linting
+    ;;
+    :eastwood {:extra-deps {jonase/eastwood {:mvn/version "RELEASE"}}
+               :main-opts ["-m" "eastwood.lint" "{:source-paths,[\"src\"],
+               :test-paths,[\"test\"]}"]}
+
+    :check {:extra-deps {athos/clj-check {:git/url "https://github.com/athos/clj-check.git"
+                                                   :sha "da6363a38b06d9b84976ed330a9544b69d3c4dee"}}
+                      :main-opts ["-m" "clj-check.check"]}
+    ;; Dependencies
+    ;; Point out your outdated dependencies
+    ;;
+    ;; - https://github.com/Olical/depot
+;;    :outdated {:extra-deps {olical/depot {:mvn/version "2.0.1"}}
+;;               :main-opts ["-m" "depot.outdated.main"]}
+    ;; - https://github.com/liquidz/antq
+    :outdated {:extra-deps {antq {:mvn/version "RELEASE"}}
+               :main-opts ["-m" "antq.core"]}
+
+    ;; REPL Tools
+    ;; 
+    ;; - start a modern nREPL server on a random available port:
+    :nrepl {:extra-deps {nrepl/nrepl {:mvn/version "RELEASE"}}
+          :main-opts ["-m" "nrepl.cmdline"]}
+
+    ;; - start a Socket REPL on port 50505:
+    :socket {:jvm-opts ["-Dclojure.server.repl={:port,50505,:accept,clojure.core.server/repl}"]}
+
+    ;; rebel-readline for terminal multiline editing support
+    :rebel {:extra-deps {com.bhauman/rebel-readline {:mvn/version "0.1.4"}}
+                   :main-opts  ["-m" "rebel-readline.main"]}
+
+    ;; Cognitect REBL data viewer
+    :rebl {:extra-deps {com.cognitect/rebl {:local/root "/home/soulman/devel/tools/REBL/openjfx15ea"}}
+	   :main-opts ["-m" "cognitect.rebl"]
+;           :jvm-opts ["-Dsun.java2d.uiScale=2.5"]
+           :jvm-opts ["-Dglass.gtk.uiScale=200%"]
+          }
+    :rebl8 {:extra-deps {com.cognitect/rebl {:local/root "/home/soulman/devel/tools/REBL/java8"}}
+           :main-opts ["-m" "cognitect.rebl"]}
+
+    ;; Reveal REPL text based data browser
+    :reveal {:extra-deps {vlaaad/reveal {:mvn/version "0.1.0-ea27"}}
+             :jvm-opts ["-Dglass.gtk.uiScale=200%"]
+             :main-opts ["-m" "vlaaad.reveal" "repl"]}
+    }
+
+  ;; Provider attributes
+  :mvn/repos {
+;;    "central" {:url "https://repo1.maven.org/maven2/"}
+;;    "clojars" {:url "https://repo.clojars.org/"}
+    "sonatype" {:url "https://oss.sonatype.org/content/repositories/snapshots/"}}
+}
