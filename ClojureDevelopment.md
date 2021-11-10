@@ -120,6 +120,10 @@ Libraries
 * [clojure.math.combinatorics](https://github.com/clojure/math.combinatorics)
 * [clj-math](https://github.com/lsolbach/CljMath) - Clojure Math library
 
+### Graphs
+* [loom](https://github.com/aysylu/loom) - Graph library for Clojure.
+* [ubergraph](https://github.com/Engelberg/ubergraph) - An all-purpose Clojure graph data structure that implements Loom protocols and more.
+
 ### Visualization
 * [oz](https://github.com/metasoarous/oz) - data visualization and scientific document processing library for Clojure built around Vega-Lite & Vega
 * [cmp.jfreechart](https://github.com/lsolbach/CljComponents) - Clojure wrapper and API for JFreeChart
@@ -154,7 +158,6 @@ Tutorials
 ### Clojure
 #### Interactive
 * [Maria](https://www.maria.cloud/) - a web coding environment for beginners
-* [4clojure](http://www.4clojure.com/)
 
 #### Texts
 * [A Joyful Introduction to Clojure, Part I](https://medium.com/@daniel.oliver.king/a-clojure-development-environment-that-gets-out-of-your-way-c11e6711ead3)
