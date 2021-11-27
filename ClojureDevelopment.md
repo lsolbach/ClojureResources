@@ -75,7 +75,7 @@ Libraries
 * [clj-serial](https://github.com/peterschwarz/clj-serial) - Serial connections with CLojure
 
 #### MicroControllers (e.g. Arduino/ESP32)
-* [clj-firmata](https://github.com/peterschwarz/clj-firmata) - 
+* [clj-firmata](https://github.com/peterschwarz/clj-firmata) -
 * cloduino
 
 ### Web
@@ -120,10 +120,6 @@ Libraries
 * [clojure.math.combinatorics](https://github.com/clojure/math.combinatorics)
 * [clj-math](https://github.com/lsolbach/CljMath) - Clojure Math library
 
-### Graphs
-* [loom](https://github.com/aysylu/loom) - Graph library for Clojure.
-* [ubergraph](https://github.com/Engelberg/ubergraph) - An all-purpose Clojure graph data structure that implements Loom protocols and more.
-
 ### Visualization
 * [oz](https://github.com/metasoarous/oz) - data visualization and scientific document processing library for Clojure built around Vega-Lite & Vega
 * [cmp.jfreechart](https://github.com/lsolbach/CljComponents) - Clojure wrapper and API for JFreeChart
@@ -145,7 +141,7 @@ Libraries
 
 Applications
 ------------
-* [Metabase](https://github.com/metabase/metabase) - 
+* [Metabase](https://github.com/metabase/metabase) -
 
 Community
 ---------
@@ -158,6 +154,7 @@ Tutorials
 ### Clojure
 #### Interactive
 * [Maria](https://www.maria.cloud/) - a web coding environment for beginners
+* [4clojure](http://www.4clojure.com/)
 
 #### Texts
 * [A Joyful Introduction to Clojure, Part I](https://medium.com/@daniel.oliver.king/a-clojure-development-environment-that-gets-out-of-your-way-c11e6711ead3)
@@ -214,6 +211,7 @@ Videos
 * [3. Fixing a bug in core.memoize - Sean Corfield](https://www.youtube.com/watch?v=UFY2rd05W2g)
 * [Proto REPL, a New Clojure Development and Visualization Tool - Jason Gilman](https://www.youtube.com/watch?v=buPPGxOnBnk&feature=youtu.be)
 * [Cursive: A different type of IDE - Colin Fleming](https://www.youtube.com/watch?v=vt1y2FbWQMg)
+* [Hammock Driven Development - Rich Hickey](https://www.youtube.com/watch?v=f84n5oFoZBc)
 
 ### Experience
 * [Why Clojure? - Derek Slager](https://www.youtube.com/watch?v=BThkk5zv0DE)
@@ -234,5 +232,3 @@ Blog Posts
 
 ### ClojureScript
 * [ClojureScript Macros](https://code.thheller.com/blog/shadow-cljs/2019/10/12/clojurescript-macros.html)
-
-
