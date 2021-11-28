@@ -1,6 +1,7 @@
 Clojure/ClojureScript Development
 =================================
-This is a compilation of resources about software development in Clojure. I maintain this page as a personal reference of interesting Clojure related information but also to provide this information to other (beginning) Clojurists.
+This is a compilation of resources about software development in Clojure.
+I maintain this page as a personal reference of interesting Clojure related information but also to provide this information to other (beginning) Clojurists.
 
 
 Language
@@ -11,15 +12,22 @@ Language
 ### ClojureScript
 * [ClojureScript](https://clojurescript.org/index) - ClojureScript is a compiler for Clojure that targets JavaScript
 
+Documentation
+-------------
+
+* [Learn Clojure - Syntax](https://clojure.org/guides/learn/syntax) - Start of the official Clojure guides
+* [Reference - The Reader](https://clojure.org/reference/reader) - Start of the official Clojure reference
+* [Clojure Doc](https://clojure-doc.github.io/) - The community-driven documentation site for the Clojure programming language
+
 
 Build Tools/Runners
 -------------------
-* [Getting started](https://clojure.org/guides/getting_started) - Installing clj/clojure
-* [Leiningen](https://leiningen.org/)
+* [Getting started](https://clojure.org/guides/getting_started) - Installing clj/clojure CLIs 
+* [Leiningen](https://leiningen.org/) - 
 * [Boot](https://github.com/boot-clj/boot)
-* [Baumeister](https://github.com/lsolbach/)
-* [Maven](https://maven.apache.org/)
+* [Maven](https://maven.apache.org/) - Java build system which can build clojure code, too 
 * [shadowcljs](http://shadow-cljs.org/)
+* [Baumeister](https://github.com/lsolbach/) - My own multi language build system, currently not maintained anymore
 
 
 Editors/IDEs
@@ -68,6 +76,7 @@ Libraries
 #### Network Sockets
 * [clj-sockets](https://github.com/atroche/clj-sockets)
 * [async-sockets](https://github.com/bguthrie/async-sockets)
+* [http-kit](https://github.com/http-kit/http-kit) - A simple, high-performance event-driven HTTP client+server for Clojure without external dependencies
 * [aleph](https://github.com/ztellman/aleph) - Fast asynchronous HTTP server based on Netty
 * [link](https://github.com/clojure-link/link)
 
@@ -98,16 +107,16 @@ Libraries
 ### UI
 #### JVM
 ##### Swing
-* [seesaw](https://github.com/daveray/seesaw)
-* [clj-swing](https://github.com/lsolbach/CljBase) - Clojure API for Java Swing
+* [seesaw](https://github.com/daveray/seesaw) - Clojure API for Java Swing
+* [clj-swing](https://github.com/lsolbach/CljBase) - My Clojure API for Java Swing
 
 ##### JavaFX
-* [fn-fx](https://github.com/fn-fx/fn-fx) - a functional, declarative wrapper around JavaFX / OpenJFX
 * [cljfx](https://github.com/cljfx/cljfx) - a declarative, functional and extensible wrapper of JavaFX inspired by better parts of react and re-frame
 * [cljfx/css](https://github.com/cljfx/css) - Charmingly Simple Styling for cljfx
+* [fn-fx](https://github.com/fn-fx/fn-fx) - a functional, declarative wrapper around JavaFX / OpenJFX
 
 #### ClojureScript
-* [reagent](http://reagent-project.github.io/)
+* [reagent](http://reagent-project.github.io/) - ClojureScript React programming
 * [re-frame](https://github.com/Day8/re-frame)
 
 #### ClojureScript React Native
@@ -220,11 +229,15 @@ Videos
 * [ClojureScript for Skeptics - Derek Slager](https://www.youtube.com/watch?v=gsffg5xxFQI)
 
 ### App Development
-* [ClojureScript loves React Native - Peter Strömberg](https://www.youtube.com/watch?v=QsUj7HO5xDg) - tutorial for developing react native apps in clojure
-* [cljfx – Bringing Clojure to the Desktop - Vlad Protsenko](https://www.youtube.com/watch?v=xcMNTKFmEgI) - build javaFX desktop apps with clojure
+* [ClojureScript loves React Native - Peter Strömberg](https://www.youtube.com/watch?v=QsUj7HO5xDg) - Tutorial for developing React Native apps in Clojure
+* [cljfx – Bringing Clojure to the Desktop - Vlad Protsenko](https://www.youtube.com/watch?v=xcMNTKFmEgI) - Build JavaFX desktop apps with Clojure
+
+### 3D Modelling
+* [Start 3D modeling in Clojure with scad-clj and Calva - Peter Stömberg](https://www.youtube.com/watch?v=fJpDztSR53E) - Create OpenSCAD models in Clojure
 
 Books
 -----
+* [Clojure for the Brave and True](https://www.braveclojure.com/) - Complete book available online and in print
 * [Clojure Cookbook]()
   * [Clojure Cookbook Resources](https://github.com/clojure-cookbook/clojure-cookbook)
 
