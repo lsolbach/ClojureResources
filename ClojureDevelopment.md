@@ -14,7 +14,7 @@ Language
 
 Build Tools/Runners
 -------------------
-* clj/clojure, clojure.deps
+* [Getting started](https://clojure.org/guides/getting_started) - Installing clj/clojure
 * [Leiningen](https://leiningen.org/)
 * [Boot](https://github.com/boot-clj/boot)
 * [Baumeister](https://github.com/lsolbach/)
@@ -24,6 +24,7 @@ Build Tools/Runners
 
 Editors/IDEs
 ------------
+* [Visual Studio Code](https://code.visualstudio.com/) + [Calva](https://github.com/BetterThanTomorrow/calva)
 * Emacs + [Cider](https://github.com/clojure-emacs/cider), [Cider Docs](https://docs.cider.mx/cider/0.25/index.html)
 * IntelliJ + [Cursive](https://cursive-ide.com/)
 * Eclipse + [CounterClockWise](https://github.com/ccw-ide/ccw)
@@ -31,7 +32,6 @@ Editors/IDEs
 * [NightCode](https://github.com/oakes/Nightcode)
 * [NightLight](https://sekao.net/nightlight/) - An embedded editor for Clojure
 * [LightTable](http://lighttable.com/)
-* [Visual Studio Code](https://code.visualstudio.com/) + [Calva](https://github.com/BetterThanTomorrow/calva)
 
 
 REPLs/REPL Tools
@@ -198,7 +198,7 @@ Videos
 * [Transducers - Rich Hickey](https://www.youtube.com/watch?v=Tq7r97G4b7Y)
 * [Inside Transducers - Rich Hickey](https://www.youtube.com/watch?v=4KqUvG8HPYo)
 * [Clojure core async - Rich Hickey](https://www.youtube.com/watch?v=drmNlZVkUeE)
-* [Spec-ulation Keynote - Rich Hickey](https://www.youtube.com/watch?v=oyLBGkS5ICk) - about changing and breaking software and how versioning artifacts does'nt help
+* [Spec-ulation Keynote - Rich Hickey](https://www.youtube.com/watch?v=oyLBGkS5ICk) - about changing and breaking software and how versioning artifacts doesn't help
 * [Maybe Not - Rich Hickey](https://www.youtube.com/watch?v=YR5WdGrpoug)
 * [REBL - Stuart Halloway](https://www.youtube.com/watch?v=c52QhiXsmyI)
 * [Always Be Composing - Zach Tellman](https://www.youtube.com/watch?v=3oQTSP4FngY)
@@ -218,6 +218,10 @@ Videos
 
 ### ClojureScript
 * [ClojureScript for Skeptics - Derek Slager](https://www.youtube.com/watch?v=gsffg5xxFQI)
+
+### App Development
+* [ClojureScript loves React Native - Peter Strömberg](https://www.youtube.com/watch?v=QsUj7HO5xDg) - tutorial for developing react native apps in clojure
+* [cljfx – Bringing Clojure to the Desktop - Vlad Protsenko](https://www.youtube.com/watch?v=xcMNTKFmEgI) - build javaFX desktop apps with clojure
 
 Books
 -----
