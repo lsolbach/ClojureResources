@@ -18,16 +18,17 @@ Documentation
 * [Learn Clojure - Syntax](https://clojure.org/guides/learn/syntax) - Start of the official Clojure guides
 * [Reference - The Reader](https://clojure.org/reference/reader) - Start of the official Clojure reference
 * [Clojure Doc](https://clojure-doc.github.io/) - The community-driven documentation site for the Clojure programming language
+* [cljdoc](https://cljdoc.org/) - A website building & hosting documentation for Clojure/Script libraries
 
 
 Build Tools/Runners
 -------------------
 * [Getting started](https://clojure.org/guides/getting_started) - Installing clj/clojure CLIs 
-* [Leiningen](https://leiningen.org/) - 
+* [Leiningen](https://leiningen.org/)
 * [Boot](https://github.com/boot-clj/boot)
 * [Maven](https://maven.apache.org/) - Java build system which can build clojure code, too 
 * [shadowcljs](http://shadow-cljs.org/)
-* [Baumeister](https://github.com/lsolbach/) - My own multi language build system, currently not maintained anymore
+* [Baumeister](https://github.com/lsolbach/) - My own multi language build system, currently not maintained
 
 
 Editors/IDEs
@@ -54,6 +55,7 @@ REPLs/REPL Tools
 * [integrant-repl](https://github.com/weavejester/integrant-repl)
 * [Figwheel Main](https://figwheel.org/) - Figwheel Main builds your ClojureScript code and hot loads it as you are coding
 * [figwheel.main template](https://rigsomelight.com/figwheel-main-template/) - Template generator that will produce a minimal ClojureScript project that includes figwheel.main tooling
+* [Babashka](https://github.com/babashka/babashka) - Clojure shell programming/bash replacement
 * [planck2](https://github.com/planck-repl/planck) - ClojureScript REPL for the desktop
 * [Lumo](https://github.com/anmonteiro/lumo) - Lumo is a standalone ClojureScript environment that runs on Node.js and the V8 JavaScript engine
 * [tubular](https://github.com/mfikes/tubular) - A Clojure Socket REPL client
@@ -62,6 +64,7 @@ REPLs/REPL Tools
 Libraries
 ---------
 ### Overview
+* [Clojars](https://clojars.org/) - An easy to use community repository for open source Clojure libraries
 * [The Clojure Toolbox](https://www.clojure-toolbox.com/) - Curated list of Clojure libraries
 
 ### System Configuration
@@ -84,7 +87,7 @@ Libraries
 * [clj-serial](https://github.com/peterschwarz/clj-serial) - Serial connections with CLojure
 
 #### MicroControllers (e.g. Arduino/ESP32)
-* [clj-firmata](https://github.com/peterschwarz/clj-firmata) -
+* [clj-firmata](https://github.com/peterschwarz/clj-firmata) - Clojure implementation of the firmata protocol
 * cloduino
 
 ### Web
@@ -207,7 +210,7 @@ Videos
 * [Transducers - Rich Hickey](https://www.youtube.com/watch?v=Tq7r97G4b7Y)
 * [Inside Transducers - Rich Hickey](https://www.youtube.com/watch?v=4KqUvG8HPYo)
 * [Clojure core async - Rich Hickey](https://www.youtube.com/watch?v=drmNlZVkUeE)
-* [Spec-ulation Keynote - Rich Hickey](https://www.youtube.com/watch?v=oyLBGkS5ICk) - about changing and breaking software and how versioning artifacts doesn't help
+* [Spec-ulation Keynote - Rich Hickey](https://www.youtube.com/watch?v=oyLBGkS5ICk) - About changing and breaking software and how versioning artifacts doesn't help
 * [Maybe Not - Rich Hickey](https://www.youtube.com/watch?v=YR5WdGrpoug)
 * [REBL - Stuart Halloway](https://www.youtube.com/watch?v=c52QhiXsmyI)
 * [Always Be Composing - Zach Tellman](https://www.youtube.com/watch?v=3oQTSP4FngY)
@@ -221,6 +224,7 @@ Videos
 * [Proto REPL, a New Clojure Development and Visualization Tool - Jason Gilman](https://www.youtube.com/watch?v=buPPGxOnBnk&feature=youtu.be)
 * [Cursive: A different type of IDE - Colin Fleming](https://www.youtube.com/watch?v=vt1y2FbWQMg)
 * [Hammock Driven Development - Rich Hickey](https://www.youtube.com/watch?v=f84n5oFoZBc)
+* [Babashka and Small Clojure Interpreter: Clojure in new contexts - Michiel Borkent](https://www.youtube.com/watch?v=Nw8aN-nrdEk) - Use Clojure as a bash replacement and more
 
 ### Experience
 * [Why Clojure? - Derek Slager](https://www.youtube.com/watch?v=BThkk5zv0DE)
