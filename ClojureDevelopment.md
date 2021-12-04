@@ -154,7 +154,6 @@ Libraries
 
 ### Data Access
  * [data.zip](https://github.com/clojure/data.zip) - Zipper Library
- * []() - Zipper for data.xml
  * [JDBC]() - Database access via JDBC
 
 ### Utility
