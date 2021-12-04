@@ -109,9 +109,11 @@ Libraries
 * [next-jdbc](https://github.com/seancorfield/next-jdbc) - Database access via JDBC
 
 ### Database
-* [Datomic](https://www.datomic.com/) - Datalog based db from Cognitect
+* [Datomic](https://www.datomic.com/) - Datalog based db from Cognitect with features like immutability and temporal queries
 * [Datascript](https://github.com/tonsky/datascript) - Datalog based in-memory db
 * [Datalevin](https://github.com/juji-io/datalevin) - Datalog based engine with fast LMDB persistent storage
+* [Datahike](https://github.com/replikativ/datahike) - Datalog based db engine with persistence
+* [XTDB](https://github.com/xtdb/xtdb) - Database engine with graph-oriented bitemporal indexes, Datalog, SQL & EQL queries and transaction log and document storage backends (e.g. Kafka)
 
 ### Utility
 * [clojure.tools.namespace](https://github.com/clojure/tools.namespace)
