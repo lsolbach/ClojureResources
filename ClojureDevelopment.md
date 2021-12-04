@@ -82,6 +82,9 @@ Libraries
 ### Logic Programming
 * [core.logic](https://github.com/clojure/core.logic) - Prolog-like relational logic programming based on miniKanren
 
+### Asynchronous Programming
+* [core.async](https://github.com/clojure/core.async) - Asynchronous programming/communication
+
 ### Specification/Validation
 * [Spec](https://github.com/clojure/spec.alpha) - Spec is Clojure core library to describe the structure of data and functions.
 * [Spec2](https://github.com/clojure/spec-alpha2) - Spec2 is an evolution from spec as well as work towards several new features.
@@ -94,18 +97,21 @@ Libraries
 * [data.xml](https://github.com/clojure/data.xml) - Read/write XML
 * [YAML](https://github.com/owainlewis/yaml) - Read/wite YAML
 * [Clojure ProtoBuf](https://github.com/flatland/clojure-protobuf) - Specify/read/write ProtoBuf
-* [AVRO]() - 
+* [Lancaster](https://github.com/deercreeklabs/lancaster) - Specify/read/write AVRO
+* [abracad](https://github.com/damballa/abracad) - Specify/read/write AVRO
+* [dove](https://github.com/piotr-yuxuan/dove) - Infer specs from AVRO schemas to use in validation and generative testing
 * [BinF](https://github.com/helins/binf.cljc) - Specify/read/write general binary formats
 
 ### Data Access
-* [data.zip](https://github.com/clojure/data.zip) - Zipper Library to access data in nested data structures
+* [data.zip](https://github.com/clojure/data.zip) - Zipper library to access data in nested data structures
 * [core.cache](https://github.com/clojure/core.cache) - Caching data with strategies like FIFO, LU/LRU or TTL
+* [jackdaw](https://github.com/FundingCircle/jackdaw) - Kafka library for clojure
 * [next-jdbc](https://github.com/seancorfield/next-jdbc) - Database access via JDBC
 
 ### Database
-* [Datomic]() - Datalog based db from Cognitect
-* [Datascript]() - Datalog based in-memory db
-* [Datalevin]() - Datalog based engine with fast LMDB persistent storage
+* [Datomic](https://www.datomic.com/) - Datalog based db from Cognitect
+* [Datascript](https://github.com/tonsky/datascript) - Datalog based in-memory db
+* [Datalevin](https://github.com/juji-io/datalevin) - Datalog based engine with fast LMDB persistent storage
 
 ### Utility
 * [clojure.tools.namespace](https://github.com/clojure/tools.namespace)
@@ -117,6 +123,7 @@ Libraries
 * [clojure.test](https://clojure.github.io/clojure/clojure.test-api.html) - standard unit testing
 * [test.check](https://github.com/clojure/test.check) - property based testing
 * [Criterium](https://github.com/hugoduncan/criterium) - Benchmark testing library
+* [Cloverage](https://github.com/cloverage/cloverage) - Coverage tool
 
 ### Classpath
 * [tools.deps.alpha](https://github.com/clojure/tools.deps.alpha) - 
@@ -145,6 +152,9 @@ Libraries
 #### MicroControllers (e.g. Arduino/ESP32)
 * [clj-firmata](https://github.com/peterschwarz/clj-firmata) - Clojure implementation of the firmata protocol
 * cloduino
+
+### 3D Printing
+* [scad-clj](https://github.com/farrellm/scad-clj) - OpenSCAD DSL in Clojure
 
 ### Web
 #### Libraries
@@ -232,6 +242,10 @@ Tutorials
 
 ### Datomic
 * [Learn Datalog Today](http://www.learndatalogtoday.org/)
+
+### 3D Printing
+* [Interactive 3D Modeling with Clojure](https://github.com/PEZ/scad-clj-workflow) - 
+
 
 Videos
 ------
