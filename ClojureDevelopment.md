@@ -76,8 +76,60 @@ Libraries
 * [Integrant](https://github.com/weavejester/integrant)
 * [Mount](https://github.com/tolitius/mount)
 
+### Functional Progamming
+* [xforms](https://github.com/cgrand/xforms) - additional transducers
+
+### Logic Programming
+* [core.logic](https://github.com/clojure/core.logic) - Prolog-like relational logic programming based on miniKanren
+
+### Specification/Validation
+* [Spec](https://github.com/clojure/spec.alpha) - Spec is Clojure core library to describe the structure of data and functions.
+* [Spec2](https://github.com/clojure/spec-alpha2) - Spec2 is an evolution from spec as well as work towards several new features.
+* [Schema]() - 
+* [Malli]() - 
+
+### Data Formats
+* [data.json](https://github.com/clojure/data.json) - Read/write JSON
+* [data.csv](https://github.com/clojure/data.csv) - Read/write CSV
+* [data.xml](https://github.com/clojure/data.xml) - Read/write XML
+* [YAML](https://github.com/owainlewis/yaml) - Read/wite YAML
+* [Clojure ProtoBuf](https://github.com/flatland/clojure-protobuf) - Specify/read/write ProtoBuf
+* [AVRO]() - 
+* [BinF](https://github.com/helins/binf.cljc) - Specify/read/write general binary formats
+
+### Data Access
+* [data.zip](https://github.com/clojure/data.zip) - Zipper Library to access data in nested data structures
+* [core.cache](https://github.com/clojure/core.cache) - Caching data with strategies like FIFO, LU/LRU or TTL
+* [next-jdbc](https://github.com/seancorfield/next-jdbc) - Database access via JDBC
+
+### Database
+* [Datomic]() - Datalog based db from Cognitect
+* [Datascript]() - Datalog based in-memory db
+* [Datalevin]() - Datalog based engine with fast LMDB persistent storage
+
+### Utility
+* [clojure.tools.namespace](https://github.com/clojure/tools.namespace)
+* [Editscript](https://github.com/juji-io/editscript) - find and edit differences in data
+* [expound](https://github.com/bhb/expound) - human readable spec error reporting
+* [instaparse](https://github.com/Engelberg/instaparse) - Parser generator for context-free grammars
+
+### Testing
+* [clojure.test](https://clojure.github.io/clojure/clojure.test-api.html) - standard unit testing
+* [test.check](https://github.com/clojure/test.check) - property based testing
+* [Criterium](https://github.com/hugoduncan/criterium) - Benchmark testing library
+
 ### Classpath
-* [dynapath](https://github.com/tobias/dynapath)
+* [tools.deps.alpha](https://github.com/clojure/tools.deps.alpha) - 
+* [dynapath](https://github.com/tobias/dynapath) - library for handling the classpath programmatically
+
+### Math
+* [incanter](https://github.com/incanter/incanter) - Incanter is a Clojure-based, R-like statistical computing and graphics environment
+* [clojure.math.combinatorics](https://github.com/clojure/math.combinatorics)
+* [clj-math](https://github.com/lsolbach/CljMath) - Clojure Math library
+
+### Visualization
+* [oz](https://github.com/metasoarous/oz) - data visualization and scientific document processing library for Clojure built around Vega-Lite & Vega
+* [cmp.jfreechart](https://github.com/lsolbach/CljComponents) - Clojure wrapper and API for JFreeChart
 
 ### I/O
 #### Network Sockets
@@ -130,42 +182,6 @@ Libraries
 * [ClojureScript + React Native](https://cljsrn.org/)
 * [re-natal](https://github.com/drapanjanas/re-natal)
 * [expo-cljs-template](https://github.com/seantempesta/expo-cljs-template)
-
-### Math
-* [incanter](https://github.com/incanter/incanter) - Incanter is a Clojure-based, R-like statistical computing and graphics environment
-* [clojure.math.combinatorics](https://github.com/clojure/math.combinatorics)
-* [clj-math](https://github.com/lsolbach/CljMath) - Clojure Math library
-
-### Visualization
-* [oz](https://github.com/metasoarous/oz) - data visualization and scientific document processing library for Clojure built around Vega-Lite & Vega
-* [cmp.jfreechart](https://github.com/lsolbach/CljComponents) - Clojure wrapper and API for JFreeChart
-
-### Functional Progamming
-* [xforms](https://github.com/cgrand/xforms) - additional transducers
-
-### Data Formats
- * [data.json](https://github.com/clojure/data.json) - Read/write JSON
- * [data.csv](https://github.com/clojure/data.csv) - Read/write CSV
- * [data.xml](https://github.com/clojure/data.xml) - Read/write XML
- * [YAML](https://github.com/owainlewis/yaml) - Read/wite YAML
- * [Clojure ProtoBuf](https://github.com/flatland/clojure-protobuf) - Specify/read/write ProtoBuf
- * [AVRO]() - 
- * [BinF](https://github.com/helins/binf.cljc) - Specify/read/write general binary formats
-
-### Data Access
- * [data.zip](https://github.com/clojure/data.zip) - Zipper Library
- * [JDBC]() - Database access via JDBC
-
-### Utility
-* [clojure.tools.namespace](https://github.com/clojure/tools.namespace)
-* [Editscript](https://github.com/juji-io/editscript) - find and edit differences in data
-* [expound](https://github.com/bhb/expound) - human readable spec error reporting
-* [instaparse](https://github.com/Engelberg/instaparse) - Parser generator for context-free grammars
-
-### Testing
-* [clojure.test](https://clojure.github.io/clojure/clojure.test-api.html) - standard unit testing
-* [test.check](https://github.com/clojure/test.check) - property based testing
-* [Criterium](https://github.com/hugoduncan/criterium) - Benchmark testing library
 
 #### UI Testing
 * [Etaoin](https://github.com/igrishaev/etaoin) - Browser testing via WebDriver
