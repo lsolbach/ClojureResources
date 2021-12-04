@@ -20,6 +20,7 @@ Documentation
 * [Clojure Doc](https://clojure-doc.github.io/) - The community-driven documentation site for the Clojure programming language
 * [cljdoc](https://cljdoc.org/) - A website building & hosting documentation for Clojure/Script libraries
 
+* [Clojure Style Guide](https://guide.clojure.style/) - A comprehensive style guide for Clojure
 
 Build Tools/Runners
 -------------------
@@ -36,7 +37,7 @@ Editors/IDEs
 * [Visual Studio Code](https://code.visualstudio.com/) + [Calva](https://github.com/BetterThanTomorrow/calva)
 * Emacs + [Cider](https://github.com/clojure-emacs/cider), [Cider Docs](https://docs.cider.mx/cider/0.25/index.html)
 * IntelliJ + [Cursive](https://cursive-ide.com/)
-* Eclipse + [CounterClockWise](https://github.com/ccw-ide/ccw)
+* [Eclipse](https://www.eclipse.org/) + [CounterClockWise](https://github.com/ccw-ide/ccw)
 * [Atom](https://atom.io/) + ProtoREPL/ParInfer or Chlorine
 * [NightCode](https://github.com/oakes/Nightcode)
 * [NightLight](https://sekao.net/nightlight/) - An embedded editor for Clojure
@@ -48,16 +49,19 @@ REPLs/REPL Tools
 * [nREPL](https://github.com/nrepl/nrepl) - Network REPL
 * [gorilla-repl](http://gorilla-repl.org/) - Browser REPL with plotting support
 * [protoREPL](https://github.com/jasongilman/proto-repl) - REPL for Atom
-* [unrepl](https://github.com/Unrepl/unrepl)
-* [unravel](https://github.com/Unrepl/unravel)
+* [unrepl](https://github.com/Unrepl/unrepl) - 
+* [unravel](https://github.com/Unrepl/unravel) - 
 * [rebel-readline](https://github.com/bhauman/rebel-readline) - Multiline Editor for a terminal REPL
 * [REBL](http://rebl.cognitect.com/) - A graphical, interactive tool for browsing Clojure data
 * [integrant-repl](https://github.com/weavejester/integrant-repl)
+
 * [Figwheel Main](https://figwheel.org/) - Figwheel Main builds your ClojureScript code and hot loads it as you are coding
 * [figwheel.main template](https://rigsomelight.com/figwheel-main-template/) - Template generator that will produce a minimal ClojureScript project that includes figwheel.main tooling
+
 * [Babashka](https://github.com/babashka/babashka) - Clojure shell programming/bash replacement
 * [planck2](https://github.com/planck-repl/planck) - ClojureScript REPL for the desktop
 * [Lumo](https://github.com/anmonteiro/lumo) - Lumo is a standalone ClojureScript environment that runs on Node.js and the V8 JavaScript engine
+
 * [tubular](https://github.com/mfikes/tubular) - A Clojure Socket REPL client
 
 
@@ -139,6 +143,20 @@ Libraries
 ### Functional Progamming
 * [xforms](https://github.com/cgrand/xforms) - additional transducers
 
+### Data Formats
+ * [data.json](https://github.com/clojure/data.json) - Read/write JSON
+ * [data.csv](https://github.com/clojure/data.csv) - Read/write CSV
+ * [data.xml](https://github.com/clojure/data.xml) - Read/write XML
+ * [YAML](https://github.com/owainlewis/yaml) - Read/wite YAML
+ * [Clojure ProtoBuf](https://github.com/flatland/clojure-protobuf) - Specify/read/write ProtoBuf
+ * [AVRO]() - 
+ * [BinF](https://github.com/helins/binf.cljc) - Specify/read/write general binary formats
+
+### Data Access
+ * [data.zip](https://github.com/clojure/data.zip) - Zipper Library
+ * []() - Zipper for data.xml
+ * [JDBC]() - Database access via JDBC
+
 ### Utility
 * [clojure.tools.namespace](https://github.com/clojure/tools.namespace)
 * [Editscript](https://github.com/juji-io/editscript) - find and edit differences in data
@@ -150,10 +168,19 @@ Libraries
 * [test.check](https://github.com/clojure/test.check) - property based testing
 * [Criterium](https://github.com/hugoduncan/criterium) - Benchmark testing library
 
+#### UI Testing
+* [Etaoin](https://github.com/igrishaev/etaoin) - Browser testing via WebDriver
+
+
+### Documents/Reporting
+* [clj-pdf](https://github.com/clj-pdf/clj-pdf) - Generate PDF programatically
+* [cmp.poi]()
+* [cmp.jfreechart]()
+* [xml.]()
 
 Applications
 ------------
-* [Metabase](https://github.com/metabase/metabase) -
+* [Metabase](https://github.com/metabase/metabase) - Data(base) analytics and visualization
 
 Community
 ---------
@@ -166,7 +193,7 @@ Tutorials
 ### Clojure
 #### Interactive
 * [Maria](https://www.maria.cloud/) - a web coding environment for beginners
-* [4clojure](http://www.4clojure.com/)
+
 
 #### Texts
 * [A Joyful Introduction to Clojure, Part I](https://medium.com/@daniel.oliver.king/a-clojure-development-environment-that-gets-out-of-your-way-c11e6711ead3)
@@ -175,7 +202,7 @@ Tutorials
 * [Clojure Concurrency Tutorial](https://purelyfunctional.tv/guide/clojure-concurrency/)
 
 #### deps.edn
-* [dot-clojure](https://github.com/seancorfield/dot-clojure)
+* [dot-clojure](https://github.com/seancorfield/dot-clojure) - Sean Corfield's personal .clojure/deps.edn file providing useful clj aliases drawn from a variety of projects
 
 #### REPL Workflow Reloaded
 * [Reloaded Workflow](http://thinkrelevance.com/blog/2013/06/04/clojure-workflow-reloaded)
