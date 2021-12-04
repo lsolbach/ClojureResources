@@ -201,9 +201,9 @@ Libraries
 
 ### Documents/Reporting
 * [clj-pdf](https://github.com/clj-pdf/clj-pdf) - Generate PDF programatically
-* [cmp.poi]()
-* [cmp.jfreechart]()
-* [xml.]()
+* [cmp.poi](https://github.com/lsolbach/CljComponents) - Create, read and write excel files based on Apache POI
+* [cmp.jfreechart](https://github.com/lsolbach/CljComponents) - Create charts based on JFreeChart
+* [xml.dsl](https://github.com/lsolbach/CljXML) - DSLs for various XML dialects like SVG, DocBook, MathML, etc.
 
 Applications
 ------------
