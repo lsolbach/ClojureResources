@@ -72,12 +72,13 @@ Libraries
 * [The Clojure Toolbox](https://www.clojure-toolbox.com/) - Curated list of Clojure libraries
 
 ### System Configuration
-* [Component](https://github.com/stuartsierra/component)
-* [Integrant](https://github.com/weavejester/integrant)
-* [Mount](https://github.com/tolitius/mount)
+* [Component](https://github.com/stuartsierra/component) - Component livecycle framework
+* [Integrant](https://github.com/weavejester/integrant) - Component livecycle framework
+* [Mount](https://github.com/tolitius/mount) - Component livecycle framework
 
 ### Functional Progamming
-* [xforms](https://github.com/cgrand/xforms) - additional transducers
+* [xforms](https://github.com/cgrand/xforms) - Provides additional transducers
+* [core.memoize](https://github.com/clojure/core.memoize) - Provides memoization cache implementations and strategies like LRU or TTL
 
 ### Logic Programming
 * [core.logic](https://github.com/clojure/core.logic) - Prolog-like relational logic programming based on miniKanren
@@ -136,7 +137,7 @@ Libraries
 
 ### Math
 * [incanter](https://github.com/incanter/incanter) - Incanter is a Clojure-based, R-like statistical computing and graphics environment
-* [clojure.math.combinatorics](https://github.com/clojure/math.combinatorics)
+* [clojure.math.combinatorics](https://github.com/clojure/math.combinatorics) - 
 * [clj-math](https://github.com/lsolbach/CljMath) - Clojure Math library
 
 ### Machine Learning
@@ -251,8 +252,11 @@ Tutorials
 ### Datomic
 * [Learn Datalog Today](http://www.learndatalogtoday.org/)
 
+### Web Templating/Scraping
+* [Enlive Tutorial](https://github.com/swannodette/enlive-tutorial/) - 
+
 ### 3D Printing
-* [Interactive 3D Modeling with Clojure](https://github.com/PEZ/scad-clj-workflow) - 
+* [Interactive 3D Modeling with Clojure](https://github.com/PEZ/scad-clj-workflow) - Workflow to create OpenSCAD models in Clojure with scad-clj, VS Code and Calva
 
 
 Videos
