@@ -92,6 +92,8 @@ Libraries
 * [Malli]() - 
 
 ### Data Formats
+* [tools.reader](https://github.com/clojure/tools.reader) - Read/write EDN
+* [Nippy](https://github.com/ptaoussanis/nippy) - Read/write EDN, fast and compact with encryption
 * [data.json](https://github.com/clojure/data.json) - Read/write JSON
 * [data.csv](https://github.com/clojure/data.csv) - Read/write CSV
 * [data.xml](https://github.com/clojure/data.xml) - Read/write XML
@@ -114,6 +116,7 @@ Libraries
 * [Datalevin](https://github.com/juji-io/datalevin) - Datalog based engine with fast LMDB persistent storage
 * [Datahike](https://github.com/replikativ/datahike) - Datalog based db engine with persistence
 * [XTDB](https://github.com/xtdb/xtdb) - Database engine with graph-oriented bitemporal indexes, Datalog, SQL & EQL queries and transaction log and document storage backends (e.g. Kafka)
+* [asami](https://github.com/threatgrid/asami) - Graph database with Datalog queries, Loom support and in-memory and persistent backends
 
 ### Utility
 * [clojure.tools.namespace](https://github.com/clojure/tools.namespace)
@@ -135,6 +138,9 @@ Libraries
 * [incanter](https://github.com/incanter/incanter) - Incanter is a Clojure-based, R-like statistical computing and graphics environment
 * [clojure.math.combinatorics](https://github.com/clojure/math.combinatorics)
 * [clj-math](https://github.com/lsolbach/CljMath) - Clojure Math library
+
+### Machine Learning
+* [jutsu.ai](https://github.com/hswick/jutsu.ai) - Clojure wrapper for DeepLearning4J
 
 ### Visualization
 * [oz](https://github.com/metasoarous/oz) - data visualization and scientific document processing library for Clojure built around Vega-Lite & Vega
