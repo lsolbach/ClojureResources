@@ -92,6 +92,13 @@ Libraries
 * [Schema]() - 
 * [Malli]() - 
 
+### SCM
+* [clj-jgit](https://github.com/clj-jgit/clj-jgit) - Access git repositories from clojure. Provides the Porcelain API of JGit 
+* []() - 
+
+### Ontologies
+* [Tawny OWL](https://github.com/phillord/tawny-owl) - Tawny-OWL allows construction of OWL ontologies, in a evaluative, functional and fully programmatic environment
+
 ### Data Formats
 * [tools.reader](https://github.com/clojure/tools.reader) - Read/write EDN
 * [Nippy](https://github.com/ptaoussanis/nippy) - Read/write EDN, fast and compact with encryption
@@ -110,6 +117,8 @@ Libraries
 * [core.cache](https://github.com/clojure/core.cache) - Caching data with strategies like FIFO, LU/LRU or TTL
 * [jackdaw](https://github.com/FundingCircle/jackdaw) - Kafka library for clojure
 * [next-jdbc](https://github.com/seancorfield/next-jdbc) - Database access via JDBC
+* [clojure-hbase](https://github.com/bigmlcom/clojure-hbase) - Low level access to HBase and it's admin functions
+* [clojure-hbase-schemas](https://github.com/eslick/clojure-hbase-schemas) - Simple library for schema-based access to HBase from Clojure
 
 ### Database
 * [Datomic](https://www.datomic.com/) - Datalog based db from Cognitect with features like immutability and temporal queries
@@ -131,6 +140,9 @@ Libraries
 * [Criterium](https://github.com/hugoduncan/criterium) - Benchmark testing library
 * [Cloverage](https://github.com/cloverage/cloverage) - Coverage tool
 
+### Network
+* [clj-ftp](https://github.com/miner/clj-ftp) - Wrapper over Apache Commons Net to provide easy access from Clojure
+
 ### Classpath
 * [tools.deps.alpha](https://github.com/clojure/tools.deps.alpha) - 
 * [dynapath](https://github.com/tobias/dynapath) - library for handling the classpath programmatically
@@ -139,9 +151,12 @@ Libraries
 * [incanter](https://github.com/incanter/incanter) - Incanter is a Clojure-based, R-like statistical computing and graphics environment
 * [clojure.math.combinatorics](https://github.com/clojure/math.combinatorics) - 
 * [clj-math](https://github.com/lsolbach/CljMath) - Clojure Math library
+* [sampling](https://github.com/bigmlcom/sampling) - This library supports three flavors of random sampling: simple sampling, reservoir sampling, and stream sampling.
 
 ### Machine Learning
 * [jutsu.ai](https://github.com/hswick/jutsu.ai) - Clojure wrapper for DeepLearning4J
+* [sketchy](https://github.com/bigmlcom/sketchy) - Sketching algorithms in Clojure (e.g. Bloom Filter, Count-Min, Hyper-LogLog)
+* [histogram](https://github.com/bigmlcom/histogram) - An implementation of the streaming, one-pass histograms described in Ben-Haim's Streaming Parallel Decision Trees
 
 ### Visualization
 * [oz](https://github.com/metasoarous/oz) - data visualization and scientific document processing library for Clojure built around Vega-Lite & Vega
@@ -169,6 +184,8 @@ Libraries
 #### Libraries
 * [ring](https://github.com/ring-clojure/ring) - Clojure HTTP server abstraction
 * [compojure](https://github.com/weavejester/compojure) - Ring routing library
+* [hiccup](https://github.com/weavejester/hiccup) - Hiccup is a library for representing HTML in Clojure using vectors to represent elements, and maps to represent an element's attributes.
+* [Enlive](https://github.com/cgrand/enlive) - Enlive is a selector-based (à la CSS) templating library for Clojure.
 * [yada](https://github.com/juxt/yada), [yada docs](https://www.juxt.land/yada/manual/index.html) - Framework for production ready web services
 * [sente](https://github.com/ptaoussanis/sente) - Client/Server communication with core.async over WebSockets or AJAX
 
@@ -195,7 +212,7 @@ Libraries
 
 #### ClojureScript
 * [reagent](http://reagent-project.github.io/) - ClojureScript React programming
-* [re-frame](https://github.com/Day8/re-frame)
+* [re-frame](https://github.com/Day8/re-frame) - re-frame is a ClojureScript framework for building user interfaces with a data-oriented, functional design
 
 #### ClojureScript React Native
 * [ClojureScript + React Native](https://cljsrn.org/)
