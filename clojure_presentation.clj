@@ -11,25 +11,8 @@
 ; * programming paradigm
 ; * uses functions as primary programming construct (functions as first class citizens)
 ;
-; * Exmples of functional programming languages
+; * Examples of functional programming languages
 ;   * Lisps: Common Lisp, Scheme, Clojure/ClojureScript
-
-; Benefits of Pure Functions
-; --------------------------
-
-; * referential transparency
-; * no side effects
-; * simpler reasoning
-; * enables memoization
-
-
-; Higher Order Functions
-; ----------------------
-;
-; * map
-; * reduce
-; * filter
-
 
 ; Basics
 ; ------
@@ -59,9 +42,9 @@
 ; Java/Clojure
 ; ------------
 ; 
-; 		Operators	Methods/Fuctions
-; Java		2 + 3 + 4	sb.append("Hello!")
-; Clojure	(+ 2 3 4)	(append sb "Hello!")
+;          Operators	  Methods/Fuctions
+; Java     2 + 3 + 4	  sb.append("Hello!")
+; Clojure	 (+ 2 3 4)	  (append sb "Hello!")
 ; 
 ;
 ; Functions
@@ -126,17 +109,18 @@ false
 1
 
 ; BigInteger
-1M
-123456789012345678901234567890M
+1N
+123456789012345678901234567890N
 
 ; Double
 1.0
 
 ; BigDecimal (arbitrary precision)
-1.0N
+1.0M
 
 ; Rationals
 2/3
+(/ 2 3)
 
 ; Strings and Chars
 ; -----------------
@@ -180,9 +164,49 @@ x
 ; 
 ; RegEx:
 #"^A.*B$"
+(re-matches #"^A.*B$" "ABCDEF")
+(re-matches #"^A.*B$" "ABCDEB")
 
 ; Matching example: 
 ; TODO
+;
+; Collection Literals
+; -------------------
+;
+; Commas are whitespace:
+(= [1, 2, 3, 4] [1 2 3 4]) 
+
+; List:
+(1 2 3 4)
+
+; Quoted List:
+'(1 2 3 4)
+
+; Vector - sorted collection:
+[1 2 3 4]
+
+(nth [1 2 3 4] 1)
+(nth [1 2 3 4] 4)
+
+; Set - unsorted collection, no duplicates:
+#{1 2 3 4}
+
+#{1 2 2 3 3 3 4 4 4 4}
+
+(contains? #{1 2 3 4} 2)
+(contains? #{1 2 3 4} 5)
+
+; sorted variant
+(sorted-set 4 3 2 1)
+
+; Map:
+{:a 1 :b 2 :c 3 :d 4}
+
+; accessors
+(:a {:a 1 :b 2 :c 3 :d 4})
+({:a 1 :b 2 :c 3 :d 4} :a)
+
+(sorted-map :c 3 :d 4 :b 2 :a 1)
 
 ; Persistent Collections
 ; ----------------------
@@ -192,70 +216,28 @@ x
 ; * Performant implementation (B-Trees)
 ; * Implication: data has to be build bottom up instead of top down
 
-
-; Collection Literals
-; -------------------
-;
-; Commas are whitespace:
-(= [1, 2, 3] [1 2 3]) 
-
-; List:
-(1 2 3)
-
-; Quoted List:
-'(1 2 3)
-
-; Vector - sorted collection:
-[1 2 3]
-
-(nth [1 2 3] 1)
-(nth [1 2 3] 4)
-
-; Set - unsorted collection, no duplicates:
-#{1 2 3}
-
-#{1 2 2 3 3 3}
-
-(contains? #{1 2 3} 2)
-(contains? #{1 2 3} 5)
-
-; sorted variant
-(sorted-set 3 2 1)
-
-; Map:
-{:a 1 :b 2 :c 3}
-
-; accessors
-(:a {:a 1 :b 2 :c 3})
-({:a 1 :b 2 :c 3} :a)
-
-(sorted-map :c 3 :b 2 :a 1)
-
 ; Sequence Abstraction
 ; --------------------
 ; 9. It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures. (Alan Perlis)
 
-(seq coll)
+(seq [1 2 3 4])
 
-(first coll)
+(first [1 2 3 4])
 
-(rest coll)
+(rest [1 2 3 4])
 
-(cons i coll)
+(cons 0 [1 2 3 4])
 
 ; Hundreds of functions for working with sequences
-(count [1 2 3])
-(reverse [1 2 3])
+(count [1 2 3 4])
+(reverse [1 2 3 4])
 
 
 ; Lazy Sequences
 ; --------------
 ;
 ; Convert to lazy sequence
-(lazy-seq coll)
-
-; Realize all values
-(doall s)
+(lazy-seq [1 2 3 4])
 
 ; Possibly infinitive sequences
  ; natural numbers
@@ -263,6 +245,9 @@ x
 
 ; Only needed values are calculated
 (take 10 (drop 50 natural-numbers))
+
+; Realize all values
+(doall (lazy-seq [1 2 3 4]))
 
 
 ; Closures and Lexical Scoping
@@ -276,17 +261,16 @@ a
 ; Destructuring
 ; -------------
 
-(let [[a b c] [1 2 3]
-  (println a b c))
+(let [[a b c d] [1 2 3 4]]
+  (str a "," b "," c "," d))
 
-(let [{a :a b :b c :c} {:a 1 :b 2 :c 3}]
-  (println a b c))
+(let [{a :a b :b c :c d :d} {:a 1 :b 2 :c 3 :d 4}]
+  (str a "," b "," c "," d))
 
 
 ; Functions
 ; ---------
 ;
-
 ; define a symbol for the function
 (def square (fn [x] (* x x)))
 
@@ -298,6 +282,26 @@ a
 
 ; functions are executed at runtime
 ; when calling a fn the arguments get evaluated before the body is executed
+
+; Pure Functions
+; --------------
+; * referential transparency
+; * no side effects (e.g. IO, randomness)
+;
+; * simpler reasoning
+; * enables caching of the value for the parameters (memoization)
+
+
+; Higher Order Functions
+; ----------------------
+;
+; * map
+; * reduce
+; * filter
+
+(map (fn [x] (* 2 x)) [1 2 3 4])
+(map #(* 2 %) [1 2 3 4])
+
 
 ; Macros
 ; ------
@@ -355,19 +359,22 @@ a
 ; -----------------------
 
 
-
-
 ; Reference Types
 ; ---------------
-
+;
 ; Value and Identity
-
+;
 ; Person 'Ludger'
-{:firstname "Ludger"
- :lastname "Solbach"
- :age 53}
+(def ludger1 {:firstname "Ludger"
+             :lastname "Solbach"
+             :age 52})
 
-; Ludger ages... :-(
+; Ludger ages, birthday!
+(update ludger1 :age inc)
+
+ludger1
+
+
 ; How do I maintain the identity of 'Ludger' in the face of immutable data?
 
 
@@ -375,11 +382,23 @@ a
 ; --------
 
 ; Properties table
-; 		Ref	Agent	Atom	Var
-; Coordinated	X				
-; Asynchronous		X
-; Retriable	X		X
-; Thread-local 			X
+; 		          Atom  Ref   Agent	Var
+; Coordinated	         X				
+; Asynchronous	    	       X
+; Retriable	     X	   X
+; Thread-local 			               X
+
+; Atoms
+; -----
+;
+
+(def ludger2 (atom {:firstname "Ludger"
+                   :lastname "Solbach"
+                   :age 52}))
+ludger2
+@ludger2
+(swap! ludger2 update-in [:age] inc)
+@ludger2
 
 ; Vars
 ; ----
@@ -388,14 +407,9 @@ a
 ; thread local, dynamic scope
 
 
-; Atoms
-; -----
-
-
-
 ; Refs
 ; ----
-
+;
 
 ; Software Transactional Memory (STM)
 ; ACID? ACI!
@@ -405,18 +419,16 @@ a
 ; Watches
 ; (add-watch)
 
-
-;;; Agents
-;;; ------
-
-
+; Agents
+; ------
+;
 
 ;;; Examples
 ;;; --------
 ;
 ; * Swing App with Clojure
 ; * Internal DSLs with macros, programming XML in Clojure 
-
+;
 
 
 ; References
@@ -428,10 +440,10 @@ a
 ; http://github.org/lsolbach
 
 
-; Literature
-; ----------
-
-; Clojure(Script) Specific
+;;; Literature
+;;; ----------
+;;
+;; Clojure(Script) Specific
 ;
 ; * Programming Clojure (3nd Edition)
 ; * Getting Clojure
@@ -445,8 +457,8 @@ a
 ; * Mastering Clojure Macros
 ; * Clojure High Performance Programming (2n Edition)
 ; * Elements of Clojure
-
-; Functional Programming 
+;
+;; Functional Programming 
 ;
 ; * Structure and Interpretation of Computer Programs
 ; * Land of Lisp
@@ -457,7 +469,4 @@ a
 
 ; 11. If you have a procedure with ten parameters, you probably missed some. (Alan Perlis)
 ; http://www.cs.yale.edu/homes/perlis-alan/quotes.html
-
-
-
 
