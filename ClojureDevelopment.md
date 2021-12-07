@@ -164,6 +164,7 @@ Libraries
 * [sketchy](https://github.com/bigmlcom/sketchy) - Sketching algorithms in Clojure (e.g. Bloom Filter, Count-Min, Hyper-LogLog)
 * [histogram](https://github.com/bigmlcom/histogram) - An implementation of the streaming, one-pass histograms described in Ben-Haim's Streaming Parallel Decision Trees
 * [clojurecl](https://github.com/uncomplicate/clojurecl) - ClojureCL is a Clojure library for parallel computations with OpenCL
+* [Deep Diamond](https://github.com/uncomplicate/deep-diamond) - Deep Diamond is a Clojure library for fast tensors and neural network related computations based on the highly optimized native libraries and computation routines for both CPU and GPU
 
 ### Visualization
 * [oz](https://github.com/metasoarous/oz) - data visualization and scientific document processing library for Clojure built around Vega-Lite & Vega
