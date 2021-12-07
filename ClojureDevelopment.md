@@ -115,10 +115,15 @@ Libraries
 ### Data Access
 * [data.zip](https://github.com/clojure/data.zip) - Zipper library to access data in nested data structures
 * [core.cache](https://github.com/clojure/core.cache) - Caching data with strategies like FIFO, LU/LRU or TTL
-* [jackdaw](https://github.com/FundingCircle/jackdaw) - Kafka library for clojure
+* [Spyglass](https://github.com/clojurewerkz/spyglass) - A fast Clojure memcached client
 * [next-jdbc](https://github.com/seancorfield/next-jdbc) - Database access via JDBC
 * [clojure-hbase](https://github.com/bigmlcom/clojure-hbase) - Low level access to HBase and it's admin functions
 * [clojure-hbase-schemas](https://github.com/eslick/clojure-hbase-schemas) - Simple library for schema-based access to HBase from Clojure
+* [carmine](https://github.com/ptaoussanis/carmine) - A pure-Clojure Redis client & message queue
+
+### Data Streaming
+* [jackdaw](https://github.com/FundingCircle/jackdaw) - Kafka library for clojure
+* [Machine Head](https://github.com/clojurewerkz/machine_head) - A Clojure MQTT client
 
 ### Database
 * [Datomic](https://www.datomic.com/) - Datalog based db from Cognitect with features like immutability and temporal queries
@@ -159,16 +164,22 @@ Libraries
 * [clj-math](https://github.com/lsolbach/CljMath) - Clojure Math library
 * [sampling](https://github.com/bigmlcom/sampling) - This library supports three flavors of random sampling: simple sampling, reservoir sampling, and stream sampling.
 
-### Machine Learning
+### Analytics/Machine Learning
 * [jutsu.ai](https://github.com/hswick/jutsu.ai) - Clojure wrapper for DeepLearning4J
-* [sketchy](https://github.com/bigmlcom/sketchy) - Sketching algorithms in Clojure (e.g. Bloom Filter, Count-Min, Hyper-LogLog)
-* [histogram](https://github.com/bigmlcom/histogram) - An implementation of the streaming, one-pass histograms described in Ben-Haim's Streaming Parallel Decision Trees
 * [clojurecl](https://github.com/uncomplicate/clojurecl) - ClojureCL is a Clojure library for parallel computations with OpenCL
 * [Deep Diamond](https://github.com/uncomplicate/deep-diamond) - Deep Diamond is a Clojure library for fast tensors and neural network related computations based on the highly optimized native libraries and computation routines for both CPU and GPU
+* [histogram](https://github.com/bigmlcom/histogram) - An implementation of the streaming, one-pass histograms described in Ben-Haim's Streaming Parallel Decision Trees
+* [sketchy](https://github.com/bigmlcom/sketchy) - Sketching algorithms in Clojure (e.g. Bloom Filter, Count-Min, Hyper-LogLog)
+* [streampunk](https://github.com/clojurewerkz/streampunk) - Streampunk is a Clojure interface to stream summarization and cardinality estimation libraries, such as stream-lib
+* [Statistiker](https://github.com/clojurewerkz/statistiker) - Statistiker is a simple way to do Statistics in Clojure. The goal is to have an implementation of all popular algorithms for mining datasets
 
 ### Visualization
 * [oz](https://github.com/metasoarous/oz) - data visualization and scientific document processing library for Clojure built around Vega-Lite & Vega
 * [cmp.jfreechart](https://github.com/lsolbach/CljComponents) - Clojure wrapper and API for JFreeChart
+
+### Cryptography
+* [scrypt](https://github.com/clojurewerkz/scrypt) - scrypt is a tiny Clojure library for the scrypt key derivation function
+
 
 ### I/O
 #### Network Sockets
@@ -177,6 +188,10 @@ Libraries
 * [http-kit](https://github.com/http-kit/http-kit) - A simple, high-performance event-driven HTTP client+server for Clojure without external dependencies
 * [aleph](https://github.com/ztellman/aleph) - Fast asynchronous HTTP server based on Netty
 * [link](https://github.com/clojure-link/link)
+
+#### Email
+* [Mailer](https://github.com/clojurewerkz/mailer) - Mailer is an ActionMailer-inspired mailer library for Clojure. It combines Postal, Clostache and a number of its own features and conventions to make delivering complex template-based emails as painless as possible
+* [postal](https://github.com/drewr/postal) - postal is a library for constructing and sending RFC822-compliant Internet email messages
 
 #### Serial Communication
 * [clj-serial](https://github.com/peterschwarz/clj-serial) - Serial connections with CLojure
@@ -229,13 +244,14 @@ Libraries
 
 #### UI Testing
 * [Etaoin](https://github.com/igrishaev/etaoin) - Browser testing via WebDriver
-
+* [touchstone](https://github.com/ptaoussanis/touchstone) - a split testing library for Clojure (A/B (conversion) testing)
 
 ### Documents/Reporting
 * [clj-pdf](https://github.com/clj-pdf/clj-pdf) - Generate PDF programatically
 * [cmp.poi](https://github.com/lsolbach/CljComponents) - Create, read and write excel files based on Apache POI
 * [cmp.jfreechart](https://github.com/lsolbach/CljComponents) - Create charts based on JFreeChart
 * [xml.dsl](https://github.com/lsolbach/CljXML) - DSLs for various XML dialects like SVG, DocBook, MathML, etc.
+* [Clostache](https://github.com/fhd/clostache) - Mustache templates for clojure
 
 Applications
 ------------
@@ -276,6 +292,9 @@ Tutorials
 
 ### Datomic
 * [Learn Datalog Today](http://www.learndatalogtoday.org/)
+
+### Analytics/Machine Learning
+* [OpenCV with Clojure](https://docs.opencv.org/4.x/d7/d1e/tutorial_clojure_dev_intro.html) - Introduction to OpenCV Development with Clojure
 
 ### Web Templating/Scraping
 * [Enlive Tutorial](https://github.com/swannodette/enlive-tutorial/) - 
