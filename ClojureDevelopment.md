@@ -94,7 +94,7 @@ Libraries
 
 ### SCM
 * [clj-jgit](https://github.com/clj-jgit/clj-jgit) - Access git repositories from clojure. Provides the Porcelain API of JGit 
-* []() - 
+* [tools.git](https://github.com/lsolbach/CljDevTools) - The tools.git component provides a Clojure api for JGit.
 
 ### Ontologies
 * [Tawny OWL](https://github.com/phillord/tawny-owl) - Tawny-OWL allows construction of OWL ontologies, in a evaluative, functional and fully programmatic environment
@@ -130,6 +130,8 @@ Libraries
 
 ### Utility
 * [clojure.tools.namespace](https://github.com/clojure/tools.namespace)
+* [Timbre](https://github.com/ptaoussanis/timbre) - A pure Clojure/Script logging library
+* [Tempura](https://github.com/ptaoussanis/tempura) - A pure Clojure/Script i18n translations library
 * [Editscript](https://github.com/juji-io/editscript) - find and edit differences in data
 * [expound](https://github.com/bhb/expound) - human readable spec error reporting
 * [instaparse](https://github.com/Engelberg/instaparse) - Parser generator for context-free grammars
@@ -137,8 +139,12 @@ Libraries
 ### Testing
 * [clojure.test](https://clojure.github.io/clojure/clojure.test-api.html) - standard unit testing
 * [test.check](https://github.com/clojure/test.check) - property based testing
-* [Criterium](https://github.com/hugoduncan/criterium) - Benchmark testing library
+* [](https://github.com/clojure-expectations/clojure-test) - A clojure.test-compatible version of the classic Expectations testing library
 * [Cloverage](https://github.com/cloverage/cloverage) - Coverage tool
+
+# Performance Testing/Monitoring
+* [Criterium](https://github.com/hugoduncan/criterium) - Benchmark testing library
+* [Tufte](https://github.com/ptaoussanis/tufte) - Simple profiling and performance monitoring for Clojure/Script
 
 ### Network
 * [clj-ftp](https://github.com/miner/clj-ftp) - Wrapper over Apache Commons Net to provide easy access from Clojure
@@ -157,6 +163,7 @@ Libraries
 * [jutsu.ai](https://github.com/hswick/jutsu.ai) - Clojure wrapper for DeepLearning4J
 * [sketchy](https://github.com/bigmlcom/sketchy) - Sketching algorithms in Clojure (e.g. Bloom Filter, Count-Min, Hyper-LogLog)
 * [histogram](https://github.com/bigmlcom/histogram) - An implementation of the streaming, one-pass histograms described in Ben-Haim's Streaming Parallel Decision Trees
+* [clojurecl](https://github.com/uncomplicate/clojurecl) - ClojureCL is a Clojure library for parallel computations with OpenCL
 
 ### Visualization
 * [oz](https://github.com/metasoarous/oz) - data visualization and scientific document processing library for Clojure built around Vega-Lite & Vega
