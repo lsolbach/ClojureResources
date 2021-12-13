@@ -105,6 +105,7 @@ Libraries
 * [data.json](https://github.com/clojure/data.json) - Read/write JSON
 * [data.csv](https://github.com/clojure/data.csv) - Read/write CSV
 * [data.xml](https://github.com/clojure/data.xml) - Read/write XML
+* [clj-xpath](https://github.com/kyleburton/clj-xpath) - A library that makes it easier to work with XPath from Clojure
 * [YAML](https://github.com/owainlewis/yaml) - Read/wite YAML
 * [Clojure ProtoBuf](https://github.com/flatland/clojure-protobuf) - Specify/read/write ProtoBuf
 * [Lancaster](https://github.com/deercreeklabs/lancaster) - Specify/read/write AVRO
