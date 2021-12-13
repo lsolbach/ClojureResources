@@ -5,8 +5,8 @@
 ; 19. A language that doesn't affect the way you think about programming, is not worth knowing. (Alan Perlis)
 ;
 
-; Functional Programming
-; ----------------------
+;;; Functional Programming
+;;; ----------------------
 ;
 ; * programming paradigm
 ; * uses functions as primary programming construct (functions as first class citizens)
@@ -14,8 +14,8 @@
 ; * Examples of functional programming languages
 ;   * Lisps: Common Lisp, Scheme, Clojure/ClojureScript
 
-; Basics
-; ------
+;;; Properties of Clojure
+;;; ---------------------
 
 ; Clojure is
 ; * a functional programming language
@@ -23,7 +23,7 @@
 ; * simple
 ; * fun to use
 
-; * almost no syntax
+; * has almost no syntax
 ; * like an AST written out (in list representation)
 ; * homoiconic, code is data is code...
 ;   * clojure code can transform clojure data
@@ -36,19 +36,20 @@
 
 
 
-; Features
-; --------
+;;; Features
+;;; --------
 ;
-; Java/Clojure
-; ------------
+
+;;; Java/Clojure
+;;; ------------
 ; 
 ;          Operators	  Methods/Fuctions
 ; Java     2 + 3 + 4	  sb.append("Hello!")
 ; Clojure	 (+ 2 3 4)	  (append sb "Hello!")
 ; 
 ;
-; Functions
-;---------
+;;; Functions
+;;; ---------
 ;
 ; Java:    calculate(a, b)
 ; Clojure: (calculate a b)
@@ -57,8 +58,8 @@
 ; * first entry is the function position
 ; * function is called with the rest of the list as parameters
 
-; Development Environments
-; ------------------------
+;;; Development Environments
+;;; ------------------------
 ; 
 ; * VS Code with Calva
 ; * Emacs with Cider
@@ -67,128 +68,107 @@
 ; * ...
 ;
 
-; Clojure REPL
-; ------------
+;;; Clojure REPL
+;;; ------------
 ;
 ; * Read Evaluate Print Loop
 ; * Interactive develpment
 ; * Instant feedback
 ; java -cp clojure-1.10.3.jar clojure.main
 
-; Clojure CLI
+;; Clojure CLI
 ; clj
 ; clojure
 
 ; <DEMO>
 
 
-; Clojure syntax
-; --------------
+;;; Clojure syntax
+;;; --------------
 
-; Scalars
-; -------
-
-; Nil and Boolean
-; ---------------
+; ### Nil
 ; Nil / Null Value
 
 nil
 
-; Boolean Literals:
+; ### Boolean Literals:
 true
 false
 
 ; false and nil evaluate to false in a boolean context
 ; 0, "" or () all evaluate to true in a boolean context (truthiness)
 
-; Numbers
-; -------
-
-; Number Literals:
-; Long
+; ###  Number Literals:
+; #### Long
 1
 
-; BigInteger
+; #### BigInteger
 1N
 123456789012345678901234567890N
 
-; Double
+; #### Double
 1.0
 
-; BigDecimal (arbitrary precision)
+; #### BigDecimal (arbitrary precision)
 1.0M
 
-; Rationals
+; #### Rationals
 2/3
-(/ 2 3)
+(/ 2 3) ; operators are functions, result is a rational, no loss in precision
 
-; Strings and Chars
-; -----------------
-
-; String:
+; ### Strings and Chars
+; #### String
 "Hello World!"
 
-; Multiline:
+; #### Multiline String
 "Hello
  World"
 
-; Character A:
+; #### Character
 \A
+\B
+\.
 
-; Namespaces
-; ----------
-; 
-; Modularisation
+(seq "Hello!")
 
-ns
-require
-
-
-; Keywords and Symbols
-; --------------------
-;
-; Symbol:
+; ###  Keywords and Symbols
+; #### Symbol
 x
 (def x 1)
 x
 
 ; Symbols evaluate to their value 
 
-; Keyword:
+
+; #### Keyword
 :keyword
 
 ; Keywords evaluate to themselves
 
-; Regular Expressions
-; -------------------
+; ###  Regular Expressions
 ; 
-; RegEx:
+; RegEx Literal
 #"^A.*B$"
+
 (re-matches #"^A.*B$" "ABCDEF")
 (re-matches #"^A.*B$" "ABCDEB")
 
-; Matching example: 
-; TODO
-;
-; Collection Literals
-; -------------------
-;
-; Commas are whitespace:
-(= [1, 2, 3, 4] [1 2 3 4]) 
-
-; List:
+; ###  Collection Literals
+; #### List
 (1 2 3 4)
 
-; Quoted List:
+; 1 is no function
+
+; #### Quoted List
 '(1 2 3 4)
 
-; Vector - sorted collection:
+; #### Vector - sorted collection
 [1 2 3 4]
 
 (nth [1 2 3 4] 1)
 (nth [1 2 3 4] 4)
 
-; Set - unsorted collection, no duplicates:
+; #### Set - unsorted collection, no duplicates
 #{1 2 3 4}
 
 #{1 2 2 3 3 3 4 4 4 4}
@@ -196,31 +176,42 @@ x
 (contains? #{1 2 3 4} 2)
 (contains? #{1 2 3 4} 5)
 
-; sorted variant
+; sorted set variant
 (sorted-set 4 3 2 1)
 
-; Map:
+; #### Map
 {:a 1 :b 2 :c 3 :d 4}
 
 ; accessors
+(get {:a 1 :b 2 :c 3 :d 4} :a)
+
 (:a {:a 1 :b 2 :c 3 :d 4})
 ({:a 1 :b 2 :c 3 :d 4} :a)
 
+; maps and keywords act as functions
+
+
 (sorted-map :c 3 :d 4 :b 2 :a 1)
 
-; Persistent Collections
-; ----------------------
+; #### Commas are whitespace
+(= [1, 2, 3, 4] [1 2 3 4])
+
+
+; ###  Persistent Collections
 ;
 ; * Immutable data
 ; * Structural sharing
 ; * Performant implementation (B-Trees)
 ; * Implication: data has to be build bottom up instead of top down
 
-; Sequence Abstraction
-; --------------------
+; ###  Sequence Abstraction
+;
 ; 9. It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures. (Alan Perlis)
 
+; convert a value to a sequence
 (seq [1 2 3 4])
+(seq [])
+(sequence [])
 
 (first [1 2 3 4])
 
@@ -228,23 +219,24 @@ x
 
 (cons 0 [1 2 3 4])
 
-; Hundreds of functions for working with sequences
+; hundreds of functions for working with sequences
 (count [1 2 3 4])
 (reverse [1 2 3 4])
+(partition 2 [1 2 3 4])
+(sort [2 4 3 1])
 
-
-; Lazy Sequences
-; --------------
+; ###  Lazy Sequences
 ;
-; Convert to lazy sequence
+; #### Convert to lazy sequence
 (lazy-seq [1 2 3 4])
 
-; Possibly infinitive sequences
- ; natural numbers
+; #### Possibly infinitive sequences
+; natural numbers (unbounded)
 (def natural-numbers (iterate inc 0))
 
 ; Only needed values are calculated
-(take 10 (drop 50 natural-numbers))
+(take 100 natural-numbers)
+(take 10 (drop 500 natural-numbers))
 
 ; Realize all values
 (doall (lazy-seq [1 2 3 4]))
@@ -353,6 +345,14 @@ a
 (let [sb (StringBuffer.)] ; constructor call
   (.append sb "Hello World") ; call append() on sb
   (.toString sb)) ; calling toString() on sb
+
+; Namespaces
+; ----------
+; 
+; Modularisation
+
+; ns
+; require
 
 
 ; Protocols and Datatypes
