@@ -298,6 +298,7 @@ Tutorials
 
 ### Analytics/Machine Learning
 * [OpenCV with Clojure](https://docs.opencv.org/4.x/d7/d1e/tutorial_clojure_dev_intro.html) - Introduction to OpenCV Development with Clojure
+* [mxnet Clojure tutorials](https://github.com/Chouffe/mxnet-clj-tutorials) - Collection of tutorials for the Clojure MXNET package
 
 ### Web Templating/Scraping
 * [Enlive Tutorial](https://github.com/swannodette/enlive-tutorial/) - 
@@ -353,6 +354,9 @@ Videos
 
 ### 3D Modelling
 * [Start 3D modeling in Clojure with scad-clj and Calva - Peter Stömberg](https://www.youtube.com/watch?v=fJpDztSR53E) - Create OpenSCAD models in Clojure
+
+### Visualization
+* [Vega & Vegalite - Christopher Small](https://www.youtube.com/watch?v=hXq5Bb40zZY) - Create interactive data visualizations in Clojure with Oz and Vega/Vegalite
 
 Books
 -----
