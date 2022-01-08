@@ -175,7 +175,8 @@ Libraries
 * [Statistiker](https://github.com/clojurewerkz/statistiker) - Statistiker is a simple way to do Statistics in Clojure. The goal is to have an implementation of all popular algorithms for mining datasets
 
 ### Visualization
-* [oz](https://github.com/metasoarous/oz) - data visualization and scientific document processing library for Clojure built around Vega-Lite & Vega
+* [oz](https://github.com/metasoarous/oz) - Data visualization and scientific document processing library for Clojure built around Vega-Lite & Vega
+* [hanami](https://github.com/jsa-aerial/hanami) - Interactive arts and charts visualizations with Clojure(Script), Vega-lite, and Vega
 * [cmp.jfreechart](https://github.com/lsolbach/CljComponents) - Clojure wrapper and API for JFreeChart
 
 ### Cryptography
@@ -237,6 +238,7 @@ Libraries
 #### ClojureScript
 * [reagent](http://reagent-project.github.io/) - ClojureScript React programming
 * [re-frame](https://github.com/Day8/re-frame) - re-frame is a ClojureScript framework for building user interfaces with a data-oriented, functional design
+* [fulcro](https://github.com/fulcrologic/fulcro) - Fulcro is a library for building data-driven full-stack applications for the web, native, and desktop (via electron) based on React.
 
 #### ClojureScript React Native
 * [ClojureScript + React Native](https://cljsrn.org/)
