@@ -177,6 +177,7 @@ Libraries
 ### Visualization
 * [oz](https://github.com/metasoarous/oz) - Data visualization and scientific document processing library for Clojure built around Vega-Lite & Vega
 * [hanami](https://github.com/jsa-aerial/hanami) - Interactive arts and charts visualizations with Clojure(Script), Vega-lite, and Vega
+* [viz.clj](https://github.com/scicloj/viz.clj) - 
 * [cmp.jfreechart](https://github.com/lsolbach/CljComponents) - Clojure wrapper and API for JFreeChart
 
 ### Cryptography
