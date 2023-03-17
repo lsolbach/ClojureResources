@@ -208,9 +208,11 @@ Libraries
 
 ### Web
 #### Libraries
-* [ring](https://github.com/ring-clojure/ring) - Clojure HTTP server abstraction
-* [compojure](https://github.com/weavejester/compojure) - Ring routing library
+* [ring](https://github.com/ring-clojure/ring) - Clojure HTTP server abstraction.
+* [compojure](https://github.com/weavejester/compojure) - Ring routing library.
+* [reitit](https://github.com/metosin/reitit) - Modern ring routing library.
 * [hiccup](https://github.com/weavejester/hiccup) - Hiccup is a library for representing HTML in Clojure using vectors to represent elements, and maps to represent an element's attributes.
+* [garden] (https://github.com/noprompt/garden) - Garden is a library for representing CSS in Clojure.
 * [Enlive](https://github.com/cgrand/enlive) - Enlive is a selector-based (à la CSS) templating library for Clojure.
 * [yada](https://github.com/juxt/yada), [yada docs](https://www.juxt.land/yada/manual/index.html) - Framework for production ready web services
 * [sente](https://github.com/ptaoussanis/sente) - Client/Server communication with core.async over WebSockets or AJAX
