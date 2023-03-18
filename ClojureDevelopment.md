@@ -71,12 +71,8 @@ Libraries
 * [Clojars](https://clojars.org/) - An easy to use community repository for open source Clojure libraries
 * [The Clojure Toolbox](https://www.clojure-toolbox.com/) - Curated list of Clojure libraries
 
-### System Configuration
-* [Component](https://github.com/stuartsierra/component) - Component livecycle framework
-* [Integrant](https://github.com/weavejester/integrant) - Component livecycle framework
-* [Mount](https://github.com/tolitius/mount) - Component livecycle framework
-
 ### Functional Progamming
+* [medley](https://github.com/weavejester/medley) - A small collection of useful, mostly pure functions that might not look out of place in the clojure.core namespace.
 * [xforms](https://github.com/cgrand/xforms) - Provides additional transducers
 * [core.memoize](https://github.com/clojure/core.memoize) - Provides memoization cache implementations and strategies like LRU or TTL
 
@@ -89,8 +85,12 @@ Libraries
 ### Specification/Validation
 * [Spec](https://github.com/clojure/spec.alpha) - Spec is Clojure core library to describe the structure of data and functions.
 * [Spec2](https://github.com/clojure/spec-alpha2) - Spec2 is an evolution from spec as well as work towards several new features.
-* [Schema]() - 
-* [Malli]() - 
+* [Malli](https://github.com/metosin/malli) - Data-driven Schemas for Clojure/Script and babashka.
+
+### System Configuration
+* [Component](https://github.com/stuartsierra/component) - Component livecycle framework
+* [Integrant](https://github.com/weavejester/integrant) - Component livecycle framework
+* [Mount](https://github.com/tolitius/mount) - Component livecycle framework
 
 ### SCM
 * [clj-jgit](https://github.com/clj-jgit/clj-jgit) - Access git repositories from clojure. Provides the Porcelain API of JGit 
