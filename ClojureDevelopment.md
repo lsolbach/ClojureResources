@@ -37,12 +37,10 @@ Editors/IDEs
 * [Visual Studio Code](https://code.visualstudio.com/) + [Calva](https://github.com/BetterThanTomorrow/calva)
 * Emacs + [Cider](https://github.com/clojure-emacs/cider), [Cider Docs](https://docs.cider.mx/cider/0.25/index.html)
 * IntelliJ + [Cursive](https://cursive-ide.com/)
-* [Eclipse](https://www.eclipse.org/) + [CounterClockWise](https://github.com/ccw-ide/ccw)
 * [Atom](https://atom.io/) + ProtoREPL/ParInfer or Chlorine
 * [NightCode](https://github.com/oakes/Nightcode)
 * [NightLight](https://sekao.net/nightlight/) - An embedded editor for Clojure
 * [LightTable](http://lighttable.com/)
-
 
 REPLs/REPL Tools
 ----------------
@@ -54,6 +52,7 @@ REPLs/REPL Tools
 * [rebel-readline](https://github.com/bhauman/rebel-readline) - Multiline Editor for a terminal REPL
 * [REBL](http://rebl.cognitect.com/) - A graphical, interactive tool for browsing Clojure data
 * [integrant-repl](https://github.com/weavejester/integrant-repl)
+* [portal](https://github.com/djblue/portal) - A clojure tool to navigate through your data.
 
 * [Figwheel Main](https://figwheel.org/) - Figwheel Main builds your ClojureScript code and hot loads it as you are coding
 * [figwheel.main template](https://rigsomelight.com/figwheel-main-template/) - Template generator that will produce a minimal ClojureScript project that includes figwheel.main tooling
