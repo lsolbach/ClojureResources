@@ -334,6 +334,7 @@ Videos
 * [REBL - Stuart Halloway](https://www.youtube.com/watch?v=c52QhiXsmyI)
 * [Always Be Composing - Zach Tellman](https://www.youtube.com/watch?v=3oQTSP4FngY)
 * [Everything Will Flow - Zach Tellman](https://www.youtube.com/watch?v=1bNOO3xxMc0)
+* [Solving Problems the Clojure Way - Rafal Dittwald](https://www.youtube.com/watch?v=vK1DazRK_a0) - Functional refactoring of an application (JS example ;-) )
 
 #### Workflow
 * [Clojure Basics: Editor and Tooling Setup](https://www.youtube.com/watch?v=kjJVfoqFj_k)
@@ -344,6 +345,7 @@ Videos
 * [Cursive: A different type of IDE - Colin Fleming](https://www.youtube.com/watch?v=vt1y2FbWQMg)
 * [Hammock Driven Development - Rich Hickey](https://www.youtube.com/watch?v=f84n5oFoZBc)
 * [Babashka and Small Clojure Interpreter: Clojure in new contexts - Michiel Borkent](https://www.youtube.com/watch?v=Nw8aN-nrdEk) - Use Clojure as a bash replacement and more
+* [Tapping into one of Clojure's superpowers with Portal by James Trunk](https://www.youtube.com/watch?v=A-QvUw5LLVU)
 
 ### Experience
 * [Why Clojure? - Derek Slager](https://www.youtube.com/watch?v=BThkk5zv0DE)
