@@ -327,7 +327,7 @@ Videos
 * [Effective Programs - 10 Years of Clojure - Rich Hickey](https://www.youtube.com/watch?v=2V1FtfBDsLU)
 * [Transducers - Rich Hickey](https://www.youtube.com/watch?v=Tq7r97G4b7Y)
 * [Inside Transducers - Rich Hickey](https://www.youtube.com/watch?v=4KqUvG8HPYo)
-* [Clojure core async - Rich Hickey](https://www.youtube.com/watch?v=drmNlZVkUeE)
+* [Clojure core async - Rich Hickey](https://www.youtube.com/watch?v=yJxFPoxqzWE)
 * [Spec-ulation Keynote - Rich Hickey](https://www.youtube.com/watch?v=oyLBGkS5ICk) - About changing and breaking software and how versioning artifacts doesn't help
 * [Maybe Not - Rich Hickey](https://www.youtube.com/watch?v=YR5WdGrpoug)
 * [REBL - Stuart Halloway](https://www.youtube.com/watch?v=c52QhiXsmyI)
