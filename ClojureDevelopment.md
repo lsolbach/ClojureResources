@@ -37,12 +37,10 @@ Editors/IDEs
 * [Visual Studio Code](https://code.visualstudio.com/) + [Calva](https://github.com/BetterThanTomorrow/calva)
 * Emacs + [Cider](https://github.com/clojure-emacs/cider), [Cider Docs](https://docs.cider.mx/cider/0.25/index.html)
 * IntelliJ + [Cursive](https://cursive-ide.com/)
-* [Eclipse](https://www.eclipse.org/) + [CounterClockWise](https://github.com/ccw-ide/ccw)
 * [Atom](https://atom.io/) + ProtoREPL/ParInfer or Chlorine
 * [NightCode](https://github.com/oakes/Nightcode)
 * [NightLight](https://sekao.net/nightlight/) - An embedded editor for Clojure
 * [LightTable](http://lighttable.com/)
-
 
 REPLs/REPL Tools
 ----------------
@@ -54,6 +52,7 @@ REPLs/REPL Tools
 * [rebel-readline](https://github.com/bhauman/rebel-readline) - Multiline Editor for a terminal REPL
 * [REBL](http://rebl.cognitect.com/) - A graphical, interactive tool for browsing Clojure data
 * [integrant-repl](https://github.com/weavejester/integrant-repl)
+* [portal](https://github.com/djblue/portal) - A clojure tool to navigate through your data.
 
 * [Figwheel Main](https://figwheel.org/) - Figwheel Main builds your ClojureScript code and hot loads it as you are coding
 * [figwheel.main template](https://rigsomelight.com/figwheel-main-template/) - Template generator that will produce a minimal ClojureScript project that includes figwheel.main tooling
@@ -328,12 +327,13 @@ Videos
 * [Effective Programs - 10 Years of Clojure - Rich Hickey](https://www.youtube.com/watch?v=2V1FtfBDsLU)
 * [Transducers - Rich Hickey](https://www.youtube.com/watch?v=Tq7r97G4b7Y)
 * [Inside Transducers - Rich Hickey](https://www.youtube.com/watch?v=4KqUvG8HPYo)
-* [Clojure core async - Rich Hickey](https://www.youtube.com/watch?v=drmNlZVkUeE)
+* [Clojure core async - Rich Hickey](https://www.youtube.com/watch?v=yJxFPoxqzWE)
 * [Spec-ulation Keynote - Rich Hickey](https://www.youtube.com/watch?v=oyLBGkS5ICk) - About changing and breaking software and how versioning artifacts doesn't help
 * [Maybe Not - Rich Hickey](https://www.youtube.com/watch?v=YR5WdGrpoug)
 * [REBL - Stuart Halloway](https://www.youtube.com/watch?v=c52QhiXsmyI)
 * [Always Be Composing - Zach Tellman](https://www.youtube.com/watch?v=3oQTSP4FngY)
 * [Everything Will Flow - Zach Tellman](https://www.youtube.com/watch?v=1bNOO3xxMc0)
+* [Solving Problems the Clojure Way - Rafal Dittwald](https://www.youtube.com/watch?v=vK1DazRK_a0) - Functional refactoring of an application (JS example ;-) )
 
 #### Workflow
 * [Clojure Basics: Editor and Tooling Setup](https://www.youtube.com/watch?v=kjJVfoqFj_k)
@@ -344,6 +344,7 @@ Videos
 * [Cursive: A different type of IDE - Colin Fleming](https://www.youtube.com/watch?v=vt1y2FbWQMg)
 * [Hammock Driven Development - Rich Hickey](https://www.youtube.com/watch?v=f84n5oFoZBc)
 * [Babashka and Small Clojure Interpreter: Clojure in new contexts - Michiel Borkent](https://www.youtube.com/watch?v=Nw8aN-nrdEk) - Use Clojure as a bash replacement and more
+* [Tapping into one of Clojure's superpowers with Portal by James Trunk](https://www.youtube.com/watch?v=A-QvUw5LLVU)
 
 ### Experience
 * [Why Clojure? - Derek Slager](https://www.youtube.com/watch?v=BThkk5zv0DE)
