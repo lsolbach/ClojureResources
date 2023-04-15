@@ -117,6 +117,7 @@ Libraries
 * [core.cache](https://github.com/clojure/core.cache) - Caching data with strategies like FIFO, LU/LRU or TTL
 * [Spyglass](https://github.com/clojurewerkz/spyglass) - A fast Clojure memcached client
 * [next-jdbc](https://github.com/seancorfield/next-jdbc) - Database access via JDBC
+* [Honey SQL](https://github.com/seancorfield/honeysql) - SQL as Clojure data structures. Build queries programmatically even at runtime without having to bash strings together.
 * [clojure-hbase](https://github.com/bigmlcom/clojure-hbase) - Low level access to HBase and it's admin functions
 * [clojure-hbase-schemas](https://github.com/eslick/clojure-hbase-schemas) - Simple library for schema-based access to HBase from Clojure
 * [carmine](https://github.com/ptaoussanis/carmine) - A pure-Clojure Redis client & message queue
