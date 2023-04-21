@@ -22,9 +22,12 @@
 ;   * functions as return values
 ;   * named and anonymous functions
 ;
-; * Examples of functional programming languages
-;   * Lisps: Common Lisp, Scheme, Clojure/ClojureScript
-;
+; * pure functions are referentially transparent
+;   * have no side effects
+;   * always return the same result for the same input
+;     * can be cached, easily tested, reasoned about
+;   * are composable
+;   
 
 ;;;
 ;;; Properties of Clojure
@@ -46,6 +49,8 @@
 ;
 ; * functional
 ; * values, immutable data
+; * rich set of persistent data structures
+;   * performant through structural sharing
 ; * explicit state
 ; * hosted
 ;   * runs on JVM, JavaScript, CLR
@@ -471,13 +476,27 @@ false
 ; * enables caching of the value for the parameters (memoization)
 ;
 
-(square (+ 4 7))
-(square (+ 4 7))
-(time (square (+ 4 7)))
+(defn fib [n]
+  (cond
+    (= 0 n) 0
+    (= 1 n) 1
+    :else
+    (+ (fib (- n 2)) (fib (- n 1)))))
 
-(def square (memoize square))
+(fib 2)
+(fib 10)
+;(fib 25)
 
-(time (square (+ 4 7)))
+(time (fib 2))
+(time (fib 10))
+;(time (fib 33))
+
+;(def fib (memoize fib))
+
+;(time (fib 33))
+;(time (fib 80))
+
+; meoize caches the calls to fib per input
 
 ;;;
 ;;; Higher Order Functions
@@ -490,6 +509,10 @@ false
 
 (map (fn [x] (* 2 x)) [1 2 3 4])
 (map #(* 2 %) [1 2 3 4])
+
+(filter even? [1 2 3 4])
+
+(reduce + [1 2 3 4])
 
 ;;;
 ;;; Special Forms
