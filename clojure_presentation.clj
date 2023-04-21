@@ -1,12 +1,20 @@
-(ns clojure-presentation)
+(ns clojure-presentation
+;  (:require [clojure.string :as str]
+  )
+
+;;;;
 ;;;; Clojure/ClojureScript
 ;;;; =====================
+;;;;
+
 ;
 ; 19. A language that doesn't affect the way you think about programming, is not worth knowing. (Alan Perlis)
 ;
 
+;;;
 ;;; Functional Programming
 ;;; ----------------------
+
 ;
 ; * programming paradigm
 ; * uses functions as primary programming construct (functions as first class citizens)
@@ -14,6 +22,7 @@
 ; * Examples of functional programming languages
 ;   * Lisps: Common Lisp, Scheme, Clojure/ClojureScript
 
+;;;
 ;;; Properties of Clojure
 ;;; ---------------------
 
@@ -23,33 +32,23 @@
 ; * simple
 ; * fun to use
 
-; * has almost no syntax
-; * like an AST written out (in list representation)
 ; * homoiconic, code is data is code...
 ;   * clojure code can transform clojure data
-;   * clojure code *is* clojure data, clojure code can transform clojure code
+;   * clojure code *is* clojure data => clojure code can transform clojure code
 ;   * with macros at compile time
 
-;
 ; * Clojure runs on the JVM
 ; * ClojureScript runs in the Browser or on node.js
 
 
-
+;;;
 ;;; Features
 ;;; --------
-;
 
+;;;
 ;;; Java/Clojure
 ;;; ------------
-; 
-;          Operators	  Methods/Fuctions
-; Java     2 + 3 + 4	  sb.append("Hello!")
-; Clojure	 (+ 2 3 4)	  (append sb "Hello!")
-; 
-;
-;;; Functions
-;;; ---------
+
 ;
 ; Java:    calculate(a, b)
 ; Clojure: (calculate a b)
@@ -57,6 +56,17 @@
 ; * list evaluation
 ; * first entry is the function position
 ; * function is called with the rest of the list as parameters
+
+;         |  Operators	 |   Methods/Functions
+; --------+--------------+-----------------------
+; Java    |  2 + 3 + 4	 |   sb.append("Hello!")
+; Clojure	|  (+ 2 3 4)	 |   (append sb "Hello!")
+
+
+; Clojure has almost no syntax
+; * like an AST written out (in list representation)
+
+
 
 ;;; Development Environments
 ;;; ------------------------
@@ -133,7 +143,7 @@ false
 
 ; ###  Keywords and Symbols
 ; #### Symbol
-x
+; x
 (def x 1)
 x
 
@@ -145,6 +155,10 @@ x
 
 ; Keywords evaluate to themselves
 
+::keyword
+
+; namespace qualified keywords
+
 ; ###  Regular Expressions
 ; 
 ; RegEx Literal
@@ -155,7 +169,7 @@ x
 
 ; ###  Collection Literals
 ; #### List
-(1 2 3 4)
+; (1 2 3 4)
 
 ; 1 is no function
 
@@ -171,7 +185,7 @@ x
 ; #### Set - unsorted collection, no duplicates
 #{1 2 3 4}
 
-#{1 2 2 3 3 3 4 4 4 4}
+; #{1 2 2 3 3 3 4 4 4 4}
 
 (contains? #{1 2 3 4} 2)
 (contains? #{1 2 3 4} 5)
@@ -201,10 +215,10 @@ x
 ;
 ; * Immutable data
 ; * Structural sharing
-; * Performant implementation (B-Trees)
+; * Performant implementation (Bagwell-Trees)
 ; * Implication: data has to be build bottom up instead of top down
 
-; ###  Sequence Abstraction
+; ###  Sequence Abstraction (ISeq)
 ;
 ; 9. It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures. (Alan Perlis)
 
@@ -237,6 +251,7 @@ x
 ; Only needed values are calculated
 (take 100 natural-numbers)
 (take 10 (drop 500 natural-numbers))
+(println (take 10000 natural-numbers))
 
 ; Realize all values
 (doall (lazy-seq [1 2 3 4]))
@@ -245,10 +260,10 @@ x
 ; Closures and Lexical Scoping
 ; ----------------------------
 ;
-(let [a 1
-      b 2]
+(let [a 2
+      b 3]
   (* a b))
-a
+; a
 
 ; Destructuring
 ; -------------
@@ -272,6 +287,9 @@ a
   [x]
   (* x x))
 
+(square (+ 4 7))
+
+
 ; functions are executed at runtime
 ; when calling a fn the arguments get evaluated before the body is executed
 
@@ -282,6 +300,14 @@ a
 ;
 ; * simpler reasoning
 ; * enables caching of the value for the parameters (memoization)
+
+(square (+ 4 7))
+(square (+ 4 7))
+(time (square (+ 4 7)))
+
+(def square (memoize square))
+
+(time (square (+ 4 7)))
 
 
 ; Higher Order Functions
@@ -300,10 +326,10 @@ a
 ;
 ; Compile time templating
 (defmacro my-macro
-	"Documentation"
-	[param]
+  "Documentation"
+  [param]
 	; Body
-	)
+  )
 
 ; macros are executed at compile time
 ; when a macro is called, the arguments are not evaluated before the body is executed
@@ -340,12 +366,14 @@ a
 
 ; Calling Static Methods
 (Math/sin 3.14)
+(java.util.Date.)
 
 ; Calling Instance Methods
 (let [sb (StringBuffer.)] ; constructor call
   (.append sb "Hello World") ; call append() on sb
   (.toString sb)) ; calling toString() on sb
 
+;
 ; Namespaces
 ; ----------
 ; 
@@ -354,7 +382,7 @@ a
 ; ns
 ; require
 
-
+;
 ; Protocols and Datatypes
 ; -----------------------
 
@@ -366,17 +394,20 @@ a
 ;
 ; Person 'Ludger'
 (def ludger1 {:firstname "Ludger"
-             :lastname "Solbach"
-             :age 52})
+              :lastname "Solbach"
+              :age 54})
 
 ; Ludger ages, birthday!
 (update ludger1 :age inc)
 
 ludger1
 
+; (def ludger2 (update ludger1 :age inc))
+ludger1
+;ludger2
 
 ; How do I maintain the identity of 'Ludger' in the face of immutable data?
-
+; Explicit state management via reference types.
 
 ; Overview
 ; --------
@@ -384,7 +415,7 @@ ludger1
 ; Properties table
 ; 		          Atom  Ref   Agent	Var
 ; Coordinated	         X				
-; Asynchronous	    	       X
+; Asynchronous	    	        X
 ; Retriable	     X	   X
 ; Thread-local 			               X
 
@@ -392,24 +423,28 @@ ludger1
 ; -----
 ;
 
-(def ludger2 (atom {:firstname "Ludger"
-                   :lastname "Solbach"
-                   :age 52}))
-ludger2
-@ludger2
-(swap! ludger2 update-in [:age] inc)
-@ludger2
+(def ludger3 (atom {:firstname "Ludger"
+                    :lastname "Solbach"
+                    :age 54}))
+ludger3
+(deref ludger3)
+@ludger3
+(swap! ludger3 update-in [:age] inc)
+@ludger3
 
-; Vars
-; ----
-; 
-; vars are not variables
-; thread local, dynamic scope
-
+; (add-watch ludger3 :changed (fn [_ _ old new] (println "Change:" old new)))
 
 ; Refs
 ; ----
 ;
+; first ref
+(def ludger4 (ref {:id (java.util.UUID/randomUUID)
+                   :firstname "Ludger"
+                   :lastname  "Solbach"
+                   :age 54}))
+
+(deref ludger4)
+@ludger4
 
 ; Software Transactional Memory (STM)
 ; ACID? ACI!
@@ -422,6 +457,14 @@ ludger2
 ; Agents
 ; ------
 ;
+
+; Vars
+; ----
+; 
+; vars are not variables
+; thread local, dynamic scope
+
+(def my-var)
 
 ;;; Examples
 ;;; --------
@@ -462,6 +505,7 @@ ludger2
 ;
 ; * Structure and Interpretation of Computer Programs
 ; * Land of Lisp
+; * Grokking Simplicity
 ; * Let over Lambda
 ; * Purely Fuctional Data Structures
 ; * 7 Concurrency Models in 7 Weeks
