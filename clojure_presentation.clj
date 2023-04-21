@@ -33,14 +33,9 @@
 ; * simple
 ; * fun to use
 
-; * homoiconic, code is data is code...
-;   * clojure code can transform clojure data
-;   * clojure code *is* clojure data
-;       => clojure code can transform clojure code
-;   * with macros at compile time
-;
 ; * Clojure runs on the JVM
 ; * ClojureScript runs in the Browser or on node.js
+; * Clojure CLR runs on MS Common Language Runtime
 
 
 ;;;
@@ -472,6 +467,15 @@ x
 ;;; Macros
 ;;; ------
 ;
+; * Clojure is homoiconic, code is data
+;   * clojure code can transform clojure data
+;   * clojure code *is* clojure data
+;       => clojure code can transform clojure code
+;   * with macros at compile time
+;
+
+
+;
 ; Compile time templating
 ;
 (defmacro my-macro
@@ -504,6 +508,7 @@ x
 ; * (try expr* catch-clause* finally-clause?)
 ; * (monitor-enter x)
 ; * (monitor-exit x)
+;
 
 ;;;
 ;;; Java Interoperation
@@ -667,10 +672,12 @@ ludger3
 ; http://github.org/lsolbach
 
 
+;;;
 ;;; Literature
-;;; ----------
-;;
-;; Clojure(Script) Specific
+;;; ==========
+;;;
+;;; Clojure(Script) Specific
+;;; ------------------------
 ;
 ; * Programming Clojure (3nd Edition)
 ; * Getting Clojure
@@ -685,7 +692,10 @@ ludger3
 ; * Clojure High Performance Programming (2n Edition)
 ; * Elements of Clojure
 ;
-;; Functional Programming 
+
+;;;
+;;; Functional Programming 
+;;; ======================
 ;
 ; * Structure and Interpretation of Computer Programs
 ; * Land of Lisp
@@ -693,8 +703,11 @@ ludger3
 ; * Let over Lambda
 ; * Purely Fuctional Data Structures
 ; * 7 Concurrency Models in 7 Weeks
-
-
-; 11. If you have a procedure with ten parameters, you probably missed some. (Alan Perlis)
+;
+;
+; If you have a procedure with ten parameters,
+;   you probably missed some.
+;                                (Alan Perlis)
+;
 ; http://www.cs.yale.edu/homes/perlis-alan/quotes.html
 
