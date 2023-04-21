@@ -6,9 +6,9 @@
 ;;;; Clojure/ClojureScript
 ;;;; =====================
 ;
-; 19. A language that doesn't affect the way you think
-;     about programming, is not worth knowing.
-;                                             (Alan Perlis)
+; A language that doesn't affect the way you think
+;   about programming, is not worth knowing.
+;                                    (Alan Perlis)
 ;
 
 ;;;
@@ -17,7 +17,10 @@
 ;
 ; * programming paradigm
 ; * uses functions as primary programming construct
-;   (functions as first class citizens)
+; * functions are first class citizens
+;   * functions as parameters
+;   * functions as return values
+;   * named and anonymous functions
 ;
 ; * Examples of functional programming languages
 ;   * Lisps: Common Lisp, Scheme, Clojure/ClojureScript
@@ -35,8 +38,7 @@
 
 ; * Clojure runs on the JVM
 ; * ClojureScript runs in the Browser or on node.js
-; * Clojure CLR runs on MS Common Language Runtime
-
+; * ClojureCLR runs on MS Common Language Runtime
 
 ;;;
 ;;; Features
@@ -64,7 +66,6 @@
 ; Clojure has almost no syntax
 ; * like an AST written out (in list representation)
 
-
 ;;;
 ;;; Development Environments
 ;;; ========================
@@ -75,15 +76,6 @@
 ; * ...
 ;
 
-;;;
-;;; Clojure REPL
-;;; ============
-;
-; * Read Evaluate Print Loop
-; * Interactive develpment
-; * Instant feedback
-; java -cp clojure-1.11.1.jar clojure.main
-;
 ;;;
 ;;; Clojure CLI
 ;;; ===========
@@ -101,9 +93,20 @@
 ; * Leiningen
 ; * Maven, Gradle, Boot, ...
 ;
+
 ;;;
-;;; <DEMO>
-;;;
+;;; The REPL
+;;; ========
+;
+; * Read
+; * Evaluate
+; * Print
+; * Loop
+;
+; * Interactive develpment
+; * Instant feedback
+; => Clojure's superpower!
+;
 
 ;;;
 ;;; Clojure syntax
@@ -216,9 +219,10 @@ false
 ;;; --------------------
 ;
 ; Symbols
-; x
-(def x 1)
-x
+;
+;x
+;(def x 1)
+;x
 
 ; for naming/alializing values
 ; symbols evaluate to their value 
@@ -462,32 +466,6 @@ x
 (map (fn [x] (* 2 x)) [1 2 3 4])
 (map #(* 2 %) [1 2 3 4])
 
-
-;;;
-;;; Macros
-;;; ------
-;
-; * Clojure is homoiconic, code is data
-;   * clojure code can transform clojure data
-;   * clojure code *is* clojure data
-;       => clojure code can transform clojure code
-;   * with macros at compile time
-;
-
-
-;
-; Compile time templating
-;
-(defmacro my-macro
-  "Documentation"
-  [param]
-	; Body
-  )
-
-; macros are executed at compile time
-; when a macro is called, the arguments are not evaluated before the body is executed
-; use macros with care, they are like a double edged sword
-
 ;;;
 ;;; Special Forms
 ;;; -------------
@@ -509,6 +487,52 @@ x
 ; * (monitor-enter x)
 ; * (monitor-exit x)
 ;
+
+;;;
+;;; Macros
+;;; ------
+;
+; * Clojure is homoiconic, code is data
+;   * clojure code can transform clojure data
+;   * clojure code *is* clojure data
+;       => clojure code can transform clojure code
+;   * with macros at compile time
+;
+
+(defmacro do-if [pred body]
+  `(if ~pred (do ~body)))
+
+; quote with '`', unquote with '~'
+
+(defn reciproc [x]
+  (do-if (not= 0 x)
+       (/ 1 x)))
+
+(reciproc 1)
+(reciproc 0)
+
+(macroexpand-1 '(do-if (not= 0 x)
+                  (/ 1 x)))
+
+; one level expansion
+
+(macroexpand '(do-if (not= 0 x)
+                (/ 1 x)))
+
+; complete expansion
+
+;
+; Compile time templating
+;
+(defmacro my-macro
+  "Documentation"
+  [param]
+	; Body
+  )
+
+; macros are executed at compile time
+; when a macro is called, the arguments are not evaluated before the body is executed
+; use macros with care, they are like a double edged sword
 
 ;;;
 ;;; Java Interoperation
@@ -642,13 +666,37 @@ ludger3
 ;
 ; Vars
 ; 
-; vars are not variables
-; thread local, dynamic scope
-
-(def my-var)
+(def ^:dynamic my-var)
 
 (binding [my-var 1]
-  (* x 1))
+  (* my-var 2))
+
+; vars are not variables
+; thread locals, dynamic scope
+
+;;;
+;;; Concurrency
+;;; ===========
+
+;
+; Delay
+;
+
+;
+; Future
+;
+
+;
+; Promise
+;
+
+;;;
+;;; core.async
+;;; ----------
+;
+; * implementation of Communicating Sequential Processes (CSP) from C.A.R. Hoare
+; * channels and go blocks
+;
 
 
 ;;;
