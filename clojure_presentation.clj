@@ -351,7 +351,7 @@ false
 ;
 ; * Immutable data
 ; * Structural sharing
-; * Performant implementation (Bagwell-Trees)
+; * Performant implementation (e.g. Bagwell-Trees)
 ; * Implication: data has to be build bottom up instead of top down
 
 ;;;
