@@ -476,7 +476,9 @@ false
 ; * enables caching of the value for the parameters (memoization)
 ;
 
-(defn fib [n]
+(defn fib
+  "Calculates the fibonacci number for 'n'."
+  [n]
   (cond
     (= 0 n) 0
     (= 1 n) 1
@@ -497,6 +499,7 @@ false
 ;(time (fib 80))
 
 ; meoize caches the calls to fib per input
+; nevertheless implementing fib
 
 ;;;
 ;;; Higher Order Functions
