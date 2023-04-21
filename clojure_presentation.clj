@@ -499,7 +499,8 @@ false
 ;(time (fib 80))
 
 ; meoize caches the calls to fib per input
-; nevertheless implementing fib
+; nevertheless implementing fib recursively is not a good idea
+; it will blow the stack quite soon
 
 ;;;
 ;;; Higher Order Functions
