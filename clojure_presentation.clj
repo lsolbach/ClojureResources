@@ -43,6 +43,15 @@
 ;;;
 ;;; Features
 ;;; ========
+;
+; * functional
+; * values, immutable data
+; * explicit state
+; * hosted
+;   * runs on JVM, JavaScript, CLR
+;   * complete access to the ecosystem of the platform
+; * runs in shell (babashka)
+;
 
 ;;;; TODO
 
@@ -321,6 +330,22 @@ false
 ; commas are whitespace, use for usability
 
 ;;;
+;;; Namespaces
+;;; ----------
+; 
+; * nonconflicting names
+; * modularisation
+
+; ns
+; require
+
+; (ns clojure-presentation.util)
+
+(require '[clojure.string :as str])
+
+(str/join " & " [1 2 3 4])
+
+;;;
 ;;; Persistent Collections
 ;;; ======================
 ;
@@ -539,39 +564,28 @@ false
 ;;; -------------------
 
 ;
-; Creating Java Objects
+; Creating java objects
 ;
 (new Object)
 (Object.)
 
 ;
-; Calling Static Methods
+; Calling static methods
 ;
 (Math/sin 3.14)
-(java.util.Date.)
 
 ;
-; Calling Instance Methods
+; Calling instance methods
 ;
 (let [sb (StringBuffer.)] ; constructor call
   (.append sb "Hello World") ; call append() on sb
   (.toString sb)) ; calling toString() on sb
 
-;;;
-;;; Namespaces
-;;; ----------
-; 
-; * nonconflicting names
-; * modularisation
-
-; ns
-; require
-
-; (ns clojure-presentation.util)
-
-(require '[clojure.string :as str])
-
-(str/join " & " [1 2 3 4])
+;
+; Importing classes
+;
+(import '[java.util Date])
+(Date.)
 
 ;;;
 ;;; Protocols and Types
@@ -584,14 +598,13 @@ false
 ;;; Reference Types
 ;;; ===============
 ;
-; Immutable data
-; --------------
-; 
-; * values are immutable
+; Building meaningful systems with immutable values 
+;
+; * values are immutable information, facts
 ; * values and state are different things
-;    => time
+;    => state is the succession of values over time
 ; * values and identity are different things
-;    => naming/alialising
+;    => identity is the naming/aliasing of values
 
 ; Person 'Ludger'
 (def ludger1 {:firstname "Ludger"
@@ -609,7 +622,7 @@ ludger1
 ; ludger1
 ; ludger2
 
-; How do I maintain the identity of 'Ludger' in the face of immutable data?
+; how do I maintain the identity of 'Ludger' in the face of immutable data?
 ; Explicit state management via reference types.
 
 ;;;
