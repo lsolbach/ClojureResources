@@ -358,9 +358,9 @@ false
 ;;; Sequence Abstraction (ISeq)
 ;;; ---------------------------
 ;
-; 9. It is better to have 100 functions operate on one data structure
-;    than 10 functions on 10 data structures.
-;                                                       (Alan Perlis)
+; It is better to have 100 functions operate on one data structure
+;   than 10 functions on 10 data structures.
+;                                                    (Alan Perlis)
 ;
 
 ; convert a value to a sequence
