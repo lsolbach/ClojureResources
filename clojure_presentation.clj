@@ -5,27 +5,28 @@
 ;;;;
 ;;;; Clojure/ClojureScript
 ;;;; =====================
-;;;;
-
 ;
-; 19. A language that doesn't affect the way you think about programming, is not worth knowing. (Alan Perlis)
+; 19. A language that doesn't affect the way you think
+;     about programming, is not worth knowing.
+;                                             (Alan Perlis)
 ;
 
 ;;;
 ;;; Functional Programming
-;;; ----------------------
-
+;;; ======================
 ;
 ; * programming paradigm
-; * uses functions as primary programming construct (functions as first class citizens)
+; * uses functions as primary programming construct
+;   (functions as first class citizens)
 ;
 ; * Examples of functional programming languages
 ;   * Lisps: Common Lisp, Scheme, Clojure/ClojureScript
+;
 
 ;;;
 ;;; Properties of Clojure
-;;; ---------------------
-
+;;; =====================
+;
 ; Clojure is
 ; * a functional programming language
 ; * a Lisp (but with less parenthesis)
@@ -34,21 +35,21 @@
 
 ; * homoiconic, code is data is code...
 ;   * clojure code can transform clojure data
-;   * clojure code *is* clojure data => clojure code can transform clojure code
+;   * clojure code *is* clojure data
+;       => clojure code can transform clojure code
 ;   * with macros at compile time
-
+;
 ; * Clojure runs on the JVM
 ; * ClojureScript runs in the Browser or on node.js
 
 
 ;;;
 ;;; Features
-;;; --------
+;;; ========
 
 ;;;
-;;; Java/Clojure
-;;; ------------
-
+;;; Java vs. Clojure Syntax
+;;; =======================
 ;
 ; Java:    calculate(a, b)
 ; Clojure: (calculate a b)
@@ -56,46 +57,49 @@
 ; * list evaluation
 ; * first entry is the function position
 ; * function is called with the rest of the list as parameters
-
+;
 ;         |  Operators	 |   Methods/Functions
 ; --------+--------------+-----------------------
 ; Java    |  2 + 3 + 4	 |   sb.append("Hello!")
 ; Clojure	|  (+ 2 3 4)	 |   (append sb "Hello!")
-
-
+;
+;
 ; Clojure has almost no syntax
 ; * like an AST written out (in list representation)
 
 
-
+;;;
 ;;; Development Environments
-;;; ------------------------
+;;; ========================
 ; 
 ; * VS Code with Calva
 ; * Emacs with Cider
 ; * IntelliJ with Cursive
-; * Eclipse with Counterclockwise
 ; * ...
 ;
 
+;;;
 ;;; Clojure REPL
 ;;; ------------
 ;
 ; * Read Evaluate Print Loop
 ; * Interactive develpment
 ; * Instant feedback
-; java -cp clojure-1.10.3.jar clojure.main
-
-;; Clojure CLI
+; java -cp clojure-1.11.1.jar clojure.main
+;
+;;;
+;;; Clojure CLI
+;;;
+;
 ; clj
 ; clojure
 
 ; <DEMO>
 
-
+;;;
 ;;; Clojure syntax
 ;;; --------------
-
+;
 ; ### Nil
 ; Nil / Null Value
 
@@ -112,19 +116,36 @@ false
 ; #### Long
 1
 
+(+ 2 3)
+(* 2 (+ 3 4))
+
 ; #### BigInteger
 1N
 123456789012345678901234567890N
 
+(+ 2N 3N)
+(* 2N (+ 3N 4N))
+
+(* 123456789012345678901234567890N 123456789012345678901234567890N)
+
 ; #### Double
 1.0
+
+(+ 1.0 2.0)
+(* 2.0 (+ 3.0 4.0))
 
 ; #### BigDecimal (arbitrary precision)
 1.0M
 
+1234567890.1234567890123456789M
+
+(* 1234567890.1234567890123456789M 1234567890.1234567890123456789M)
+
 ; #### Rationals
 2/3
 (/ 2 3) ; operators are functions, result is a rational, no loss in precision
+
+(* (/ 2 3) 0.5)
 
 ; ### Strings and Chars
 ; #### String
@@ -180,7 +201,7 @@ x
 [1 2 3 4]
 
 (nth [1 2 3 4] 1)
-(nth [1 2 3 4] 4)
+;(nth [1 2 3 4] 4)
 
 ; #### Set - unsorted collection, no duplicates
 #{1 2 3 4}
@@ -251,7 +272,7 @@ x
 ; Only needed values are calculated
 (take 100 natural-numbers)
 (take 10 (drop 500 natural-numbers))
-(println (take 10000 natural-numbers))
+;(println (take 10000 natural-numbers))
 
 ; Realize all values
 (doall (lazy-seq [1 2 3 4]))
