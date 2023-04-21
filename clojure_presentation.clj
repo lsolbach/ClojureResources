@@ -47,6 +47,8 @@
 ;;; Features
 ;;; ========
 
+;;;; TODO
+
 ;;;
 ;;; Java vs. Clojure Syntax
 ;;; =======================
@@ -80,7 +82,7 @@
 
 ;;;
 ;;; Clojure REPL
-;;; ------------
+;;; ============
 ;
 ; * Read Evaluate Print Loop
 ; * Interactive develpment
@@ -89,37 +91,67 @@
 ;
 ;;;
 ;;; Clojure CLI
-;;;
+;;; ===========
 ;
 ; clj
 ; clojure
+;
+; * works perfect on Linux and Macs, not so on Windows
 
-; <DEMO>
+;;;
+;;; Clojure Build Tools
+;;; ===================
+;
+; * cjl/clojure
+; * Leiningen
+; * Maven, Gradle, Boot, ...
+;
+;;;
+;;; <DEMO>
+;;;
 
 ;;;
 ;;; Clojure syntax
-;;; --------------
+;;; ==============
 ;
-; ### Nil
-; Nil / Null Value
+; Nil
+; ---
+;
 
 nil
 
-; ### Boolean Literals:
+; not set, unspecified
+; same as null in Java
+
+;
+; Boolean Literals
+; ----------------
+;
+
 true
 false
 
 ; false and nil evaluate to false in a boolean context
 ; 0, "" or () all evaluate to true in a boolean context (truthiness)
 
-; ###  Number Literals:
-; #### Long
+;
+; Number Literals
+; ---------------
+;
+; Long
+;
+
 1
 
 (+ 2 3)
 (* 2 (+ 3 4))
 
-; #### BigInteger
+; operators are functions too
+; prefix instead of infix
+
+;
+; BigInteger
+;
 1N
 123456789012345678901234567890N
 
@@ -128,82 +160,130 @@ false
 
 (* 123456789012345678901234567890N 123456789012345678901234567890N)
 
-; #### Double
+;
+; Double
+;
 1.0
 
 (+ 1.0 2.0)
 (* 2.0 (+ 3.0 4.0))
 
-; #### BigDecimal (arbitrary precision)
+;
+; BigDecimal (arbitrary precision)
+;
 1.0M
 
 1234567890.1234567890123456789M
 
 (* 1234567890.1234567890123456789M 1234567890.1234567890123456789M)
 
-; #### Rationals
+;
+; Rationals
+;
 2/3
-(/ 2 3) ; operators are functions, result is a rational, no loss in precision
+(/ 2 3)
 
-(* (/ 2 3) 0.5)
+; result is a rational, no loss in precision
 
-; ### Strings and Chars
-; #### String
+(/ (/ 2 3) 2)
+
+(/ (/ 2 3) 2.0)
+
+; result is a double, loss in precision
+
+;;;
+;;; Strings and Chars
+;;; -----------------
+;
+; Strings
+;
 "Hello World!"
 
-; #### Multiline String
+;
+; Multiline Strings
+;
 "Hello
  World"
 
-; #### Character
+;
+; Characters
+;
 \A
 \B
 \.
 
 (seq "Hello!")
 
-; ###  Keywords and Symbols
-; #### Symbol
+; gets the sequence of chars of the string
+
+;;;
+;;; Keywords and Symbols
+;;; --------------------
+;
+; Symbols
 ; x
 (def x 1)
 x
 
-; Symbols evaluate to their value 
+; for naming/alializing values
+; symbols evaluate to their value 
 
-
-; #### Keyword
+;
+; Keywords
+;
 :keyword
 
-; Keywords evaluate to themselves
+; keywords evaluate to themselves
 
 ::keyword
 
-; namespace qualified keywords
+; keywords can be qualified by namespace
 
-; ###  Regular Expressions
-; 
+;;;
+;;; Regular Expressions
+;;; 
+;
 ; RegEx Literal
+;
 #"^A.*B$"
 
-(re-matches #"^A.*B$" "ABCDEF")
-(re-matches #"^A.*B$" "ABCDEB")
+; matches strings starting with \A and ending with \B
 
-; ###  Collection Literals
-; #### List
+(re-matches #"^A.*B$" "ABCDEB")
+(re-matches #"^A.*B$" "ABCDEF")
+
+;;;
+;;;  Collection Literals
+;;;
+;
+; List
 ; (1 2 3 4)
 
 ; 1 is no function
 
-; #### Quoted List
+;
+; Quoted List
+;
+
 '(1 2 3 4)
 
-; #### Vector - sorted collection
+;
+; Vectors 
+;
+
 [1 2 3 4]
+
+; indexed collection
 
 (nth [1 2 3 4] 1)
 ;(nth [1 2 3 4] 4)
 
-; #### Set - unsorted collection, no duplicates
+; access by index
+
+;
+; Set - unsorted collection, no duplicates
+;
+
 #{1 2 3 4}
 
 ; #{1 2 2 3 3 3 4 4 4 4}
@@ -211,10 +291,14 @@ x
 (contains? #{1 2 3 4} 2)
 (contains? #{1 2 3 4} 5)
 
-; sorted set variant
+;
+; Sorted sets
+;
 (sorted-set 4 3 2 1)
 
-; #### Map
+;
+; Map
+;
 {:a 1 :b 2 :c 3 :d 4}
 
 ; accessors
@@ -225,33 +309,44 @@ x
 
 ; maps and keywords act as functions
 
-
+;
+; Sorted Maps
+;
 (sorted-map :c 3 :d 4 :b 2 :a 1)
 
-; #### Commas are whitespace
+;
+; Commas
+;
 (= [1, 2, 3, 4] [1 2 3 4])
 
+; commas are whitespace, use for usability
 
-; ###  Persistent Collections
+;;;
+;;; Persistent Collections
+;;; ======================
 ;
 ; * Immutable data
 ; * Structural sharing
 ; * Performant implementation (Bagwell-Trees)
 ; * Implication: data has to be build bottom up instead of top down
 
-; ###  Sequence Abstraction (ISeq)
+;;;
+;;; Sequence Abstraction (ISeq)
+;;; ---------------------------
 ;
-; 9. It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures. (Alan Perlis)
+; 9. It is better to have 100 functions operate on one data structure
+;    than 10 functions on 10 data structures.
+;                                                       (Alan Perlis)
+;
 
 ; convert a value to a sequence
 (seq [1 2 3 4])
 (seq [])
 (sequence [])
 
+; functions from ISeq
 (first [1 2 3 4])
-
 (rest [1 2 3 4])
-
 (cons 0 [1 2 3 4])
 
 ; hundreds of functions for working with sequences
@@ -260,34 +355,53 @@ x
 (partition 2 [1 2 3 4])
 (sort [2 4 3 1])
 
-; ###  Lazy Sequences
+; ...
+;;;; TODO
+
+
+;;;
+;;; Lazy Sequences
+;;; --------------
 ;
-; #### Convert to lazy sequence
+; Convert to lazy sequence
 (lazy-seq [1 2 3 4])
 
-; #### Possibly infinitive sequences
-; natural numbers (unbounded)
+; Possibly infinitive sequences
+
 (def natural-numbers (iterate inc 0))
 
-; Only needed values are calculated
+; natural numbers (unbounded)
+
 (take 100 natural-numbers)
 (take 10 (drop 500 natural-numbers))
+
+; only the needed values are calculated
+
 ;(println (take 10000 natural-numbers))
 
 ; Realize all values
 (doall (lazy-seq [1 2 3 4]))
 
 
-; Closures and Lexical Scoping
-; ----------------------------
+;;;
+;;; Closures and Lexical Scoping
+;;; ----------------------------
+
 ;
+; local binding
+;
+
 (let [a 2
       b 3]
   (* a b))
+
+; a and b are available in the context of let
+
 ; a
 
-; Destructuring
-; -------------
+;;;
+;;; Destructuring
+;;; -------------
 
 (let [[a b c d] [1 2 3 4]]
   (str a "," b "," c "," d))
@@ -295,32 +409,43 @@ x
 (let [{a :a b :b c :c d :d} {:a 1 :b 2 :c 3 :d 4}]
   (str a "," b "," c "," d))
 
-
-; Functions
-; ---------
+;;;
+;;; Functions
+;;; ---------
 ;
 ; define a symbol for the function
+;
+
+(fn [x] (* x x))
+
+; anonymous function, lambda
+
 (def square (fn [x] (* x x)))
 
-; Defn:
+; names the function by assigning to a symbol
+
 (defn square
   "Returns the square of x." ; Docstring
   [x]
   (* x x))
 
-(square (+ 4 7))
+; ideomatic function definition with the 'defn' macro
 
+(square (+ 4 7))
 
 ; functions are executed at runtime
 ; when calling a fn the arguments get evaluated before the body is executed
 
-; Pure Functions
-; --------------
+;;;
+;;; Pure Functions
+;;; --------------
+;
 ; * referential transparency
 ; * no side effects (e.g. IO, randomness)
 ;
 ; * simpler reasoning
 ; * enables caching of the value for the parameters (memoization)
+;
 
 (square (+ 4 7))
 (square (+ 4 7))
@@ -330,22 +455,25 @@ x
 
 (time (square (+ 4 7)))
 
-
-; Higher Order Functions
-; ----------------------
+;;;
+;;; Higher Order Functions
+;;; ----------------------
 ;
 ; * map
-; * reduce
 ; * filter
+; * reduce
+;
 
 (map (fn [x] (* 2 x)) [1 2 3 4])
 (map #(* 2 %) [1 2 3 4])
 
 
-; Macros
-; ------
+;;;
+;;; Macros
+;;; ------
 ;
 ; Compile time templating
+;
 (defmacro my-macro
   "Documentation"
   [param]
@@ -356,9 +484,9 @@ x
 ; when a macro is called, the arguments are not evaluated before the body is executed
 ; use macros with care, they are like a double edged sword
 
-
-; Special Forms
-; -------------
+;;;
+;;; Special Forms
+;;; -------------
 ; 
 ; * special forms have their own evaluation rules
 ; 
@@ -377,42 +505,65 @@ x
 ; * (monitor-enter x)
 ; * (monitor-exit x)
 
+;;;
+;;; Java Interoperation
+;;; -------------------
 
-; Java Interoperation
-; -------------------
-
+;
 ; Creating Java Objects
+;
 (new Object)
 (Object.)
 
+;
 ; Calling Static Methods
+;
 (Math/sin 3.14)
 (java.util.Date.)
 
+;
 ; Calling Instance Methods
+;
 (let [sb (StringBuffer.)] ; constructor call
   (.append sb "Hello World") ; call append() on sb
   (.toString sb)) ; calling toString() on sb
 
-;
-; Namespaces
-; ----------
+;;;
+;;; Namespaces
+;;; ----------
 ; 
-; Modularisation
+; * nonconflicting names
+; * modularisation
 
 ; ns
 ; require
 
-;
-; Protocols and Datatypes
-; -----------------------
+; (ns clojure-presentation.util)
+
+(require '[clojure.string :as str])
+
+(str/join " & " [1 2 3 4])
+
+;;;
+;;; Protocols and Types
+;;; =======================
+
+;;;; TODO
 
 
-; Reference Types
-; ---------------
+;;;
+;;; Reference Types
+;;; ===============
 ;
-; Value and Identity
-;
+; Immutable data
+; --------------
+; 
+; * values are immutable
+; * values and state are different things
+;    => time
+; * values and identity are different things
+;    => naming/alialising
+
 ; Person 'Ludger'
 (def ludger1 {:firstname "Ludger"
               :lastname "Solbach"
@@ -423,15 +574,18 @@ x
 
 ludger1
 
+; ludger1 has not changed
+
 ; (def ludger2 (update ludger1 :age inc))
-ludger1
-;ludger2
+; ludger1
+; ludger2
 
 ; How do I maintain the identity of 'Ludger' in the face of immutable data?
 ; Explicit state management via reference types.
 
-; Overview
-; --------
+;;;
+;;; Overview
+;;; --------
 
 ; Properties table
 ; 		          Atom  Ref   Agent	Var
@@ -440,8 +594,8 @@ ludger1
 ; Retriable	     X	   X
 ; Thread-local 			               X
 
+;
 ; Atoms
-; -----
 ;
 
 (def ludger3 (atom {:firstname "Ludger"
@@ -455,9 +609,10 @@ ludger3
 
 ; (add-watch ludger3 :changed (fn [_ _ old new] (println "Change:" old new)))
 
-; Refs
-; ----
 ;
+; Refs
+;
+
 ; first ref
 (def ludger4 (ref {:id (java.util.UUID/randomUUID)
                    :firstname "Ludger"
@@ -475,28 +630,36 @@ ludger3
 ; Watches
 ; (add-watch)
 
+;
 ; Agents
-; ------
 ;
 
+;
 ; Vars
-; ----
 ; 
 ; vars are not variables
 ; thread local, dynamic scope
 
 (def my-var)
 
+(binding [my-var 1]
+  (* x 1))
+
+
+;;;
 ;;; Examples
-;;; --------
+;;; ========
 ;
 ; * Swing App with Clojure
 ; * Internal DSLs with macros, programming XML in Clojure 
 ;
 
+;;;; TODO
 
-; References
-; ----------
+
+;;;
+;;; References
+;;; ==========
 ;
 ; http://clojure.org/
 ; http://clojurescript.org/
