@@ -279,12 +279,16 @@ false
 ;
 
 '(1 2 3 4)
+'("Foo" "Bar")
+'(:foo :bar)
 
 ;
 ; Vectors 
 ;
 
 [1 2 3 4]
+["Foo" "Bar"]
+[:foo :bar]
 
 ; indexed collection
 
@@ -292,6 +296,11 @@ false
 ;(nth [1 2 3 4] 4)
 
 ; access by index
+
+([1 2 3 4] 1)
+(["Foo" "Bar"] 0)
+
+; vectors are functions of their indices
 
 ;
 ; Set - unsorted collection, no duplicates
@@ -307,11 +316,13 @@ false
 ;
 ; Sorted sets
 ;
+
 (sorted-set 4 3 2 1)
 
 ;
 ; Map
 ;
+
 {:a 1 :b 2 :c 3 :d 4}
 
 ; accessors
@@ -320,16 +331,23 @@ false
 (:a {:a 1 :b 2 :c 3 :d 4})
 ({:a 1 :b 2 :c 3 :d 4} :a)
 
-; maps and keywords act as functions
+; maps and keywords act as functions too
+
+{:firstname "Charlie"
+ :lastname "Brown"}
 
 ;
 ; Sorted Maps
 ;
+
 (sorted-map :c 3 :d 4 :b 2 :a 1)
+
+; sorted by key
 
 ;
 ; Commas
 ;
+
 (= [1, 2, 3, 4] [1 2 3 4])
 
 ; commas are whitespace, use for usability
@@ -358,6 +376,8 @@ false
 ; * Structural sharing
 ; * Performant implementation (e.g. Bagwell-Trees)
 ; * Implication: data has to be build bottom up instead of top down
+
+
 
 ;;;
 ;;; Sequence Abstraction (ISeq)
