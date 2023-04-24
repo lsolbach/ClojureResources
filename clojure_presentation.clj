@@ -30,63 +30,41 @@
 ;   
 
 ;;;
-;;; Properties of Clojure
-;;; =====================
+;;; Properties of Clojure/Clojurescript
+;;; ===================================
 ;
 ; Clojure is
 ; * a functional programming language
 ; * a Lisp (but with less parenthesis)
-; * simple
-; * fun to use
-
-; * Clojure runs on the JVM
-; * ClojureScript runs in the Browser or on node.js
-; * ClojureCLR runs on MS Common Language Runtime
+;
 
 ;;;
 ;;; Features
 ;;; ========
 ;
 ; * functional
+;   * simple by design
+;
 ; * data driven
 ;   * values, immutable data
 ;   * information, facts don't change
+;
 ; * rich set of data literals
+;   * list, vectors, sets, maps
+;
 ; * rich set of persistent data structures
 ;   * performant through structural sharing
+;
 ; * explicit state through reference types
 ;   * atoms for uncoordinated atomic changes
 ;   * refs for coordinated changes
 ;   * agents for asynchronous changes
 ;   * vars for thread local state
+;
 ; * hosted
 ;   * runs on JVM, JavaScript, CLR
 ;     * complete access to the ecosystem of the platform
 ;   * runs as shell (babashka)
-;
-
-;;;; TODO
-
-;;;
-;;; Java vs. Clojure Syntax
-;;; =======================
-;
-; Java:    calculate(a, b)
-; Clojure: (calculate a b)
-; 
-; * list evaluation
-; * first entry is the function position
-; * function is called with the rest of the list as parameters
-;
-;         |  Operators	 |   Methods/Functions
-; --------+--------------+-----------------------
-; Java    |  2 + 3 + 4	 |   sb.append("Hello!")
-; Clojure	|  (+ 2 3 4)	 |   (append sb "Hello!")
-;
-;
-; Clojure has almost no syntax
-; * like an AST written out (in list representation)
-; * much more conchise as Common Lisp and Scheme
 ;
 
 ;;;
@@ -118,9 +96,31 @@
 ; * Print
 ; * Loop
 ;
-; * Interactive develpment
-; * Instant feedback
+; * interactive develpment
+; * instant feedback
 ; => Clojure's superpower!
+;
+
+;;;
+;;; Java vs. Clojure Syntax
+;;; =======================
+;
+; Java:    calculate(a, b)
+; Clojure: (calculate a b)
+; 
+; * list evaluation
+;   * first entry is the function position
+;   * function is called with the rest of the list as parameters
+;
+;         |  Operators	 |   Methods/Functions
+; --------+--------------+-----------------------
+; Java    |  2 + 3 + 4	 |   sb.append("Hello!")
+; Clojure	|  (+ 2 3 4)	 |   (append sb "Hello!")
+;
+;
+; Clojure has a simple and consistent syntax
+; * like an AST written out (in list representation)
+; * much more conchise as Common Lisp and Scheme
 ;
 
 ;;;
