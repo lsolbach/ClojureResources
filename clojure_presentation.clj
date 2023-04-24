@@ -16,7 +16,7 @@
 ;;; ======================
 ;
 ; * programming paradigm
-; * uses functions as primary programming construct
+; * uses functions as a primary programming construct
 ; * functions are first class citizens
 ;   * functions as parameters
 ;   * functions as return values
@@ -48,14 +48,21 @@
 ;;; ========
 ;
 ; * functional
-; * values, immutable data
+; * data driven
+;   * values, immutable data
+;   * information, facts don't change
+; * rich set of data literals
 ; * rich set of persistent data structures
 ;   * performant through structural sharing
-; * explicit state
+; * explicit state through reference types
+;   * atoms for uncoordinated atomic changes
+;   * refs for coordinated changes
+;   * agents for asynchronous changes
+;   * vars for thread local state
 ; * hosted
 ;   * runs on JVM, JavaScript, CLR
-;   * complete access to the ecosystem of the platform
-; * runs in shell (babashka)
+;     * complete access to the ecosystem of the platform
+;   * runs as shell (babashka)
 ;
 
 ;;;; TODO
@@ -79,6 +86,8 @@
 ;
 ; Clojure has almost no syntax
 ; * like an AST written out (in list representation)
+; * much more conchise as Common Lisp and Scheme
+;
 
 ;;;
 ;;; Development Environments
@@ -91,19 +100,11 @@
 ;
 
 ;;;
-;;; Clojure CLI
-;;; ===========
-;
-; clj
-; clojure
-;
-; * works perfect on Linux and Macs, not so on Windows
-
-;;;
 ;;; Clojure Build Tools
 ;;; ===================
 ;
 ; * cjl/clojure
+;   * works perfect on Linux and Macs, not so on Windows
 ; * Leiningen
 ; * Maven, Gradle, Boot, ...
 ;
@@ -238,7 +239,7 @@ false
 ;(def x 1)
 ;x
 
-; for naming/alializing values
+; symbols are used to name values (alias)
 ; symbols evaluate to their value 
 
 ;
@@ -251,6 +252,7 @@ false
 ::keyword
 
 ; keywords can be qualified by namespace
+; keywords are useful as map keys and as labels (e.g. in enumerations)
 
 ;;;
 ;;; Regular Expressions
@@ -333,9 +335,6 @@ false
 
 ; maps and keywords act as functions too
 
-{:firstname "Charlie"
- :lastname "Brown"}
-
 ;
 ; Sorted Maps
 ;
@@ -351,6 +350,18 @@ false
 (= [1, 2, 3, 4] [1 2 3 4])
 
 ; commas are whitespace, use for usability
+
+;;;
+;;; Literal definition of data
+;;;
+
+{:firstname "Charlie"
+ :lastname "Brown"
+ :age 10
+ :friends #{"Linus"}}
+
+; vectors, maps and sets used as literals to define data
+; no classes, constructors, setters needed
 
 ;;;
 ;;; Namespaces
@@ -492,14 +503,18 @@ false
 ;;; --------------
 ;
 ; * referential transparency
-; * no side effects (e.g. IO, randomness)
+;   * result only depends on the input arguments
+;   * no side effects (e.g. IO, randomness)
+;   * function call can be replaced with the result
 ;
+; * pure functions enable
 ; * simpler reasoning
-; * enables caching of the value for the parameters (memoization)
+; * caching of the return value for the given parameters (memoization)
 ;
 
 (defn fib
-  "Calculates the fibonacci number for 'n'."
+  "Calculates the fibonacci number for 'n'.
+   Uses recursion, so this implementation might blow the stack for n > 70."
   [n]
   (cond
     (= 0 n) 0
@@ -520,17 +535,27 @@ false
 ;(time (fib 33))
 ;(time (fib 80))
 
-; meoize caches the calls to fib per input
+; meoize caches the calls to fib per input parameter
 ; nevertheless implementing fib recursively is not a good idea
 ; it will blow the stack quite soon
+
 
 ;;;
 ;;; Higher Order Functions
 ;;; ----------------------
 ;
-; * map
-; * filter
-; * reduce
+; * higher order functions can
+;   * take functions as parameters
+;   * return functions as result
+;
+; * examples
+;   * map
+;     * applies a function to every element of a collection
+;   * filter
+;     * filters a collection with a predicate function
+;   * reduce
+;     * aggregates a collection by applying a reducing function
+;       to the elements of the list
 ;
 
 (map (fn [x] (* 2 x)) [1 2 3 4])
@@ -538,7 +563,7 @@ false
 
 (filter even? [1 2 3 4])
 
-(reduce + [1 2 3 4])
+(reduce + 0 [1 2 3 4])
 
 ;;;
 ;;; Special Forms
@@ -573,16 +598,21 @@ false
 ;   * with macros at compile time
 ;
 
-(defmacro do-if [pred body]
-  `(if ~pred (do ~body)))
+(defmacro do-if [pred & body]
+  (list 'if pred (cons 'do body)))
 
+; compile time templating
 ; quote with '`', unquote with '~'
+
+(/ 1 2)
+(/ 1 0)
 
 (defn reciproc [x]
   (do-if (not= 0 x)
-       (/ 1 x)))
+         (println "Dividing 1 by" x)
+         (/ 1 x)))
 
-(reciproc 1)
+(reciproc 2)
 (reciproc 0)
 
 (macroexpand-1 '(do-if (not= 0 x)
@@ -596,7 +626,6 @@ false
 ; complete expansion
 
 ;
-; Compile time templating
 ;
 (defmacro my-macro
   "Documentation"
