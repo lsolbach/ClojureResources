@@ -91,14 +91,13 @@
 ;;; The REPL
 ;;; ========
 ;
-; * Read
-; * Evaluate
-; * Print
-; * Loop
+;  +> Read -> Evaluate -> Print +
+;  +------------Loop------------+
 ;
-; * interactive develpment
-; * instant feedback
-; => Clojure's superpower!
+; * enable interactive develpment
+; * gives instant feedback
+;
+;   => Clojure's superpower!
 ;
 
 ;;;
@@ -159,8 +158,11 @@ false
 (+ 2 3)
 (* 2 (+ 3 4))
 
-; operators are functions too
 ; prefix instead of infix
+; operators are functions
+
+; one simple simple syntax for everything
+; function name in the first position, rest are arguments
 
 ;
 ; BigInteger
@@ -199,7 +201,6 @@ false
 ; result is a rational, no loss in precision
 
 (/ (/ 2 3) 2)
-
 (/ (/ 2 3) 2.0)
 
 ; result is a double, loss in precision
@@ -249,10 +250,27 @@ false
 
 ; keywords evaluate to themselves
 
+:clojure-presentation/keyword
 ::keyword
 
 ; keywords can be qualified by namespace
 ; keywords are useful as map keys and as labels (e.g. in enumerations)
+
+;;;
+;;; Namespaces
+;;; ----------
+; 
+; * nonconflicting names
+; * modularisation
+
+; ns
+; require
+
+; (ns clojure-presentation.util)
+
+(require '[clojure.string :as str])
+
+(str/join " & " [1 2 3 4])
 
 ;;;
 ;;; Regular Expressions
@@ -362,22 +380,6 @@ false
 
 ; vectors, maps and sets used as literals to define data
 ; no classes, constructors, setters needed
-
-;;;
-;;; Namespaces
-;;; ----------
-; 
-; * nonconflicting names
-; * modularisation
-
-; ns
-; require
-
-; (ns clojure-presentation.util)
-
-(require '[clojure.string :as str])
-
-(str/join " & " [1 2 3 4])
 
 ;;;
 ;;; Persistent Collections
