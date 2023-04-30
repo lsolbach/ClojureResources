@@ -141,6 +141,7 @@ Libraries
 * [Editscript](https://github.com/juji-io/editscript) - find and edit differences in data
 * [expound](https://github.com/bhb/expound) - human readable spec error reporting
 * [instaparse](https://github.com/Engelberg/instaparse) - Parser generator for context-free grammars
+* [automat](https://github.com/ztellman/automat) - Automat is a Clojure and ClojureScript library for defining and using finite-state automata
 
 ### Testing
 * [clojure.test](https://clojure.github.io/clojure/clojure.test-api.html) - standard unit testing
@@ -334,7 +335,9 @@ Videos
 * [REBL - Stuart Halloway](https://www.youtube.com/watch?v=c52QhiXsmyI)
 * [Always Be Composing - Zach Tellman](https://www.youtube.com/watch?v=3oQTSP4FngY)
 * [Everything Will Flow - Zach Tellman](https://www.youtube.com/watch?v=1bNOO3xxMc0)
-* [Solving Problems the Clojure Way - Rafal Dittwald](https://www.youtube.com/watch?v=vK1DazRK_a0) - Functional refactoring of an application (JS example ;-) )
+* [Solving Problems the Clojure Way - Rafal Dittwald](https://www.youtube.com/watch?v=vK1DazRK_a0) - Functional refactoring of an application (JS example ;-)
+* [Bottom Up vs Top Down Design in Clojure - Mark Bastian](https://www.youtube.com/watch?v=Tb823aqgX_0)
+* [Condition Systems in an Exceptional Language - Chris Houser](https://www.youtube.com/watch?v=zp0OEDcAro0)
 
 #### Workflow
 * [Clojure Basics: Editor and Tooling Setup](https://www.youtube.com/watch?v=kjJVfoqFj_k)
