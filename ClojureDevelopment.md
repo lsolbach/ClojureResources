@@ -142,6 +142,7 @@ Libraries
 * [expound](https://github.com/bhb/expound) - human readable spec error reporting
 * [instaparse](https://github.com/Engelberg/instaparse) - Parser generator for context-free grammars
 * [automat](https://github.com/ztellman/automat) - Automat is a Clojure and ClojureScript library for defining and using finite-state automata
+* [clj-java-decompiler](https://github.com/clojure-goes-fast/clj-java-decompiler) - An integrated Clojure-to-Java decompiler usable from the REPL.
 
 ### Testing
 * [clojure.test](https://clojure.github.io/clojure/clojure.test-api.html) - standard unit testing
