@@ -142,7 +142,8 @@ Libraries
 * [expound](https://github.com/bhb/expound) - human readable spec error reporting
 * [instaparse](https://github.com/Engelberg/instaparse) - Parser generator for context-free grammars
 * [automat](https://github.com/ztellman/automat) - Automat is a Clojure and ClojureScript library for defining and using finite-state automata
-* [clj-java-decompiler](https://github.com/clojure-goes-fast/clj-java-decompiler) - An integrated Clojure-to-Java decompiler usable from the REPL.
+* [clj-java-decompiler](https://github.com/clojure-goes-fast/clj-java-decompiler) - An integrated Clojure-to-Java decompiler usable from the REPL
+* [clj-memory-meter](https://github.com/clojure-goes-fast/clj-memory-meter) - A Clojure library that allows you to inspect how much memory an object occupies at runtime
 
 ### Testing
 * [clojure.test](https://clojure.github.io/clojure/clojure.test-api.html) - standard unit testing
@@ -153,6 +154,7 @@ Libraries
 # Performance Testing/Monitoring
 * [Criterium](https://github.com/hugoduncan/criterium) - Benchmark testing library
 * [Tufte](https://github.com/ptaoussanis/tufte) - Simple profiling and performance monitoring for Clojure/Script
+* [clj-async-profiler](https://github.com/clojure-goes-fast/clj-async-profiler) - An embedded high-precision performance profiler for Clojure
 
 ### Network
 * [clj-ftp](https://github.com/miner/clj-ftp) - Wrapper over Apache Commons Net to provide easy access from Clojure
