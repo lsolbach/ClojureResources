@@ -62,6 +62,7 @@ REPLs/REPL Tools
 * [Lumo](https://github.com/anmonteiro/lumo) - Lumo is a standalone ClojureScript environment that runs on Node.js and the V8 JavaScript engine
 
 * [tubular](https://github.com/mfikes/tubular) - A Clojure Socket REPL client
+* [Clerk](https://github.com/nextjournal/clerk) - Clerk takes a Clojure namespace and turns it into a notebook
 
 
 Libraries
@@ -104,6 +105,7 @@ Libraries
 * [data.json](https://github.com/clojure/data.json) - Read/write JSON
 * [data.csv](https://github.com/clojure/data.csv) - Read/write CSV
 * [data.xml](https://github.com/clojure/data.xml) - Read/write XML
+* [Charred](https://github.com/cnuernber/charred) - Zero dependency efficient read/write of json and csv data
 * [clj-xpath](https://github.com/kyleburton/clj-xpath) - A library that makes it easier to work with XPath from Clojure
 * [YAML](https://github.com/owainlewis/yaml) - Read/wite YAML
 * [Clojure ProtoBuf](https://github.com/flatland/clojure-protobuf) - Specify/read/write ProtoBuf
@@ -170,6 +172,10 @@ Libraries
 * [sampling](https://github.com/bigmlcom/sampling) - This library supports three flavors of random sampling: simple sampling, reservoir sampling, and stream sampling.
 
 ### Analytics/Machine Learning
+* [dtype-next](https://github.com/cnuernber/dtype-next) - A Clojure library designed to aid in the implementation of high performance algorithms and systems
+* [tech.ml.dataset](https://github.com/techascent/tech.ml.dataset) - A Clojure high performance data processing system (similar to Python Pandas or R data.table)
+* [tablecloth](https://github.com/scicloj/tablecloth) - A dataset manipulation library built on the top of tech.ml.dataset
+* [scicloj.ml](https://github.com/scicloj/scicloj.ml) - A Clojure machine learning library
 * [jutsu.ai](https://github.com/hswick/jutsu.ai) - Clojure wrapper for DeepLearning4J
 * [clojurecl](https://github.com/uncomplicate/clojurecl) - ClojureCL is a Clojure library for parallel computations with OpenCL
 * [Deep Diamond](https://github.com/uncomplicate/deep-diamond) - Deep Diamond is a Clojure library for fast tensors and neural network related computations based on the highly optimized native libraries and computation routines for both CPU and GPU
@@ -177,6 +183,7 @@ Libraries
 * [sketchy](https://github.com/bigmlcom/sketchy) - Sketching algorithms in Clojure (e.g. Bloom Filter, Count-Min, Hyper-LogLog)
 * [streampunk](https://github.com/clojurewerkz/streampunk) - Streampunk is a Clojure interface to stream summarization and cardinality estimation libraries, such as stream-lib
 * [Statistiker](https://github.com/clojurewerkz/statistiker) - Statistiker is a simple way to do Statistics in Clojure. The goal is to have an implementation of all popular algorithms for mining datasets
+
 
 ### Visualization
 * [oz](https://github.com/metasoarous/oz) - Data visualization and scientific document processing library for Clojure built around Vega-Lite & Vega
