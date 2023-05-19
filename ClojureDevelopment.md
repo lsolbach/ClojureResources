@@ -138,6 +138,7 @@ Libraries
 
 ### Utility
 * [clojure.tools.namespace](https://github.com/clojure/tools.namespace)
+* [rewrite-clj](https://github.com/clj-commons/rewrite-clj) - A library to parse rewrite Clojure code and edn
 * [Timbre](https://github.com/ptaoussanis/timbre) - A pure Clojure/Script logging library
 * [Tempura](https://github.com/ptaoussanis/tempura) - A pure Clojure/Script i18n translations library
 * [Editscript](https://github.com/juji-io/editscript) - find and edit differences in data
