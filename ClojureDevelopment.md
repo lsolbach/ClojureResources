@@ -309,6 +309,9 @@ Tutorials
 ### ClojureScript
 * [modern-cljs](https://github.com/magomimmo/modern-cljs)
 
+### Logic Programming
+* [microLogic](http://mullr.github.io/micrologic/literate.html) - A literate Clojure implementation of miniKanren, a logic programming system which can be embedded in functional programming languages
+
 ### Datomic
 * [Learn Datalog Today](http://www.learndatalogtoday.org/)
 
@@ -336,6 +339,7 @@ Videos
 * [Clojure for Java Programmers Part 2 - Rich Hickey](https://www.youtube.com/watch?v=hb3rurFxrZ8)
 * [Clojure Data Structures Part 1 - Rich Hickey](https://www.youtube.com/watch?v=ketJlzX-254)
 * [Clojure Data Structures Part 2 - Rich Hickey](https://www.youtube.com/watch?v=sp2Zv7KFQQ0)
+* [Persistent Data Structures and Managed References - Rich Hickey](https://www.youtube.com/watch?v=toD45DtVCFM)
 * [Clojure Concurrency - Rich Hickey](https://www.youtube.com/watch?v=nDAfZK8m5_8)
 * [Clojure Made Simple - Rich Hickey](https://www.youtube.com/watch?v=VSdnJDO-xdg)
 * [Effective Programs - 10 Years of Clojure - Rich Hickey](https://www.youtube.com/watch?v=2V1FtfBDsLU)
@@ -344,6 +348,9 @@ Videos
 * [Clojure core async - Rich Hickey](https://www.youtube.com/watch?v=yJxFPoxqzWE)
 * [Spec-ulation Keynote - Rich Hickey](https://www.youtube.com/watch?v=oyLBGkS5ICk) - About changing and breaking software and how versioning artifacts doesn't help
 * [Maybe Not - Rich Hickey](https://www.youtube.com/watch?v=YR5WdGrpoug)
+* [The Language of the System - Rich Hickey](https://www.youtube.com/watch?v=ROor6_NGIWU)
+* [Design in Practice - Rich Hickey](https://www.youtube.com/watch?v=c5QF2HjHLSE)
+* [A History of Clojure by Rich Hickey with Q&A]()
 * [REBL - Stuart Halloway](https://www.youtube.com/watch?v=c52QhiXsmyI)
 * [Always Be Composing - Zach Tellman](https://www.youtube.com/watch?v=3oQTSP4FngY)
 * [Everything Will Flow - Zach Tellman](https://www.youtube.com/watch?v=1bNOO3xxMc0)
@@ -388,6 +395,7 @@ Books
 Blog Posts
 ----------
 ### Clojure
+* [Why Clojure?](https://blog.cleancoder.com/uncle-bob/2019/08/22/WhyClojure.html)
 * [Reducers, transducers and core.async in Clojure](https://eli.thegreenplace.net/2017/reducers-transducers-and-coreasync-in-clojure/)
 * [Clojure concurrency and blocking with core.async](https://eli.thegreenplace.net/2017/clojure-concurrency-and-blocking-with-coreasync/)
 
