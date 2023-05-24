@@ -337,6 +337,8 @@ Videos
 #### Clojure Basics
 * [Clojure for Java Programmers Part 1 - Rich Hickey](https://www.youtube.com/watch?v=P76Vbsk_3J0)
 * [Clojure for Java Programmers Part 2 - Rich Hickey](https://www.youtube.com/watch?v=hb3rurFxrZ8)
+* [Clojure for Lisp Programmers Part 1 - Rich Hickey](https://www.youtube.com/watch?v=cPNkH-7PRTk)
+* [Clojure for Lisp Programmers Part 2 - Rich Hickey](https://www.youtube.com/watch?v=7mbcYxHO0nM)
 * [Clojure Data Structures Part 1 - Rich Hickey](https://www.youtube.com/watch?v=ketJlzX-254)
 * [Clojure Data Structures Part 2 - Rich Hickey](https://www.youtube.com/watch?v=sp2Zv7KFQQ0)
 * [Persistent Data Structures and Managed References - Rich Hickey](https://www.youtube.com/watch?v=toD45DtVCFM)
@@ -351,6 +353,7 @@ Videos
 * [The Language of the System - Rich Hickey](https://www.youtube.com/watch?v=ROor6_NGIWU)
 * [Design in Practice - Rich Hickey](https://www.youtube.com/watch?v=c5QF2HjHLSE)
 * [A History of Clojure by Rich Hickey with Q&A]()
+
 * [REBL - Stuart Halloway](https://www.youtube.com/watch?v=c52QhiXsmyI)
 * [Always Be Composing - Zach Tellman](https://www.youtube.com/watch?v=3oQTSP4FngY)
 * [Everything Will Flow - Zach Tellman](https://www.youtube.com/watch?v=1bNOO3xxMc0)
