@@ -334,6 +334,10 @@ Videos
 ### Clojure
 * [ClojureTV](https://www.youtube.com/channel/UCaLlzGqiPE2QRj6sSOawJRg) - youtube channel
 
+* [Java's Quirks and Wrong (?) Defaults with Brian Goetz](https://www.youtube.com/watch?v=ZyTH8uCziI4)
+* [Why Brian Goetz prefers Clojure over Scala and Kotlin (as a Java language architect)](https://www.youtube.com/watch?v=GedrGWu16_I)
+
+
 #### Clojure Basics
 * [Clojure for Java Programmers Part 1 - Rich Hickey](https://www.youtube.com/watch?v=P76Vbsk_3J0)
 * [Clojure for Java Programmers Part 2 - Rich Hickey](https://www.youtube.com/watch?v=hb3rurFxrZ8)
@@ -343,6 +347,7 @@ Videos
 * [Clojure Data Structures Part 2 - Rich Hickey](https://www.youtube.com/watch?v=sp2Zv7KFQQ0)
 * [Persistent Data Structures and Managed References - Rich Hickey](https://www.youtube.com/watch?v=toD45DtVCFM)
 * [Clojure Concurrency - Rich Hickey](https://www.youtube.com/watch?v=nDAfZK8m5_8)
+* [Simple made Easy - Rich Hickey](https://www.youtube.com/watch?v=LKtk3HCgTa8)
 * [Clojure Made Simple - Rich Hickey](https://www.youtube.com/watch?v=VSdnJDO-xdg)
 * [Effective Programs - 10 Years of Clojure - Rich Hickey](https://www.youtube.com/watch?v=2V1FtfBDsLU)
 * [Transducers - Rich Hickey](https://www.youtube.com/watch?v=Tq7r97G4b7Y)
@@ -360,6 +365,7 @@ Videos
 * [Solving Problems the Clojure Way - Rafal Dittwald](https://www.youtube.com/watch?v=vK1DazRK_a0) - Functional refactoring of an application (JS example ;-)
 * [Bottom Up vs Top Down Design in Clojure - Mark Bastian](https://www.youtube.com/watch?v=Tb823aqgX_0)
 * [Condition Systems in an Exceptional Language - Chris Houser](https://www.youtube.com/watch?v=zp0OEDcAro0)
+
 
 #### Workflow
 * [Clojure Basics: Editor and Tooling Setup](https://www.youtube.com/watch?v=kjJVfoqFj_k)
