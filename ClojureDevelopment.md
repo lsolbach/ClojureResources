@@ -349,15 +349,15 @@ Videos
 * [Clojure Concurrency - Rich Hickey](https://www.youtube.com/watch?v=nDAfZK8m5_8)
 * [Simple made Easy - Rich Hickey](https://www.youtube.com/watch?v=LKtk3HCgTa8)
 * [Clojure Made Simple - Rich Hickey](https://www.youtube.com/watch?v=VSdnJDO-xdg)
-* [Effective Programs - 10 Years of Clojure - Rich Hickey](https://www.youtube.com/watch?v=2V1FtfBDsLU)
 * [Transducers - Rich Hickey](https://www.youtube.com/watch?v=Tq7r97G4b7Y)
 * [Inside Transducers - Rich Hickey](https://www.youtube.com/watch?v=4KqUvG8HPYo)
 * [Clojure core async - Rich Hickey](https://www.youtube.com/watch?v=yJxFPoxqzWE)
+* [Effective Programs - 10 Years of Clojure - Rich Hickey](https://www.youtube.com/watch?v=2V1FtfBDsLU)
 * [Spec-ulation Keynote - Rich Hickey](https://www.youtube.com/watch?v=oyLBGkS5ICk) - About changing and breaking software and how versioning artifacts doesn't help
 * [Maybe Not - Rich Hickey](https://www.youtube.com/watch?v=YR5WdGrpoug)
 * [The Language of the System - Rich Hickey](https://www.youtube.com/watch?v=ROor6_NGIWU)
 * [Design in Practice - Rich Hickey](https://www.youtube.com/watch?v=c5QF2HjHLSE)
-* [A History of Clojure by Rich Hickey with Q&A]()
+* [A History of Clojure by Rich Hickey with Q&A](https://www.youtube.com/watch?v=nD-QHbRWcoM)
 
 * [REBL - Stuart Halloway](https://www.youtube.com/watch?v=c52QhiXsmyI)
 * [Always Be Composing - Zach Tellman](https://www.youtube.com/watch?v=3oQTSP4FngY)
@@ -394,6 +394,10 @@ Videos
 
 ### Visualization
 * [Vega & Vegalite - Christopher Small](https://www.youtube.com/watch?v=hXq5Bb40zZY) - Create interactive data visualizations in Clojure with Oz and Vega/Vegalite
+
+### Machine Learning and AI
+* [Vector Symbolic Architectures In Clojure - Carin Meier](https://www.youtube.com/watch?v=j7ygjfbBJD0)
+
 
 Books
 -----
