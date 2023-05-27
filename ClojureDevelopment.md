@@ -62,6 +62,7 @@ REPLs/REPL Tools
 * [Lumo](https://github.com/anmonteiro/lumo) - Lumo is a standalone ClojureScript environment that runs on Node.js and the V8 JavaScript engine
 
 * [tubular](https://github.com/mfikes/tubular) - A Clojure Socket REPL client
+* [Clerk](https://github.com/nextjournal/clerk) - Clerk takes a Clojure namespace and turns it into a notebook
 
 
 Libraries
@@ -104,6 +105,7 @@ Libraries
 * [data.json](https://github.com/clojure/data.json) - Read/write JSON
 * [data.csv](https://github.com/clojure/data.csv) - Read/write CSV
 * [data.xml](https://github.com/clojure/data.xml) - Read/write XML
+* [Charred](https://github.com/cnuernber/charred) - Zero dependency efficient read/write of json and csv data
 * [clj-xpath](https://github.com/kyleburton/clj-xpath) - A library that makes it easier to work with XPath from Clojure
 * [YAML](https://github.com/owainlewis/yaml) - Read/wite YAML
 * [Clojure ProtoBuf](https://github.com/flatland/clojure-protobuf) - Specify/read/write ProtoBuf
@@ -136,11 +138,15 @@ Libraries
 
 ### Utility
 * [clojure.tools.namespace](https://github.com/clojure/tools.namespace)
+* [rewrite-clj](https://github.com/clj-commons/rewrite-clj) - A library to parse rewrite Clojure code and edn
 * [Timbre](https://github.com/ptaoussanis/timbre) - A pure Clojure/Script logging library
 * [Tempura](https://github.com/ptaoussanis/tempura) - A pure Clojure/Script i18n translations library
 * [Editscript](https://github.com/juji-io/editscript) - find and edit differences in data
 * [expound](https://github.com/bhb/expound) - human readable spec error reporting
 * [instaparse](https://github.com/Engelberg/instaparse) - Parser generator for context-free grammars
+* [automat](https://github.com/ztellman/automat) - Automat is a Clojure and ClojureScript library for defining and using finite-state automata
+* [clj-java-decompiler](https://github.com/clojure-goes-fast/clj-java-decompiler) - An integrated Clojure-to-Java decompiler usable from the REPL
+* [clj-memory-meter](https://github.com/clojure-goes-fast/clj-memory-meter) - A Clojure library that allows you to inspect how much memory an object occupies at runtime
 
 ### Testing
 * [clojure.test](https://clojure.github.io/clojure/clojure.test-api.html) - standard unit testing
@@ -151,6 +157,7 @@ Libraries
 # Performance Testing/Monitoring
 * [Criterium](https://github.com/hugoduncan/criterium) - Benchmark testing library
 * [Tufte](https://github.com/ptaoussanis/tufte) - Simple profiling and performance monitoring for Clojure/Script
+* [clj-async-profiler](https://github.com/clojure-goes-fast/clj-async-profiler) - An embedded high-precision performance profiler for Clojure
 
 ### Network
 * [clj-ftp](https://github.com/miner/clj-ftp) - Wrapper over Apache Commons Net to provide easy access from Clojure
@@ -166,6 +173,10 @@ Libraries
 * [sampling](https://github.com/bigmlcom/sampling) - This library supports three flavors of random sampling: simple sampling, reservoir sampling, and stream sampling.
 
 ### Analytics/Machine Learning
+* [dtype-next](https://github.com/cnuernber/dtype-next) - A Clojure library designed to aid in the implementation of high performance algorithms and systems
+* [tech.ml.dataset](https://github.com/techascent/tech.ml.dataset) - A Clojure high performance data processing system (similar to Python Pandas or R data.table)
+* [tablecloth](https://github.com/scicloj/tablecloth) - A dataset manipulation library built on the top of tech.ml.dataset
+* [scicloj.ml](https://github.com/scicloj/scicloj.ml) - A Clojure machine learning library
 * [jutsu.ai](https://github.com/hswick/jutsu.ai) - Clojure wrapper for DeepLearning4J
 * [clojurecl](https://github.com/uncomplicate/clojurecl) - ClojureCL is a Clojure library for parallel computations with OpenCL
 * [Deep Diamond](https://github.com/uncomplicate/deep-diamond) - Deep Diamond is a Clojure library for fast tensors and neural network related computations based on the highly optimized native libraries and computation routines for both CPU and GPU
@@ -173,6 +184,7 @@ Libraries
 * [sketchy](https://github.com/bigmlcom/sketchy) - Sketching algorithms in Clojure (e.g. Bloom Filter, Count-Min, Hyper-LogLog)
 * [streampunk](https://github.com/clojurewerkz/streampunk) - Streampunk is a Clojure interface to stream summarization and cardinality estimation libraries, such as stream-lib
 * [Statistiker](https://github.com/clojurewerkz/statistiker) - Statistiker is a simple way to do Statistics in Clojure. The goal is to have an implementation of all popular algorithms for mining datasets
+
 
 ### Visualization
 * [oz](https://github.com/metasoarous/oz) - Data visualization and scientific document processing library for Clojure built around Vega-Lite & Vega
@@ -216,6 +228,7 @@ Libraries
 * [Enlive](https://github.com/cgrand/enlive) - Enlive is a selector-based (à la CSS) templating library for Clojure.
 * [yada](https://github.com/juxt/yada), [yada docs](https://www.juxt.land/yada/manual/index.html) - Framework for production ready web services
 * [sente](https://github.com/ptaoussanis/sente) - Client/Server communication with core.async over WebSockets or AJAX
+* [etaoin](https://github.com/clj-commons/etaoin) - A pure Clojure implementation of the Webdriver protocol for browser tests
 
 #### Web Services
 * [liberator](https://github.com/clojure-liberator/liberator/) - Framework for web services
@@ -296,6 +309,9 @@ Tutorials
 ### ClojureScript
 * [modern-cljs](https://github.com/magomimmo/modern-cljs)
 
+### Logic Programming
+* [microLogic](http://mullr.github.io/micrologic/literate.html) - A literate Clojure implementation of miniKanren, a logic programming system which can be embedded in functional programming languages
+
 ### Datomic
 * [Learn Datalog Today](http://www.learndatalogtoday.org/)
 
@@ -318,11 +334,18 @@ Videos
 ### Clojure
 * [ClojureTV](https://www.youtube.com/channel/UCaLlzGqiPE2QRj6sSOawJRg) - youtube channel
 
+* [Java's Quirks and Wrong (?) Defaults with Brian Goetz](https://www.youtube.com/watch?v=ZyTH8uCziI4)
+* [Why Brian Goetz prefers Clojure over Scala and Kotlin (as a Java language architect)](https://www.youtube.com/watch?v=GedrGWu16_I)
+
+
 #### Clojure Basics
 * [Clojure for Java Programmers Part 1 - Rich Hickey](https://www.youtube.com/watch?v=P76Vbsk_3J0)
 * [Clojure for Java Programmers Part 2 - Rich Hickey](https://www.youtube.com/watch?v=hb3rurFxrZ8)
+* [Clojure for Lisp Programmers Part 1 - Rich Hickey](https://www.youtube.com/watch?v=cPNkH-7PRTk)
+* [Clojure for Lisp Programmers Part 2 - Rich Hickey](https://www.youtube.com/watch?v=7mbcYxHO0nM)
 * [Clojure Data Structures Part 1 - Rich Hickey](https://www.youtube.com/watch?v=ketJlzX-254)
 * [Clojure Data Structures Part 2 - Rich Hickey](https://www.youtube.com/watch?v=sp2Zv7KFQQ0)
+* [Persistent Data Structures and Managed References - Rich Hickey](https://www.youtube.com/watch?v=toD45DtVCFM)
 * [Clojure Concurrency - Rich Hickey](https://www.youtube.com/watch?v=nDAfZK8m5_8)
 * [Simple Made Easy - Rich Hickey](https://www.youtube.com/watch?v=LKtk3HCgTa8)
 * [Clojure Made Simple - Rich Hickey](https://www.youtube.com/watch?v=VSdnJDO-xdg)
@@ -331,12 +354,20 @@ Videos
 * [Transducers - Rich Hickey](https://www.youtube.com/watch?v=Tq7r97G4b7Y)
 * [Inside Transducers - Rich Hickey](https://www.youtube.com/watch?v=4KqUvG8HPYo)
 * [Clojure core async - Rich Hickey](https://www.youtube.com/watch?v=yJxFPoxqzWE)
+* [Effective Programs - 10 Years of Clojure - Rich Hickey](https://www.youtube.com/watch?v=2V1FtfBDsLU)
 * [Spec-ulation Keynote - Rich Hickey](https://www.youtube.com/watch?v=oyLBGkS5ICk) - About changing and breaking software and how versioning artifacts doesn't help
 * [Maybe Not - Rich Hickey](https://www.youtube.com/watch?v=YR5WdGrpoug)
+* [The Language of the System - Rich Hickey](https://www.youtube.com/watch?v=ROor6_NGIWU)
+* [Design in Practice - Rich Hickey](https://www.youtube.com/watch?v=c5QF2HjHLSE)
+* [A History of Clojure by Rich Hickey with Q&A](https://www.youtube.com/watch?v=nD-QHbRWcoM)
+
 * [REBL - Stuart Halloway](https://www.youtube.com/watch?v=c52QhiXsmyI)
 * [Always Be Composing - Zach Tellman](https://www.youtube.com/watch?v=3oQTSP4FngY)
 * [Everything Will Flow - Zach Tellman](https://www.youtube.com/watch?v=1bNOO3xxMc0)
-* [Solving Problems the Clojure Way - Rafal Dittwald](https://www.youtube.com/watch?v=vK1DazRK_a0) - Functional refactoring of an application (JS example ;-) )
+* [Solving Problems the Clojure Way - Rafal Dittwald](https://www.youtube.com/watch?v=vK1DazRK_a0) - Functional refactoring of an application (JS example ;-))
+* [Bottom Up vs Top Down Design in Clojure - Mark Bastian](https://www.youtube.com/watch?v=Tb823aqgX_0)
+* [Condition Systems in an Exceptional Language - Chris Houser](https://www.youtube.com/watch?v=zp0OEDcAro0)
+
 
 #### Workflow
 * [Clojure Basics: Editor and Tooling Setup](https://www.youtube.com/watch?v=kjJVfoqFj_k)
@@ -366,6 +397,10 @@ Videos
 ### Visualization
 * [Vega & Vegalite - Christopher Small](https://www.youtube.com/watch?v=hXq5Bb40zZY) - Create interactive data visualizations in Clojure with Oz and Vega/Vegalite
 
+### Machine Learning and AI
+* [Vector Symbolic Architectures In Clojure - Carin Meier](https://www.youtube.com/watch?v=j7ygjfbBJD0)
+
+
 Books
 -----
 * [Clojure for the Brave and True](https://www.braveclojure.com/) - Complete book available online and in print
@@ -375,6 +410,7 @@ Books
 Blog Posts
 ----------
 ### Clojure
+* [Why Clojure?](https://blog.cleancoder.com/uncle-bob/2019/08/22/WhyClojure.html)
 * [Reducers, transducers and core.async in Clojure](https://eli.thegreenplace.net/2017/reducers-transducers-and-coreasync-in-clojure/)
 * [Clojure concurrency and blocking with core.async](https://eli.thegreenplace.net/2017/clojure-concurrency-and-blocking-with-coreasync/)
 

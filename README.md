@@ -6,5 +6,6 @@ I maintain this page as a personal reference of interesting Clojure related info
 
 
 * [Clojure(Script) Development](https://github.com/lsolbach/ClojureResources/blob/master/ClojureDevelopment.md) - List of resources, libraries, tuturials and videos for Clojure(Script)
+* [Clojure Presentation](https://github.com/lsolbach/ClojureResources/blob/master/presentation/clojure_presentation.md) - An interactive Clojure presentation
 * [deps.edn](https://github.com/lsolbach/ClojureResources/blob/master/deps.edn)
 

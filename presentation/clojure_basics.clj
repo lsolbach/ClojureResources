@@ -13,8 +13,9 @@
 ;;; The REPL
 ;;; ========
 ;
-;  +> Read -> Evaluate -> Print +
-;  +------------Loop------------+
+;  +-> Read -> Evaluate -> Print -+
+;  |                              |
+;  +-------------Loop-------------+
 ;
 ; * interactive develpment
 ; * instant feedback
