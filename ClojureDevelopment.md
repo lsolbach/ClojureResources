@@ -347,6 +347,7 @@ Videos
 * [Clojure Data Structures Part 2 - Rich Hickey](https://www.youtube.com/watch?v=sp2Zv7KFQQ0)
 * [Persistent Data Structures and Managed References - Rich Hickey](https://www.youtube.com/watch?v=toD45DtVCFM)
 * [Clojure Concurrency - Rich Hickey](https://www.youtube.com/watch?v=nDAfZK8m5_8)
+* [Simplicity Ain't Easy - Stuart Halloway](https://www.youtube.com/watch?v=cidchWg74Y4)
 * [Simple Made Easy - Rich Hickey](https://www.youtube.com/watch?v=LKtk3HCgTa8)
 * [Clojure Made Simple - Rich Hickey](https://www.youtube.com/watch?v=VSdnJDO-xdg)
 * [Ousterhout's Dichotomy Isn't (Part 2 of the Simplicity/Power/Focus Series) - Stuart Halloway](https://www.youtube.com/watch?v=KZ8u_sWT9Ls)
