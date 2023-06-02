@@ -381,6 +381,7 @@ Videos
 * [Hammock Driven Development - Rich Hickey](https://www.youtube.com/watch?v=f84n5oFoZBc)
 * [Babashka and Small Clojure Interpreter: Clojure in new contexts - Michiel Borkent](https://www.youtube.com/watch?v=Nw8aN-nrdEk) - Use Clojure as a bash replacement and more
 * [Tapping into one of Clojure's superpowers with Portal by James Trunk](https://www.youtube.com/watch?v=A-QvUw5LLVU)
+* [Testing Stateful and Concurrent Systems Using test.check - Eric Normand](https://www.youtube.com/watch?v=r5i_OiZw6Sw)
 
 ### Experience
 * [Why Clojure? - Derek Slager](https://www.youtube.com/watch?v=BThkk5zv0DE)
