@@ -162,14 +162,14 @@ Libraries
 ### Network
 * [clj-ftp](https://github.com/miner/clj-ftp) - Wrapper over Apache Commons Net to provide easy access from Clojure
 
-### Classpath
-* [tools.deps.alpha](https://github.com/clojure/tools.deps.alpha) - 
+### Classpath/Dependencies
+* [tools.deps](https://github.com/clojure/tools.deps) - 
 * [dynapath](https://github.com/tobias/dynapath) - library for handling the classpath programmatically
 
 ### Math
 * [incanter](https://github.com/incanter/incanter) - Incanter is a Clojure-based, R-like statistical computing and graphics environment
 * [clojure.math.combinatorics](https://github.com/clojure/math.combinatorics) - 
-* [clj-math](https://github.com/lsolbach/CljMath) - Clojure Math library
+* [math.core](https://github.com/soulspace-org/math.core) - Clojure/ClojureScript Math library
 * [sampling](https://github.com/bigmlcom/sampling) - This library supports three flavors of random sampling: simple sampling, reservoir sampling, and stream sampling.
 
 ### Analytics/Machine Learning
@@ -190,7 +190,7 @@ Libraries
 * [oz](https://github.com/metasoarous/oz) - Data visualization and scientific document processing library for Clojure built around Vega-Lite & Vega
 * [hanami](https://github.com/jsa-aerial/hanami) - Interactive arts and charts visualizations with Clojure(Script), Vega-lite, and Vega
 * [viz.clj](https://github.com/scicloj/viz.clj) - 
-* [cmp.jfreechart](https://github.com/lsolbach/CljComponents) - Clojure wrapper and API for JFreeChart
+* [cmp.jfreechart](https://github.com/soulspace-org/cmp.jfreechart) - Clojure wrapper and API for JFreeChart
 
 ### Cryptography
 * [scrypt](https://github.com/clojurewerkz/scrypt) - scrypt is a tiny Clojure library for the scrypt key derivation function
@@ -244,7 +244,7 @@ Libraries
 #### JVM
 ##### Swing
 * [seesaw](https://github.com/daveray/seesaw) - Clojure API for Java Swing
-* [clj-swing](https://github.com/lsolbach/CljBase) - My Clojure API for Java Swing
+* [clj-swing](https://github.com/soulspace-org/clj.swing) - My Clojure API for Java Swing
 
 ##### JavaFX
 * [cljfx](https://github.com/cljfx/cljfx) - a declarative, functional and extensible wrapper of JavaFX inspired by better parts of react and re-frame
@@ -267,9 +267,9 @@ Libraries
 
 ### Documents/Reporting
 * [clj-pdf](https://github.com/clj-pdf/clj-pdf) - Generate PDF programatically
-* [cmp.poi](https://github.com/lsolbach/CljComponents) - Create, read and write excel files based on Apache POI
-* [cmp.jfreechart](https://github.com/lsolbach/CljComponents) - Create charts based on JFreeChart
-* [xml.dsl](https://github.com/lsolbach/CljXML) - DSLs for various XML dialects like SVG, DocBook, MathML, etc.
+* [cmp.poi](https://github.com/soulspace-org/cmp.poi) - Create, read and write excel files based on Apache POI
+* [cmp.jfreechart](https://github.com/soulspace-org/cmp.jfreechart) - Create charts based on JFreeChart
+* [xml.dsl](https://github.com/soulspace-org/xml.dsl) - DSLs for various XML dialects like SVG, DocBook, MathML, etc.
 * [Clostache](https://github.com/fhd/clostache) - Mustache templates for clojure
 
 Applications
