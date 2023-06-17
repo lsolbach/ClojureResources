@@ -10,6 +10,22 @@
 ;
 
 ;;;
+;;; Why I love Clojure
+;;; ==================
+;
+; * conceptionally simple yet powerful
+;   * not complected
+;   * simple to reason about
+; * fun to use
+;   * interactive development
+;   * very productive
+; * many use cases
+;   * backend (Clojure, ClojureCLR)
+;   * browser (ClojureScript)
+;   * shell   (Babashka)
+;
+
+;;;
 ;;; The REPL
 ;;; ========
 ;
@@ -25,10 +41,12 @@
 ;;;
 ;;; Example
 ;;; =======
-
-; from the positive natural numbers, filter the od numbers,
+;
+; from the non-negative natural numbers, filter the odd numbers,
 ; square them and return the first 10 squares
 (take 10 (map #(* % %) (filter odd? (range))))
+
+; you've seen nearly everything about clojure now
 
 ;;;
 ;;; Clojure syntax
@@ -37,7 +55,7 @@
 ;;
 ;; scalar literals
 ;;
-
+;
 ; nil, java null, missing values
 nil
 
@@ -110,7 +128,7 @@ false
 
 ; keywords evaluate to themselves
 
-:clojure-presentation/keyword
+:clojure-basics/keyword
 ::keyword
 
 ; keywords can be qualified by namespace
@@ -168,10 +186,6 @@ false
 ; no classes, constructors, setters needed
 
 
-
-
-
-
 ;;
 ;; Java Interoperation
 ;; 
@@ -191,3 +205,4 @@ false
 (let [sb (StringBuffer.)] ; constructor call
   (.append sb "Hello World") ; call append() on sb
   (.toString sb)) ; calling toString() on sb
+

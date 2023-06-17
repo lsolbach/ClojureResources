@@ -12,6 +12,22 @@
 ;
 
 ;;;
+;;; Why I love Clojure
+;;; ==================
+;
+; * conceptionally simple yet powerful
+;   * not complected
+;   * simple to reason about
+; * fun to use
+;   * interactive development
+;   * very productive
+; * many use cases
+;   * backend (Clojure, ClojureCLR)
+;   * browser (ClojureScript)
+;   * shell   (Babashka)
+;
+
+;;;
 ;;; Functional Programming
 ;;; ======================
 ;
@@ -82,7 +98,8 @@
 ;;; ===================
 ;
 ; * cjl/clojure
-;   * works perfect on Linux and Macs, not so on Windows
+;   * works perfect on Linux and Macs
+;   * not so well on Windows
 ; * Leiningen
 ; * Maven, Gradle, Boot, ...
 ;
