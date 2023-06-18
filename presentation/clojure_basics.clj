@@ -104,8 +104,9 @@ false
 ; strings
 "Hello World!"
 
+; multiline string
 "Hello
- World" ; multiline
+ World"
 
 ; characters
 \A
@@ -114,6 +115,13 @@ false
 
 ; sequence of characters
 (seq "Hello!")
+
+; regular expressions
+#"^A.*B$"
+
+; matches strings starting with \A and ending with \B
+(re-matches #"^A.*B$" "ABCDEB")
+(re-matches #"^A.*B$" "ABCDEF")
 
 
 ; symbols
@@ -133,6 +141,9 @@ false
 
 ; keywords can be qualified by namespace
 ; keywords are useful as map keys and as labels (e.g. in enumerations)
+
+; see also
+; [Clojure Syntax Guide](https://clojure.org/guides/learn/syntax)
 
 ;;
 ;; collection literals
@@ -173,6 +184,11 @@ false
 ({:a 1 :b 2 :c 3 :d 4} :a)
 ; maps and keywords act as functions too
 
+; see also
+; [Clojure Sequential Collections Guide](https://clojure.org/guides/learn/sequential_colls)
+; [Clojure Hashed Collections Guide](https://clojure.org/guides/learn/hashed_colls)
+
+
 ;;
 ;; Literal definition of data
 ;;
@@ -180,20 +196,62 @@ false
 {:firstname "Charlie"
  :lastname "Brown"
  :age 10
- :friends #{"Linus"}}
+ :friends #{"Linus" "Peppermint Patty"}}
 
 ; vectors, maps and sets used as literals to define data
 ; no classes, constructors, setters needed
 
-
 ;;
-;; Java Interoperation
-;; 
+;; Sequence functions in clojure.core
+;;
+
+; hundreds of functions for working with sequences
+(count [1 2 3 4])
+(reverse [1 2 3 4])
+(partition 2 [1 2 3 4])
+(sort [2 4 3 1])
+(frequencies ["a" "a" "b" "c" "d" "c" "b" "a" "a"])
+
+;;;
+;;; Functions
+;;; =========
+
+; anonymous function, lambda
+(fn [x] (* x x))
+
+
+; define a symbol for the function
+(def square (fn [x] (* x x)))
+
+
+; ideomatic function definition with the 'defn' macro
+(defn square
+  "Returns the square of x." ; Docstring
+  [x]
+  (* x x))
+
+; call function by name
+(square (+ 4 7))
+
+; functions are executed at runtime
+; when calling a fn, the arguments get evaluated before the body is executed
+
+; see also
+; [Clojure Functions Guide](https://clojure.org/guides/learn/functions)
+
+;;;
+;;; Flow Control
+;;; ============
+
+
+;;;
+;;; Java Interoperation
+;;; ===================
 
 ; static method calls
 (Math/sin 3.14)
 
-; construction
+; object construction
 (new Object)
 (Object.)
 
@@ -205,4 +263,3 @@ false
 (let [sb (StringBuffer.)] ; constructor call
   (.append sb "Hello World") ; call append() on sb
   (.toString sb)) ; calling toString() on sb
-
