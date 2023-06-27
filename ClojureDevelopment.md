@@ -37,10 +37,6 @@ Editors/IDEs
 * [Visual Studio Code](https://code.visualstudio.com/) + [Calva](https://github.com/BetterThanTomorrow/calva)
 * Emacs + [Cider](https://github.com/clojure-emacs/cider), [Cider Docs](https://docs.cider.mx/cider/0.25/index.html)
 * IntelliJ + [Cursive](https://cursive-ide.com/)
-* [Atom](https://atom.io/) + ProtoREPL/ParInfer or Chlorine
-* [NightCode](https://github.com/oakes/Nightcode)
-* [NightLight](https://sekao.net/nightlight/) - An embedded editor for Clojure
-* [LightTable](http://lighttable.com/)
 
 REPLs/REPL Tools
 ----------------
