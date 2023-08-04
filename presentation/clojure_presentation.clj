@@ -12,6 +12,22 @@
 ;
 
 ;;;
+;;; Why I love Clojure
+;;; ==================
+;
+; * conceptionally simple yet powerful
+;   * not complected
+;   * simple to reason about
+; * fun to use
+;   * interactive development
+;   * very productive
+; * many use cases
+;   * backend (Clojure, ClojureCLR)
+;   * browser (ClojureScript)
+;   * shell   (Babashka)
+;
+
+;;;
 ;;; Functional Programming
 ;;; ======================
 ;
@@ -82,7 +98,8 @@
 ;;; ===================
 ;
 ; * cjl/clojure
-;   * works perfect on Linux and Macs, not so on Windows
+;   * works perfect on Linux and Macs
+;   * not so well on Windows
 ; * Leiningen
 ; * Maven, Gradle, Boot, ...
 ;
@@ -142,9 +159,6 @@ nil
 
 true
 false
-
-; false and nil evaluate to false in a boolean context
-; 0, "" or () all evaluate to true in a boolean context (truthiness)
 
 ;
 ; Number Literals
@@ -257,22 +271,6 @@ false
 ; keywords are useful as map keys and as labels (e.g. in enumerations)
 
 ;;;
-;;; Namespaces
-;;; ----------
-; 
-; * nonconflicting names
-; * modularisation
-
-; ns
-; require
-
-; (ns clojure-presentation.util)
-
-(require '[clojure.string :as str])
-
-(str/join " & " [1 2 3 4])
-
-;;;
 ;;; Regular Expressions
 ;;; 
 ;
@@ -284,6 +282,9 @@ false
 
 (re-matches #"^A.*B$" "ABCDEB")
 (re-matches #"^A.*B$" "ABCDEF")
+
+; see also
+; [Clojure Syntax Guide](https://clojure.org/guides/learn/syntax)
 
 ;;;
 ;;;  Collection Literals
@@ -369,6 +370,10 @@ false
 
 ; commas are whitespace, use for usability
 
+; see also
+; [Clojure Sequential Collections Guide](https://clojure.org/guides/learn/sequential_colls)
+; [Clojure Hashed Collections Guide](https://clojure.org/guides/learn/hashed_colls)
+
 ;;;
 ;;; Literal definition of data
 ;;;
@@ -376,7 +381,7 @@ false
 {:firstname "Charlie"
  :lastname "Brown"
  :age 10
- :friends #{"Linus"}}
+ :friends #{"Linus" "Peppermint Patty"}}
 
 ; vectors, maps and sets used as literals to define data
 ; no classes, constructors, setters needed
@@ -389,8 +394,6 @@ false
 ; * Structural sharing
 ; * Performant implementation (e.g. Bagwell-Trees)
 ; * Implication: data has to be build bottom up instead of top down
-
-
 
 ;;;
 ;;; Sequence Abstraction (ISeq)
@@ -416,13 +419,12 @@ false
 (reverse [1 2 3 4])
 (partition 2 [1 2 3 4])
 (sort [2 4 3 1])
-
-(frequencies [1 1 2 3 4 3 2 1 1])
-
-; https://clojure.org/api/cheatsheet
-
+(frequencies ["a" "a" "b" "c" "d" "c" "b" "a" "a"])
 ; ...
 ;;;; TODO
+
+; see also
+; [Clojure Cheatsheet](https://clojure.org/api/cheatsheet)
 
 
 ;;;
@@ -448,6 +450,79 @@ false
 ; Realize all values
 (doall (lazy-seq [1 2 3 4]))
 
+
+;;;
+;;; Flow Control
+;;; ------------
+
+; false and nil evaluate to false in a boolean context
+; every other value evaluates to true in a boolean context (truthiness)
+; (e.g.  0, "" or ())
+
+; if
+(def a 2)
+(def b 0)
+
+(if (= b 0)
+  0
+  (/ a b))
+
+; 'if' takes only a single expression for 'then' and optional 'else'
+; use 'do' to create a block of expressions (e.g. to add side effects)
+(if (= b 0)
+  (do (println "Division by zero!")
+      0)
+  (/ a b))
+
+; in clojure everything is an expression, there are no statements
+; the result of a block of expressions is the value of the last expression
+
+; use 'when'/'when-not' if you only have one branch
+; 'when'/'when-not' have an implicit 'do', so side effects are possible
+(when (not= b 0)
+  (println "Division possible")
+  (/ a b))
+
+(when-not (= b 0)
+  (println "Division possible")
+  (/ a b))
+
+; 'cond'
+
+; 'case'
+
+; 'loop'/'recur'
+
+
+; 'for' list comprehension (generates permutations of elements)
+(for [x [:a :b]
+      y [0 1 2]]
+  [x y])
+
+; 'dotimes', 'doseq'  iteration for side effects
+(dotimes [i 3]
+  (println i))
+
+(doseq [i [0 1 2]]
+  (println i))
+
+(doseq [x [:a :b]
+        y [0 1 2]]
+  (println x y))
+
+; exception handling
+
+(try
+  (/ a b)
+  (catch ArithmeticException e
+    (throw (ex-info "Division by zero!" {:a a :b b :ex e})))
+  (finally
+    (println "Cleaning up the mess!")))
+
+
+
+; see also
+; [Clojure Flow Control Guide](https://clojure.org/guides/learn/flow)
 
 ;;;
 ;;; Closures and Lexical Scoping
@@ -479,28 +554,27 @@ false
 ;;; Functions
 ;;; ---------
 ;
-; define a symbol for the function
-;
-
+; anonymous function, lambda
 (fn [x] (* x x))
 
-; anonymous function, lambda
 
+; define a symbol for the function
 (def square (fn [x] (* x x)))
 
-; names the function by assigning to a symbol
-
+; ideomatic function definition with the 'defn' macro
 (defn square
   "Returns the square of x." ; Docstring
   [x]
   (* x x))
 
-; ideomatic function definition with the 'defn' macro
-
+; call function by name
 (square (+ 4 7))
 
 ; functions are executed at runtime
-; when calling a fn the arguments get evaluated before the body is executed
+; when calling a fn, the arguments get evaluated before the body is executed
+
+; see also
+; [Clojure Functions Guide](https://clojure.org/guides/learn/functions)
 
 ;;;
 ;;; Pure Functions
@@ -609,7 +683,7 @@ false
 ; quote with '`', unquote with '~'
 
 (/ 1 2)
-(/ 1 0)
+;(/ 1 0)
 
 (defn reciproc [x]
   (do-if (not= 0 x)
@@ -640,6 +714,22 @@ false
 ; macros are executed at compile time
 ; when a macro is called, the arguments are not evaluated before the body is executed
 ; use macros with care, they are like a double edged sword
+
+;;;
+;;; Namespaces
+;;; ----------
+; 
+; * non conflicting names
+; * modularisation
+
+; ns
+; require
+
+; (ns clojure-presentation.util)
+
+(require '[clojure.string :as str])
+
+(str/join " & " [1 2 3 4])
 
 ;;;
 ;;; Java Interoperation
