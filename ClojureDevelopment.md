@@ -347,19 +347,13 @@ Videos
 * [Clojure Data Structures Part 2 - Rich Hickey](https://www.youtube.com/watch?v=sp2Zv7KFQQ0)
 * [Persistent Data Structures and Managed References - Rich Hickey](https://www.youtube.com/watch?v=toD45DtVCFM)
 * [Clojure Concurrency - Rich Hickey](https://www.youtube.com/watch?v=nDAfZK8m5_8)
-* [Simplicity Ain't Easy - Stuart Halloway](https://www.youtube.com/watch?v=cidchWg74Y4)
-* [Simple Made Easy - Rich Hickey](https://www.youtube.com/watch?v=LKtk3HCgTa8)
-* [Clojure Made Simple - Rich Hickey](https://www.youtube.com/watch?v=VSdnJDO-xdg)
 * [Ousterhout's Dichotomy Isn't (Part 2 of the Simplicity/Power/Focus Series) - Stuart Halloway](https://www.youtube.com/watch?v=KZ8u_sWT9Ls)
-* [Effective Programs - 10 Years of Clojure - Rich Hickey](https://www.youtube.com/watch?v=2V1FtfBDsLU)
 * [Transducers - Rich Hickey](https://www.youtube.com/watch?v=Tq7r97G4b7Y)
 * [Inside Transducers - Rich Hickey](https://www.youtube.com/watch?v=4KqUvG8HPYo)
 * [Clojure core async - Rich Hickey](https://www.youtube.com/watch?v=yJxFPoxqzWE)
 * [Effective Programs - 10 Years of Clojure - Rich Hickey](https://www.youtube.com/watch?v=2V1FtfBDsLU)
 * [Spec-ulation Keynote - Rich Hickey](https://www.youtube.com/watch?v=oyLBGkS5ICk) - About changing and breaking software and how versioning artifacts doesn't help
 * [Maybe Not - Rich Hickey](https://www.youtube.com/watch?v=YR5WdGrpoug)
-* [The Language of the System - Rich Hickey](https://www.youtube.com/watch?v=ROor6_NGIWU)
-* [Design in Practice - Rich Hickey](https://www.youtube.com/watch?v=c5QF2HjHLSE)
 * [A History of Clojure by Rich Hickey with Q&A](https://www.youtube.com/watch?v=nD-QHbRWcoM)
 
 * [REBL - Stuart Halloway](https://www.youtube.com/watch?v=c52QhiXsmyI)
@@ -368,6 +362,15 @@ Videos
 * [Solving Problems the Clojure Way - Rafal Dittwald](https://www.youtube.com/watch?v=vK1DazRK_a0) - Functional refactoring of an application (JS example ;-))
 * [Bottom Up vs Top Down Design in Clojure - Mark Bastian](https://www.youtube.com/watch?v=Tb823aqgX_0)
 * [Condition Systems in an Exceptional Language - Chris Houser](https://www.youtube.com/watch?v=zp0OEDcAro0)
+
+#### Design
+* [Simplicity Ain't Easy - Stuart Halloway](https://www.youtube.com/watch?v=cidchWg74Y4)
+* [Simple Made Easy - Rich Hickey](https://www.youtube.com/watch?v=LKtk3HCgTa8)
+* [Clojure Made Simple - Rich Hickey](https://www.youtube.com/watch?v=VSdnJDO-xdg)
+* [Effective Programs - 10 Years of Clojure - Rich Hickey](https://www.youtube.com/watch?v=2V1FtfBDsLU)
+* [The Language of the System - Rich Hickey](https://www.youtube.com/watch?v=ROor6_NGIWU)
+* [Design in Practice - Rich Hickey](https://www.youtube.com/watch?v=c5QF2HjHLSE)
+* [On Abstraction – Zach Tellman](https://www.youtube.com/watch?v=x9pxbnFC4aQ)
 
 
 #### Workflow
