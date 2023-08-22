@@ -409,6 +409,7 @@ Books
 * [Clojure for the Brave and True](https://www.braveclojure.com/) - Complete book available online and in print
 * [Clojure Cookbook]()
   * [Clojure Cookbook Resources](https://github.com/clojure-cookbook/clojure-cookbook)
+* [Learn ClojureScript](https://www.learn-clojurescript.com/)
 
 Blog Posts
 ----------
