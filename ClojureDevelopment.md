@@ -350,7 +350,9 @@ Videos
 * [Effective Programs - 10 Years of Clojure - Rich Hickey](https://www.youtube.com/watch?v=2V1FtfBDsLU)
 * [Spec-ulation Keynote - Rich Hickey](https://www.youtube.com/watch?v=oyLBGkS5ICk) - About changing and breaking software and how versioning artifacts doesn't help
 * [Maybe Not - Rich Hickey](https://www.youtube.com/watch?v=YR5WdGrpoug)
-* [A History of Clojure by Rich Hickey with Q&A](https://www.youtube.com/watch?v=nD-QHbRWcoM)
+* [A History of Clojure (with Q&A) - Rich Hickey](https://www.youtube.com/watch?v=nD-QHbRWcoM)
+
+* [Java Interop Performance - Alex Miller](https://www.youtube.com/watch?v=s_xjnXB994w)
 
 * [REBL - Stuart Halloway](https://www.youtube.com/watch?v=c52QhiXsmyI)
 * [Always Be Composing - Zach Tellman](https://www.youtube.com/watch?v=3oQTSP4FngY)
@@ -381,6 +383,7 @@ Videos
 * [Babashka and Small Clojure Interpreter: Clojure in new contexts - Michiel Borkent](https://www.youtube.com/watch?v=Nw8aN-nrdEk) - Use Clojure as a bash replacement and more
 * [Tapping into one of Clojure's superpowers with Portal by James Trunk](https://www.youtube.com/watch?v=A-QvUw5LLVU)
 * [Testing Stateful and Concurrent Systems Using test.check - Eric Normand](https://www.youtube.com/watch?v=r5i_OiZw6Sw)
+* [Running With Scissors: Live Coding With Data - Stuart Halloway](https://www.youtube.com/watch?v=Qx0-pViyIDU)
 
 ### Experience
 * [Why Clojure? - Derek Slager](https://www.youtube.com/watch?v=BThkk5zv0DE)
