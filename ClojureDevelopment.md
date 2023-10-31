@@ -25,6 +25,7 @@ Documentation
 Build Tools/Runners
 -------------------
 * [Getting started](https://clojure.org/guides/getting_started) - Installing clj/clojure CLIs 
+* [deps.clj](https://github.com/borkdude/deps.clj) - A faithful port of the clojure CLI bash script to Clojure
 * [Leiningen](https://leiningen.org/)
 * [Boot](https://github.com/boot-clj/boot)
 * [Maven](https://maven.apache.org/) - Java build system which can build clojure code, too 
@@ -395,6 +396,9 @@ Videos
 ### App Development
 * [ClojureScript loves React Native - Peter Strömberg](https://www.youtube.com/watch?v=QsUj7HO5xDg) - Tutorial for developing React Native apps in Clojure
 * [cljfx – Bringing Clojure to the Desktop - Vlad Protsenko](https://www.youtube.com/watch?v=xcMNTKFmEgI) - Build JavaFX desktop apps with Clojure
+
+### Database
+* [](https://www.youtube.com/watch?v=-5SrIUK6k5g)
 
 ### 3D Modelling
 * [Start 3D modeling in Clojure with scad-clj and Calva - Peter Stömberg](https://www.youtube.com/watch?v=fJpDztSR53E) - Create OpenSCAD models in Clojure
