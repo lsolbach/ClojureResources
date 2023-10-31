@@ -398,7 +398,7 @@ Videos
 * [cljfx – Bringing Clojure to the Desktop - Vlad Protsenko](https://www.youtube.com/watch?v=xcMNTKFmEgI) - Build JavaFX desktop apps with Clojure
 
 ### Database
-* [](https://www.youtube.com/watch?v=-5SrIUK6k5g)
+* [Datalevin - simple durable Datalog database to embed in Clojure stateful apps - Huahai Yang](https://www.youtube.com/watch?v=-5SrIUK6k5g)
 
 ### 3D Modelling
 * [Start 3D modeling in Clojure with scad-clj and Calva - Peter Stömberg](https://www.youtube.com/watch?v=fJpDztSR53E) - Create OpenSCAD models in Clojure
@@ -408,6 +408,7 @@ Videos
 
 ### Big Data
 * [High Performance Data With Clojure - Chris Nuernberger](https://www.youtube.com/watch?v=5mUGu4RlwKE)
+* [TMD 7.0 - Higher Performance Functional Data Science - Chris Nuernberger](https://www.youtube.com/watch?v=WA5O7jNoNGE)
 
 ### Machine Learning and AI
 * [Vector Symbolic Architectures In Clojure - Carin Meier](https://www.youtube.com/watch?v=j7ygjfbBJD0)
