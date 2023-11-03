@@ -406,9 +406,10 @@ Videos
 ### Visualization
 * [Vega & Vegalite - Christopher Small](https://www.youtube.com/watch?v=hXq5Bb40zZY) - Create interactive data visualizations in Clojure with Oz and Vega/Vegalite
 
-### Big Data
+### Big Data/High Performance
 * [High Performance Data With Clojure - Chris Nuernberger](https://www.youtube.com/watch?v=5mUGu4RlwKE)
 * [TMD 7.0 - Higher Performance Functional Data Science - Chris Nuernberger](https://www.youtube.com/watch?v=WA5O7jNoNGE)
+* [High Performance Clojure - Chris Nuernberger](https://www.youtube.com/watch?v=ralZ4j_ruVg)
 
 ### Machine Learning and AI
 * [Vector Symbolic Architectures In Clojure - Carin Meier](https://www.youtube.com/watch?v=j7ygjfbBJD0)
