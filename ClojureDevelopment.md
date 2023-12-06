@@ -25,6 +25,7 @@ Documentation
 Build Tools/Runners
 -------------------
 * [Getting started](https://clojure.org/guides/getting_started) - Installing clj/clojure CLIs 
+* [deps.clj](https://github.com/borkdude/deps.clj) - A faithful port of the clojure CLI bash script to Clojure
 * [Leiningen](https://leiningen.org/)
 * [Boot](https://github.com/boot-clj/boot)
 * [Maven](https://maven.apache.org/) - Java build system which can build clojure code, too 
@@ -350,7 +351,9 @@ Videos
 * [Effective Programs - 10 Years of Clojure - Rich Hickey](https://www.youtube.com/watch?v=2V1FtfBDsLU)
 * [Spec-ulation Keynote - Rich Hickey](https://www.youtube.com/watch?v=oyLBGkS5ICk) - About changing and breaking software and how versioning artifacts doesn't help
 * [Maybe Not - Rich Hickey](https://www.youtube.com/watch?v=YR5WdGrpoug)
-* [A History of Clojure by Rich Hickey with Q&A](https://www.youtube.com/watch?v=nD-QHbRWcoM)
+* [A History of Clojure (with Q&A) - Rich Hickey](https://www.youtube.com/watch?v=nD-QHbRWcoM)
+
+* [Java Interop Performance - Alex Miller](https://www.youtube.com/watch?v=s_xjnXB994w)
 
 * [REBL - Stuart Halloway](https://www.youtube.com/watch?v=c52QhiXsmyI)
 * [Always Be Composing - Zach Tellman](https://www.youtube.com/watch?v=3oQTSP4FngY)
@@ -381,6 +384,7 @@ Videos
 * [Babashka and Small Clojure Interpreter: Clojure in new contexts - Michiel Borkent](https://www.youtube.com/watch?v=Nw8aN-nrdEk) - Use Clojure as a bash replacement and more
 * [Tapping into one of Clojure's superpowers with Portal by James Trunk](https://www.youtube.com/watch?v=A-QvUw5LLVU)
 * [Testing Stateful and Concurrent Systems Using test.check - Eric Normand](https://www.youtube.com/watch?v=r5i_OiZw6Sw)
+* [Running With Scissors: Live Coding With Data - Stuart Halloway](https://www.youtube.com/watch?v=Qx0-pViyIDU)
 
 ### Experience
 * [Why Clojure? - Derek Slager](https://www.youtube.com/watch?v=BThkk5zv0DE)
@@ -394,11 +398,19 @@ Videos
 * [ClojureScript loves React Native - Peter Strömberg](https://www.youtube.com/watch?v=QsUj7HO5xDg) - Tutorial for developing React Native apps in Clojure
 * [cljfx – Bringing Clojure to the Desktop - Vlad Protsenko](https://www.youtube.com/watch?v=xcMNTKFmEgI) - Build JavaFX desktop apps with Clojure
 
+### Database
+* [Datalevin - simple durable Datalog database to embed in Clojure stateful apps - Huahai Yang](https://www.youtube.com/watch?v=-5SrIUK6k5g)
+
 ### 3D Modelling
 * [Start 3D modeling in Clojure with scad-clj and Calva - Peter Stömberg](https://www.youtube.com/watch?v=fJpDztSR53E) - Create OpenSCAD models in Clojure
 
 ### Visualization
 * [Vega & Vegalite - Christopher Small](https://www.youtube.com/watch?v=hXq5Bb40zZY) - Create interactive data visualizations in Clojure with Oz and Vega/Vegalite
+
+### Big Data/High Performance
+* [High Performance Data With Clojure - Chris Nuernberger](https://www.youtube.com/watch?v=5mUGu4RlwKE)
+* [TMD 7.0 - Higher Performance Functional Data Science - Chris Nuernberger](https://www.youtube.com/watch?v=WA5O7jNoNGE)
+* [High Performance Clojure - Chris Nuernberger](https://www.youtube.com/watch?v=ralZ4j_ruVg)
 
 ### Machine Learning and AI
 * [Vector Symbolic Architectures In Clojure - Carin Meier](https://www.youtube.com/watch?v=j7ygjfbBJD0)
