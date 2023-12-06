@@ -385,6 +385,7 @@ Videos
 ### Experience
 * [Why Clojure? - Derek Slager](https://www.youtube.com/watch?v=BThkk5zv0DE)
 * [Core.Async in Use - Timothy Baldridge](https://www.youtube.com/watch?v=096pIlA3GDo)
+* [How startups can move fast with Clojure - Bradford Cross](https://www.youtube.com/watch?v=MZy-SNswH2E)
 
 ### ClojureScript
 * [ClojureScript for Skeptics - Derek Slager](https://www.youtube.com/watch?v=gsffg5xxFQI)
