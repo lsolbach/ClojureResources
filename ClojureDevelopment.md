@@ -151,7 +151,7 @@ Libraries
 * [](https://github.com/clojure-expectations/clojure-test) - A clojure.test-compatible version of the classic Expectations testing library
 * [Cloverage](https://github.com/cloverage/cloverage) - Coverage tool
 
-# Performance Testing/Monitoring
+### Performance Testing/Monitoring
 * [Criterium](https://github.com/hugoduncan/criterium) - Benchmark testing library
 * [Tufte](https://github.com/ptaoussanis/tufte) - Simple profiling and performance monitoring for Clojure/Script
 * [clj-async-profiler](https://github.com/clojure-goes-fast/clj-async-profiler) - An embedded high-precision performance profiler for Clojure
@@ -182,12 +182,14 @@ Libraries
 * [streampunk](https://github.com/clojurewerkz/streampunk) - Streampunk is a Clojure interface to stream summarization and cardinality estimation libraries, such as stream-lib
 * [Statistiker](https://github.com/clojurewerkz/statistiker) - Statistiker is a simple way to do Statistics in Clojure. The goal is to have an implementation of all popular algorithms for mining datasets
 
-
 ### Visualization
 * [oz](https://github.com/metasoarous/oz) - Data visualization and scientific document processing library for Clojure built around Vega-Lite & Vega
 * [hanami](https://github.com/jsa-aerial/hanami) - Interactive arts and charts visualizations with Clojure(Script), Vega-lite, and Vega
 * [viz.clj](https://github.com/scicloj/viz.clj) - 
 * [cmp.jfreechart](https://github.com/soulspace-org/cmp.jfreechart) - Clojure wrapper and API for JFreeChart
+
+### Audio/Video
+* [clj-media](https://github.com/phronmophobic/clj-media) - Read, write, and transform audio and video with Clojure
 
 ### Cryptography
 * [scrypt](https://github.com/clojurewerkz/scrypt) - scrypt is a tiny Clojure library for the scrypt key derivation function
