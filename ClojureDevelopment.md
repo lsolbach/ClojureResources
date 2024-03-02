@@ -85,9 +85,9 @@ Libraries
 * [Malli](https://github.com/metosin/malli) - Data-driven Schemas for Clojure/Script and babashka.
 
 ### System Configuration
-* [Component](https://github.com/stuartsierra/component) - Component livecycle framework
-* [Integrant](https://github.com/weavejester/integrant) - Component livecycle framework
-* [Mount](https://github.com/tolitius/mount) - Component livecycle framework
+* [Integrant](https://github.com/weavejester/integrant) - Component lifecycle framework
+* [Component](https://github.com/stuartsierra/component) - Component lifecycle framework
+* [Mount](https://github.com/tolitius/mount) - Component lifecycle framework
 
 ### SCM
 * [clj-jgit](https://github.com/clj-jgit/clj-jgit) - Access git repositories from clojure. Provides the Porcelain API of JGit 
@@ -220,8 +220,8 @@ Libraries
 ### Web
 #### Libraries
 * [ring](https://github.com/ring-clojure/ring) - Clojure HTTP server abstraction.
-* [compojure](https://github.com/weavejester/compojure) - Ring routing library.
 * [reitit](https://github.com/metosin/reitit) - Modern ring routing library.
+* [compojure](https://github.com/weavejester/compojure) - Ring routing library.
 * [hiccup](https://github.com/weavejester/hiccup) - Hiccup is a library for representing HTML in Clojure using vectors to represent elements, and maps to represent an element's attributes.
 * [garden] (https://github.com/noprompt/garden) - Garden is a library for representing CSS in Clojure.
 * [Enlive](https://github.com/cgrand/enlive) - Enlive is a selector-based (à la CSS) templating library for Clojure.
@@ -230,6 +230,9 @@ Libraries
 * [etaoin](https://github.com/clj-commons/etaoin) - A pure Clojure implementation of the Webdriver protocol for browser tests
 
 #### Web Services
+* [pedestal](https://github.com/pedestal/pedestal) - Libraries to create backend services and applications
+* [lacinia](https://github.com/walmartlabs/lacinia) - GraphQL implementation in pure Clojure
+* [lacinia-pedestal](https://github.com/walmartlabs/lacinia-pedestal) - Expose Lacinia GraphQL as Pedestal endpoints
 * [liberator](https://github.com/clojure-liberator/liberator/) - Framework for web services
 
 #### Static Site Generation
