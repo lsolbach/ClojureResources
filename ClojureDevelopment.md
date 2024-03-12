@@ -71,6 +71,8 @@ Libraries
 ### Functional Progamming
 * [medley](https://github.com/weavejester/medley) - A small collection of useful, mostly pure functions that might not look out of place in the clojure.core namespace.
 * [xforms](https://github.com/cgrand/xforms) - Provides additional transducers
+* [redux](https://github.com/henrygarner/redux) - A Clojure/ClojureScript library of reducing function combinators
+* [tesser](https://github.com/aphyr/tesser) - Clojure reducers, but for parallel execution: locally and on distributed systems
 * [core.memoize](https://github.com/clojure/core.memoize) - Provides memoization cache implementations and strategies like LRU or TTL
 
 ### Logic Programming
@@ -243,12 +245,15 @@ Libraries
 * [amazonica](https://github.com/mcohen01/amazonica) - Clojure wrapper for the AWS SDK
 
 ### UI
-#### JVM
-##### Swing
+#### CLI
+* [tools.cli](https://github.com/clojure/tools.cli) - Command-line processing
+* [cli-matic](https://github.com/l3nz/cli-matic) - Compact, hands-free (sub)command line parsing library for Clojure
+
+#### Swing
 * [seesaw](https://github.com/daveray/seesaw) - Clojure API for Java Swing
 * [clj-swing](https://github.com/soulspace-org/clj.swing) - My Clojure API for Java Swing
 
-##### JavaFX
+#### JavaFX
 * [cljfx](https://github.com/cljfx/cljfx) - a declarative, functional and extensible wrapper of JavaFX inspired by better parts of react and re-frame
 * [cljfx/css](https://github.com/cljfx/css) - Charmingly Simple Styling for cljfx
 * [fn-fx](https://github.com/fn-fx/fn-fx) - a functional, declarative wrapper around JavaFX / OpenJFX
@@ -273,6 +278,7 @@ Libraries
 * [cmp.jfreechart](https://github.com/soulspace-org/cmp.jfreechart) - Create charts based on JFreeChart
 * [xml.dsl](https://github.com/soulspace-org/xml.dsl) - DSLs for various XML dialects like SVG, DocBook, MathML, etc.
 * [Clostache](https://github.com/fhd/clostache) - Mustache templates for clojure
+* [Comb](https://github.com/weavejester/comb) - Small template engine with embedded clojure
 
 Applications
 ------------
