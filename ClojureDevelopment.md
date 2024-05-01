@@ -324,9 +324,10 @@ Tutorials
 ### Datomic
 * [Learn Datalog Today](http://www.learndatalogtoday.org/)
 
-### Analytics/Machine Learning
+### Analytics/Machine Learning/AI
 * [OpenCV with Clojure](https://docs.opencv.org/4.x/d7/d1e/tutorial_clojure_dev_intro.html) - Introduction to OpenCV Development with Clojure
 * [mxnet Clojure tutorials](https://github.com/Chouffe/mxnet-clj-tutorials) - Collection of tutorials for the Clojure MXNET package
+* [VSA Computing Experiments in Clojure](https://github.com/gigasquid/vsa-clj)
 
 ### Web Templating/Scraping
 * [Enlive Tutorial](https://github.com/swannodette/enlive-tutorial/) - 
