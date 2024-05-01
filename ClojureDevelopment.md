@@ -134,6 +134,7 @@ Libraries
 * [Datahike](https://github.com/replikativ/datahike) - Datalog based db engine with persistence
 * [XTDB](https://github.com/xtdb/xtdb) - Database engine with graph-oriented bitemporal indexes, Datalog, SQL & EQL queries and transaction log and document storage backends (e.g. Kafka)
 * [asami](https://github.com/threatgrid/asami) - Graph database with Datalog queries, Loom support and in-memory and persistent backends
+* [hodur engine](https://github.com/hodur-org/hodur-engine) - A domain modeling approach and collection of libraries to Clojure
 
 ### Utility
 * [clojure.tools.namespace](https://github.com/clojure/tools.namespace)
