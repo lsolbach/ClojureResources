@@ -50,6 +50,8 @@ REPLs/REPL Tools
 * [REBL](http://rebl.cognitect.com/) - A graphical, interactive tool for browsing Clojure data
 * [integrant-repl](https://github.com/weavejester/integrant-repl)
 * [portal](https://github.com/djblue/portal) - A clojure tool to navigate through your data.
+* [datawalk](https://github.com/eggsyntax/datawalk) - Interactively explore complex data structures at the REPL with minimum keystrokes
+* [virgil](https://github.com/clj-commons/virgil) - Recompile Java code without restarting the REPL
 
 * [Figwheel Main](https://figwheel.org/) - Figwheel Main builds your ClojureScript code and hot loads it as you are coding
 * [figwheel.main template](https://rigsomelight.com/figwheel-main-template/) - Template generator that will produce a minimal ClojureScript project that includes figwheel.main tooling
@@ -151,8 +153,9 @@ Libraries
 ### Testing
 * [clojure.test](https://clojure.github.io/clojure/clojure.test-api.html) - standard unit testing
 * [test.check](https://github.com/clojure/test.check) - property based testing
-* [](https://github.com/clojure-expectations/clojure-test) - A clojure.test-compatible version of the classic Expectations testing library
+* [](https://github.com/clojure-expectations/clojure-test) - A clojure test-compatible version of the classic Expectations testing library
 * [Cloverage](https://github.com/cloverage/cloverage) - Coverage tool
+* [matcher-combinators](https://github.com/nubank/matcher-combinators) - Library for creating matcher combinator to compare nested data structures
 
 ### Performance Testing/Monitoring
 * [Criterium](https://github.com/hugoduncan/criterium) - Benchmark testing library
