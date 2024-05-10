@@ -84,27 +84,6 @@
 ;
 
 ;;;
-;;; Development Environments
-;;; ========================
-; 
-; * VS Code with Calva
-; * Emacs with Cider
-; * IntelliJ with Cursive
-; * ...
-;
-
-;;;
-;;; Clojure Build Tools
-;;; ===================
-;
-; * cjl/clojure
-;   * works perfect on Linux and Macs
-;   * not so well on Windows
-; * Leiningen
-; * Maven, Gradle, Boot, ...
-;
-
-;;;
 ;;; The REPL
 ;;; ========
 ;
@@ -883,6 +862,27 @@ ludger3
 ; * channels and go blocks
 ;
 
+
+;;;
+;;; Development Environments
+;;; ========================
+; 
+; * VS Code with Calva
+; * Emacs with Cider
+; * IntelliJ with Cursive
+; * ...
+;
+
+;;;
+;;; Clojure Build Tools
+;;; ===================
+;
+; * cjl/clojure
+;   * works perfectly on Linux and Macs
+;   * not so well on Windows
+; * Leiningen
+; * Maven, Gradle, Boot, ...
+;
 
 ;;;
 ;;; Examples
