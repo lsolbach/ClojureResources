@@ -419,6 +419,8 @@ Videos
 
 ### 3D Modelling
 * [Start 3D modeling in Clojure with scad-clj and Calva - Peter Stömberg](https://www.youtube.com/watch?v=fJpDztSR53E) - Create OpenSCAD models in Clojure
+* [Using Clojure for 3D Modelling - Parametric Design with Code - Adam James](https://www.youtube.com/watch?v=EU0_I-1ROok) - Clojure/OpenSCAD, with FreeCAD Step format export script
+* [clojure.core/typing - Matt Adereth](https://www.youtube.com/watch?v=uk3A41U0iO4&t=1056s) - Building a keyboard with Clojure and OpenSCAD
 
 ### Visualization
 * [Vega & Vegalite - Christopher Small](https://www.youtube.com/watch?v=hXq5Bb40zZY) - Create interactive data visualizations in Clojure with Oz and Vega/Vegalite
