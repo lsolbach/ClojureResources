@@ -231,15 +231,16 @@ Libraries
 * [hiccup](https://github.com/weavejester/hiccup) - Hiccup is a library for representing HTML in Clojure using vectors to represent elements, and maps to represent an element's attributes.
 * [garden] (https://github.com/noprompt/garden) - Garden is a library for representing CSS in Clojure.
 * [Enlive](https://github.com/cgrand/enlive) - Enlive is a selector-based (à la CSS) templating library for Clojure.
-* [yada](https://github.com/juxt/yada), [yada docs](https://www.juxt.land/yada/manual/index.html) - Framework for production ready web services
 * [sente](https://github.com/ptaoussanis/sente) - Client/Server communication with core.async over WebSockets or AJAX
 * [etaoin](https://github.com/clj-commons/etaoin) - A pure Clojure implementation of the Webdriver protocol for browser tests
+* [stub-http](https://github.com/johanhaleby/stub-http) - Client library agnostic way to stub HTTP endpoints in Clojure
 
 #### Web Services
 * [pedestal](https://github.com/pedestal/pedestal) - Libraries to create backend services and applications
 * [lacinia](https://github.com/walmartlabs/lacinia) - GraphQL implementation in pure Clojure
 * [lacinia-pedestal](https://github.com/walmartlabs/lacinia-pedestal) - Expose Lacinia GraphQL as Pedestal endpoints
 * [liberator](https://github.com/clojure-liberator/liberator/) - Framework for web services
+* [yada](https://github.com/juxt/yada), [yada docs](https://www.juxt.land/yada/manual/index.html) - Framework for production ready web services
 
 #### Static Site Generation
 * [cryogen](https://github.com/cryogen-project/cryogen) - Leiningen template for static site generation
