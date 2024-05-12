@@ -1,20 +1,18 @@
-Clojure/ClojureScript Development
-=================================
+# Clojure/ClojureScript Development
+
 This is a compilation of resources about software development in Clojure.
 I maintain this page as a personal reference of interesting Clojure related information but also to provide this information to other (beginning) Clojurists.
 
 
-Language
---------
+## Language
+
 ### Clojure
 * [Clojure](https://clojure.org) - Clojure is a functional programming language hosted on the JVM
 
 ### ClojureScript
 * [ClojureScript](https://clojurescript.org/index) - ClojureScript is a compiler for Clojure that targets JavaScript
 
-Documentation
--------------
-
+## Documentation
 * [Learn Clojure - Syntax](https://clojure.org/guides/learn/syntax) - Start of the official Clojure guides
 * [Reference - The Reader](https://clojure.org/reference/reader) - Start of the official Clojure reference
 * [Clojure Doc](https://clojure-doc.github.io/) - The community-driven documentation site for the Clojure programming language
@@ -22,8 +20,7 @@ Documentation
 
 * [Clojure Style Guide](https://guide.clojure.style/) - A comprehensive style guide for Clojure
 
-Build Tools/Runners
--------------------
+## Build Tools/Runners
 * [Getting started](https://clojure.org/guides/getting_started) - Installing clj/clojure CLIs 
 * [deps.clj](https://github.com/borkdude/deps.clj) - A faithful port of the clojure CLI bash script to Clojure
 * [Leiningen](https://leiningen.org/)
@@ -33,14 +30,12 @@ Build Tools/Runners
 * [Baumeister](https://github.com/lsolbach/) - My own multi language build system, currently not maintained
 
 
-Editors/IDEs
-------------
+## Editors/IDEs
 * [Visual Studio Code](https://code.visualstudio.com/) + [Calva](https://github.com/BetterThanTomorrow/calva)
 * Emacs + [Cider](https://github.com/clojure-emacs/cider), [Cider Docs](https://docs.cider.mx/cider/0.25/index.html)
 * IntelliJ + [Cursive](https://cursive-ide.com/)
 
-REPLs/REPL Tools
-----------------
+## REPLs/REPL Tools
 * [nREPL](https://github.com/nrepl/nrepl) - Network REPL
 * [gorilla-repl](http://gorilla-repl.org/) - Browser REPL with plotting support
 * [protoREPL](https://github.com/jasongilman/proto-repl) - REPL for Atom
@@ -56,7 +51,7 @@ REPLs/REPL Tools
 * [Figwheel Main](https://figwheel.org/) - Figwheel Main builds your ClojureScript code and hot loads it as you are coding
 * [figwheel.main template](https://rigsomelight.com/figwheel-main-template/) - Template generator that will produce a minimal ClojureScript project that includes figwheel.main tooling
 
-* [Babashka](https://github.com/babashka/babashka) - Clojure shell programming/bash replacement
+* [Babashka](https://github.com/babashka/babashka), [Babashka Book](https://book.babashka.org/) - Clojure shell programming/bash replacement
 * [planck2](https://github.com/planck-repl/planck) - ClojureScript REPL for the desktop
 * [Lumo](https://github.com/anmonteiro/lumo) - Lumo is a standalone ClojureScript environment that runs on Node.js and the V8 JavaScript engine
 
@@ -64,8 +59,8 @@ REPLs/REPL Tools
 * [Clerk](https://github.com/nextjournal/clerk) - Clerk takes a Clojure namespace and turns it into a notebook
 
 
-Libraries
----------
+## Libraries
+
 ### Overview
 * [Clojars](https://clojars.org/) - An easy to use community repository for open source Clojure libraries
 * [The Clojure Toolbox](https://www.clojure-toolbox.com/) - Curated list of Clojure libraries
@@ -193,6 +188,9 @@ Libraries
 * [hanami](https://github.com/jsa-aerial/hanami) - Interactive arts and charts visualizations with Clojure(Script), Vega-lite, and Vega
 * [viz.clj](https://github.com/scicloj/viz.clj) - 
 * [cmp.jfreechart](https://github.com/soulspace-org/cmp.jfreechart) - Clojure wrapper and API for JFreeChart
+* [clj-graphviz](https://github.com/phronmophobic/clj-graphviz) - A clojure wrapper for the libgraphviz c libraries
+* [dorothy](https://github.com/daveray/dorothy) - Hiccup-style generation of Graphviz graphs in Clojure
+* [viz.cljc](https://github.com/jebberjeb/viz.cljc) - Generate images from Graphviz dot strings in Clojure and Clojurescript
 
 ### Audio/Video
 * [clj-media](https://github.com/phronmophobic/clj-media) - Read, write, and transform audio and video with Clojure
@@ -285,19 +283,18 @@ Libraries
 * [Clostache](https://github.com/fhd/clostache) - Mustache templates for clojure
 * [Comb](https://github.com/weavejester/comb) - Small template engine with embedded clojure
 
-Applications
-------------
+## Applications
 * [Metabase](https://github.com/metabase/metabase) - Data(base) analytics and visualization
 
-Community
----------
+## Community
 * [Clojurians Slack](http://clojurians.net/) - request invitation before joining
 * [#clojure on Freenode.net IRC](https://webchat.freenode.net/) - good old Internet Relay Chat
 * [Clojurists Together Foundation](https://www.clojuriststogether.org) - Clojure open source project sponsorship
 
-Tutorials
----------
+## Tutorials
+
 ### Clojure
+
 #### Interactive
 * [Maria](https://www.maria.cloud/) - a web coding environment for beginners
 
@@ -340,8 +337,8 @@ Tutorials
 * [Interactive 3D Modeling with Clojure](https://github.com/PEZ/scad-clj-workflow) - Workflow to create OpenSCAD models in Clojure with scad-clj, VS Code and Calva
 
 
-Videos
-------
+## Videos
+
 ### Functional Programming
 * [Robert C Martin - Functional Programming; What? Why? When?](https://www.youtube.com/watch?v=7Zlp9rKHGD4)
 
@@ -389,7 +386,6 @@ Videos
 * [Design in Practice - Rich Hickey](https://www.youtube.com/watch?v=c5QF2HjHLSE)
 * [On Abstraction – Zach Tellman](https://www.youtube.com/watch?v=x9pxbnFC4aQ)
 
-
 #### Workflow
 * [Clojure Basics: Editor and Tooling Setup](https://www.youtube.com/watch?v=kjJVfoqFj_k)
 * [1. Atom, Chlorine, and Cognitect's REBL - Sean Corfield](https://www.youtube.com/watch?v=ZhzMoEz4j1k)
@@ -435,17 +431,17 @@ Videos
 * [Vector Symbolic Architectures In Clojure - Carin Meier](https://www.youtube.com/watch?v=j7ygjfbBJD0)
 
 
-Books
------
+## Books
+
 * [Clojure for the Brave and True](https://www.braveclojure.com/) - Complete book available online and in print
 * [Clojure Cookbook]()
   * [Clojure Cookbook Resources](https://github.com/clojure-cookbook/clojure-cookbook)
 * [Learn ClojureScript](https://www.learn-clojurescript.com/)
 
-Blog Posts
-----------
+## Blog Posts
+
 ### Clojure
-* [Why Clojure?](https://blog.cleancoder.com/uncle-bob/2019/08/22/WhyClojure.html)
+* [Why Clojure? - Robert C. Martin](https://blog.cleancoder.com/uncle-bob/2019/08/22/WhyClojure.html)
 * [Reducers, transducers and core.async in Clojure](https://eli.thegreenplace.net/2017/reducers-transducers-and-coreasync-in-clojure/)
 * [Clojure concurrency and blocking with core.async](https://eli.thegreenplace.net/2017/clojure-concurrency-and-blocking-with-coreasync/)
 
