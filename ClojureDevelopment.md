@@ -4,13 +4,13 @@ This is a compilation of resources about software development in Clojure.
 I maintain this page as a personal reference of interesting Clojure related information but also to provide this information to other (beginning) Clojurists.
 
 
-## Language
-
-### Clojure
+## Clojure Language Implementations
 * [Clojure](https://clojure.org) - Clojure is a functional programming language hosted on the JVM
-
-### ClojureScript
 * [ClojureScript](https://clojurescript.org/index) - ClojureScript is a compiler for Clojure that targets JavaScript
+* [ClojureCLR] (https://github.com/clojure/clojure-clr) - A port of Clojure to the CLR, part of the Clojure project 
+* [ClojureDart](https://github.com/Tensegritics/ClojureDart) - ClojureDart is a recent Clojure dialect to make native mobile and desktop apps using Flutter and the Dart ecosystem
+* [jank](https://jank-lang.org/) - A Clojure dialect hosted on LLVM with native C++ interop
+* [Basilisp](https://github.com/basilisp-lang/basilisp) - A Clojure-compatible(-ish) Lisp dialect targeting Python 3.8+
 
 ## Documentation
 * [Learn Clojure - Syntax](https://clojure.org/guides/learn/syntax) - Start of the official Clojure guides
