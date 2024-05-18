@@ -337,7 +337,7 @@ I maintain this page as a personal reference of interesting Clojure related info
 * [Interactive 3D Modeling with Clojure](https://github.com/PEZ/scad-clj-workflow) - Workflow to create OpenSCAD models in Clojure with scad-clj, VS Code and Calva
 
 
-## Videos
+## Talks
 
 ### Functional Programming
 * [Robert C Martin - Functional Programming; What? Why? When?](https://www.youtube.com/watch?v=7Zlp9rKHGD4)
@@ -429,7 +429,7 @@ I maintain this page as a personal reference of interesting Clojure related info
 
 ### Machine Learning and AI
 * [Vector Symbolic Architectures In Clojure - Carin Meier](https://www.youtube.com/watch?v=j7ygjfbBJD0)
-
+* [From data to insights: Clojure for data deep dive - Kira McLean](https://www.youtube.com/watch?v=eUFf3-og_-Y)
 
 ## Books
 
