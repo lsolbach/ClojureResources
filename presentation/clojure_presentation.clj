@@ -28,6 +28,15 @@
 ;
 
 ;;;
+;;; Properties of Clojure/Clojurescript
+;;; ===================================
+;
+; Clojure is
+; * a functional programming language
+; * a Lisp (but with less parenthesis)
+;
+
+;;;
 ;;; Functional Programming
 ;;; ======================
 ;
@@ -44,15 +53,6 @@
 ;     * can be cached, easily tested, reasoned about
 ;   * are composable
 ;   
-
-;;;
-;;; Properties of Clojure/Clojurescript
-;;; ===================================
-;
-; Clojure is
-; * a functional programming language
-; * a Lisp (but with less parenthesis)
-;
 
 ;;;
 ;;; Features
