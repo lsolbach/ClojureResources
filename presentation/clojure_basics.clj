@@ -223,7 +223,6 @@ false
 ; define a symbol for the function
 (def square (fn [x] (* x x)))
 
-
 ; ideomatic function definition with the 'defn' macro
 (defn square
   "Returns the square of x." ; Docstring
@@ -242,6 +241,62 @@ false
 ;;;
 ;;; Flow Control
 ;;; ============
+; false and nil evaluate to false in a boolean context
+; every other value evaluates to true in a boolean context (truthiness)
+
+; if
+(def a 2)
+(def b 0)
+
+(if (= b 0)
+  0
+  (/ a b))
+
+; 'if' takes only a single expression for 'then' and optional 'else'
+; use 'do' to create a block of expressions (e.g. to add side effects)
+(if (= b 0)
+  (do (println "Division by zero!")
+      0)
+  (/ a b))
+
+; in clojure everything is an expression, there are no statements
+; the result of a block of expressions is the value of the last expression
+
+; use 'when'/'when-not' if you only have one branch
+; 'when'/'when-not' have an implicit 'do', so side effects are possible
+(when (not= b 0)
+  (println "Division possible")
+  (/ a b))
+
+(when-not (= b 0)
+  (println "Division possible")
+  (/ a b))
+
+; cond/case
+
+; loop/recur
+
+; 'dotimes', 'doseq'  iteration for side effects
+(dotimes [i 3]
+  (println i))
+
+(doseq [i [0 1 2]]
+  (println i))
+
+(doseq [x [:a :b]
+        y [0 1 2]]
+  (println x y))
+
+; exception handling
+(try
+  (/ a b)
+  (catch ArithmeticException e
+    (throw (ex-info "Division by zero!" {:a a :b b :ex e})))
+  (finally
+    (println "Cleaning up the mess!")))
+
+; see also
+; [Clojure Flow Control Guide](https://clojure.org/guides/learn/flow)
 
 
 ;;;
@@ -258,6 +313,7 @@ false
 ; imports
 (import '[java.util Date])
 (Date.)
+
 
 ; instance methods
 (let [sb (StringBuffer.)] ; constructor call

@@ -1,20 +1,18 @@
-Clojure/ClojureScript Development
-=================================
+# Clojure/ClojureScript Development
+
 This is a compilation of resources about software development in Clojure.
 I maintain this page as a personal reference of interesting Clojure related information but also to provide this information to other (beginning) Clojurists.
 
 
-Language
---------
-### Clojure
+## Clojure Language Implementations
 * [Clojure](https://clojure.org) - Clojure is a functional programming language hosted on the JVM
-
-### ClojureScript
 * [ClojureScript](https://clojurescript.org/index) - ClojureScript is a compiler for Clojure that targets JavaScript
+* [ClojureCLR] (https://github.com/clojure/clojure-clr) - A port of Clojure to the CLR, part of the Clojure project 
+* [ClojureDart](https://github.com/Tensegritics/ClojureDart) - ClojureDart is a recent Clojure dialect to make native mobile and desktop apps using Flutter and the Dart ecosystem
+* [jank](https://jank-lang.org/) - A Clojure dialect hosted on LLVM with native C++ interop
+* [Basilisp](https://github.com/basilisp-lang/basilisp) - A Clojure-compatible(-ish) Lisp dialect targeting Python 3.8+
 
-Documentation
--------------
-
+## Documentation
 * [Learn Clojure - Syntax](https://clojure.org/guides/learn/syntax) - Start of the official Clojure guides
 * [Reference - The Reader](https://clojure.org/reference/reader) - Start of the official Clojure reference
 * [Clojure Doc](https://clojure-doc.github.io/) - The community-driven documentation site for the Clojure programming language
@@ -22,9 +20,9 @@ Documentation
 
 * [Clojure Style Guide](https://guide.clojure.style/) - A comprehensive style guide for Clojure
 
-Build Tools/Runners
--------------------
+## Build Tools/Runners
 * [Getting started](https://clojure.org/guides/getting_started) - Installing clj/clojure CLIs 
+* [deps.clj](https://github.com/borkdude/deps.clj) - A faithful port of the clojure CLI bash script to Clojure
 * [Leiningen](https://leiningen.org/)
 * [Boot](https://github.com/boot-clj/boot)
 * [Maven](https://maven.apache.org/) - Java build system which can build clojure code, too 
@@ -32,14 +30,12 @@ Build Tools/Runners
 * [Baumeister](https://github.com/lsolbach/) - My own multi language build system, currently not maintained
 
 
-Editors/IDEs
-------------
+## Editors/IDEs
 * [Visual Studio Code](https://code.visualstudio.com/) + [Calva](https://github.com/BetterThanTomorrow/calva)
 * Emacs + [Cider](https://github.com/clojure-emacs/cider), [Cider Docs](https://docs.cider.mx/cider/0.25/index.html)
 * IntelliJ + [Cursive](https://cursive-ide.com/)
 
-REPLs/REPL Tools
-----------------
+## REPLs/REPL Tools
 * [nREPL](https://github.com/nrepl/nrepl) - Network REPL
 * [gorilla-repl](http://gorilla-repl.org/) - Browser REPL with plotting support
 * [protoREPL](https://github.com/jasongilman/proto-repl) - REPL for Atom
@@ -49,11 +45,13 @@ REPLs/REPL Tools
 * [REBL](http://rebl.cognitect.com/) - A graphical, interactive tool for browsing Clojure data
 * [integrant-repl](https://github.com/weavejester/integrant-repl)
 * [portal](https://github.com/djblue/portal) - A clojure tool to navigate through your data.
+* [datawalk](https://github.com/eggsyntax/datawalk) - Interactively explore complex data structures at the REPL with minimum keystrokes
+* [virgil](https://github.com/clj-commons/virgil) - Recompile Java code without restarting the REPL
 
 * [Figwheel Main](https://figwheel.org/) - Figwheel Main builds your ClojureScript code and hot loads it as you are coding
 * [figwheel.main template](https://rigsomelight.com/figwheel-main-template/) - Template generator that will produce a minimal ClojureScript project that includes figwheel.main tooling
 
-* [Babashka](https://github.com/babashka/babashka) - Clojure shell programming/bash replacement
+* [Babashka](https://github.com/babashka/babashka), [Babashka Book](https://book.babashka.org/) - Clojure shell programming/bash replacement
 * [planck2](https://github.com/planck-repl/planck) - ClojureScript REPL for the desktop
 * [Lumo](https://github.com/anmonteiro/lumo) - Lumo is a standalone ClojureScript environment that runs on Node.js and the V8 JavaScript engine
 
@@ -61,8 +59,8 @@ REPLs/REPL Tools
 * [Clerk](https://github.com/nextjournal/clerk) - Clerk takes a Clojure namespace and turns it into a notebook
 
 
-Libraries
----------
+## Libraries
+
 ### Overview
 * [Clojars](https://clojars.org/) - An easy to use community repository for open source Clojure libraries
 * [The Clojure Toolbox](https://www.clojure-toolbox.com/) - Curated list of Clojure libraries
@@ -70,6 +68,8 @@ Libraries
 ### Functional Progamming
 * [medley](https://github.com/weavejester/medley) - A small collection of useful, mostly pure functions that might not look out of place in the clojure.core namespace.
 * [xforms](https://github.com/cgrand/xforms) - Provides additional transducers
+* [redux](https://github.com/henrygarner/redux) - A Clojure/ClojureScript library of reducing function combinators
+* [tesser](https://github.com/aphyr/tesser) - Clojure reducers, but for parallel execution: locally and on distributed systems
 * [core.memoize](https://github.com/clojure/core.memoize) - Provides memoization cache implementations and strategies like LRU or TTL
 
 ### Logic Programming
@@ -84,9 +84,9 @@ Libraries
 * [Malli](https://github.com/metosin/malli) - Data-driven Schemas for Clojure/Script and babashka.
 
 ### System Configuration
-* [Component](https://github.com/stuartsierra/component) - Component livecycle framework
-* [Integrant](https://github.com/weavejester/integrant) - Component livecycle framework
-* [Mount](https://github.com/tolitius/mount) - Component livecycle framework
+* [Integrant](https://github.com/weavejester/integrant) - Component lifecycle framework
+* [Component](https://github.com/stuartsierra/component) - Component lifecycle framework
+* [Mount](https://github.com/tolitius/mount) - Component lifecycle framework
 
 ### SCM
 * [clj-jgit](https://github.com/clj-jgit/clj-jgit) - Access git repositories from clojure. Provides the Porcelain API of JGit 
@@ -131,6 +131,7 @@ Libraries
 * [Datahike](https://github.com/replikativ/datahike) - Datalog based db engine with persistence
 * [XTDB](https://github.com/xtdb/xtdb) - Database engine with graph-oriented bitemporal indexes, Datalog, SQL & EQL queries and transaction log and document storage backends (e.g. Kafka)
 * [asami](https://github.com/threatgrid/asami) - Graph database with Datalog queries, Loom support and in-memory and persistent backends
+* [hodur engine](https://github.com/hodur-org/hodur-engine) - A domain modeling approach and collection of libraries to Clojure
 
 ### Utility
 * [clojure.tools.namespace](https://github.com/clojure/tools.namespace)
@@ -147,10 +148,11 @@ Libraries
 ### Testing
 * [clojure.test](https://clojure.github.io/clojure/clojure.test-api.html) - standard unit testing
 * [test.check](https://github.com/clojure/test.check) - property based testing
-* [](https://github.com/clojure-expectations/clojure-test) - A clojure.test-compatible version of the classic Expectations testing library
+* [](https://github.com/clojure-expectations/clojure-test) - A clojure test-compatible version of the classic Expectations testing library
 * [Cloverage](https://github.com/cloverage/cloverage) - Coverage tool
+* [matcher-combinators](https://github.com/nubank/matcher-combinators) - Library for creating matcher combinator to compare nested data structures
 
-# Performance Testing/Monitoring
+### Performance Testing/Monitoring
 * [Criterium](https://github.com/hugoduncan/criterium) - Benchmark testing library
 * [Tufte](https://github.com/ptaoussanis/tufte) - Simple profiling and performance monitoring for Clojure/Script
 * [clj-async-profiler](https://github.com/clojure-goes-fast/clj-async-profiler) - An embedded high-precision performance profiler for Clojure
@@ -181,12 +183,17 @@ Libraries
 * [streampunk](https://github.com/clojurewerkz/streampunk) - Streampunk is a Clojure interface to stream summarization and cardinality estimation libraries, such as stream-lib
 * [Statistiker](https://github.com/clojurewerkz/statistiker) - Statistiker is a simple way to do Statistics in Clojure. The goal is to have an implementation of all popular algorithms for mining datasets
 
-
 ### Visualization
 * [oz](https://github.com/metasoarous/oz) - Data visualization and scientific document processing library for Clojure built around Vega-Lite & Vega
 * [hanami](https://github.com/jsa-aerial/hanami) - Interactive arts and charts visualizations with Clojure(Script), Vega-lite, and Vega
 * [viz.clj](https://github.com/scicloj/viz.clj) - 
 * [cmp.jfreechart](https://github.com/soulspace-org/cmp.jfreechart) - Clojure wrapper and API for JFreeChart
+* [clj-graphviz](https://github.com/phronmophobic/clj-graphviz) - A clojure wrapper for the libgraphviz c libraries
+* [dorothy](https://github.com/daveray/dorothy) - Hiccup-style generation of Graphviz graphs in Clojure
+* [viz.cljc](https://github.com/jebberjeb/viz.cljc) - Generate images from Graphviz dot strings in Clojure and Clojurescript
+
+### Audio/Video
+* [clj-media](https://github.com/phronmophobic/clj-media) - Read, write, and transform audio and video with Clojure
 
 ### Cryptography
 * [scrypt](https://github.com/clojurewerkz/scrypt) - scrypt is a tiny Clojure library for the scrypt key derivation function
@@ -217,17 +224,21 @@ Libraries
 ### Web
 #### Libraries
 * [ring](https://github.com/ring-clojure/ring) - Clojure HTTP server abstraction.
-* [compojure](https://github.com/weavejester/compojure) - Ring routing library.
 * [reitit](https://github.com/metosin/reitit) - Modern ring routing library.
+* [compojure](https://github.com/weavejester/compojure) - Ring routing library.
 * [hiccup](https://github.com/weavejester/hiccup) - Hiccup is a library for representing HTML in Clojure using vectors to represent elements, and maps to represent an element's attributes.
 * [garden] (https://github.com/noprompt/garden) - Garden is a library for representing CSS in Clojure.
 * [Enlive](https://github.com/cgrand/enlive) - Enlive is a selector-based (à la CSS) templating library for Clojure.
-* [yada](https://github.com/juxt/yada), [yada docs](https://www.juxt.land/yada/manual/index.html) - Framework for production ready web services
 * [sente](https://github.com/ptaoussanis/sente) - Client/Server communication with core.async over WebSockets or AJAX
 * [etaoin](https://github.com/clj-commons/etaoin) - A pure Clojure implementation of the Webdriver protocol for browser tests
+* [stub-http](https://github.com/johanhaleby/stub-http) - Client library agnostic way to stub HTTP endpoints in Clojure
 
 #### Web Services
+* [pedestal](https://github.com/pedestal/pedestal) - Libraries to create backend services and applications
+* [lacinia](https://github.com/walmartlabs/lacinia) - GraphQL implementation in pure Clojure
+* [lacinia-pedestal](https://github.com/walmartlabs/lacinia-pedestal) - Expose Lacinia GraphQL as Pedestal endpoints
 * [liberator](https://github.com/clojure-liberator/liberator/) - Framework for web services
+* [yada](https://github.com/juxt/yada), [yada docs](https://www.juxt.land/yada/manual/index.html) - Framework for production ready web services
 
 #### Static Site Generation
 * [cryogen](https://github.com/cryogen-project/cryogen) - Leiningen template for static site generation
@@ -237,12 +248,15 @@ Libraries
 * [amazonica](https://github.com/mcohen01/amazonica) - Clojure wrapper for the AWS SDK
 
 ### UI
-#### JVM
-##### Swing
+#### CLI
+* [tools.cli](https://github.com/clojure/tools.cli) - Command-line processing
+* [cli-matic](https://github.com/l3nz/cli-matic) - Compact, hands-free (sub)command line parsing library for Clojure
+
+#### Swing
 * [seesaw](https://github.com/daveray/seesaw) - Clojure API for Java Swing
 * [clj-swing](https://github.com/soulspace-org/clj.swing) - My Clojure API for Java Swing
 
-##### JavaFX
+#### JavaFX
 * [cljfx](https://github.com/cljfx/cljfx) - a declarative, functional and extensible wrapper of JavaFX inspired by better parts of react and re-frame
 * [cljfx/css](https://github.com/cljfx/css) - Charmingly Simple Styling for cljfx
 * [fn-fx](https://github.com/fn-fx/fn-fx) - a functional, declarative wrapper around JavaFX / OpenJFX
@@ -267,20 +281,20 @@ Libraries
 * [cmp.jfreechart](https://github.com/soulspace-org/cmp.jfreechart) - Create charts based on JFreeChart
 * [xml.dsl](https://github.com/soulspace-org/xml.dsl) - DSLs for various XML dialects like SVG, DocBook, MathML, etc.
 * [Clostache](https://github.com/fhd/clostache) - Mustache templates for clojure
+* [Comb](https://github.com/weavejester/comb) - Small template engine with embedded clojure
 
-Applications
-------------
+## Applications
 * [Metabase](https://github.com/metabase/metabase) - Data(base) analytics and visualization
 
-Community
----------
+## Community
 * [Clojurians Slack](http://clojurians.net/) - request invitation before joining
 * [#clojure on Freenode.net IRC](https://webchat.freenode.net/) - good old Internet Relay Chat
 * [Clojurists Together Foundation](https://www.clojuriststogether.org) - Clojure open source project sponsorship
 
-Tutorials
----------
+## Tutorials
+
 ### Clojure
+
 #### Interactive
 * [Maria](https://www.maria.cloud/) - a web coding environment for beginners
 
@@ -311,9 +325,10 @@ Tutorials
 ### Datomic
 * [Learn Datalog Today](http://www.learndatalogtoday.org/)
 
-### Analytics/Machine Learning
+### Analytics/Machine Learning/AI
 * [OpenCV with Clojure](https://docs.opencv.org/4.x/d7/d1e/tutorial_clojure_dev_intro.html) - Introduction to OpenCV Development with Clojure
 * [mxnet Clojure tutorials](https://github.com/Chouffe/mxnet-clj-tutorials) - Collection of tutorials for the Clojure MXNET package
+* [VSA Computing Experiments in Clojure](https://github.com/gigasquid/vsa-clj)
 
 ### Web Templating/Scraping
 * [Enlive Tutorial](https://github.com/swannodette/enlive-tutorial/) - 
@@ -322,8 +337,8 @@ Tutorials
 * [Interactive 3D Modeling with Clojure](https://github.com/PEZ/scad-clj-workflow) - Workflow to create OpenSCAD models in Clojure with scad-clj, VS Code and Calva
 
 
-Videos
-------
+## Talks
+
 ### Functional Programming
 * [Robert C Martin - Functional Programming; What? Why? When?](https://www.youtube.com/watch?v=7Zlp9rKHGD4)
 
@@ -343,21 +358,16 @@ Videos
 * [Clojure Data Structures Part 2 - Rich Hickey](https://www.youtube.com/watch?v=sp2Zv7KFQQ0)
 * [Persistent Data Structures and Managed References - Rich Hickey](https://www.youtube.com/watch?v=toD45DtVCFM)
 * [Clojure Concurrency - Rich Hickey](https://www.youtube.com/watch?v=nDAfZK8m5_8)
-* [Simplicity Ain't Easy - Stuart Halloway](https://www.youtube.com/watch?v=cidchWg74Y4)
-* [Radical Simplicity - Stuart Halloway](https://www.youtube.com/watch?v=f_Fi8YXt2fs)
-* [Simple Made Easy - Rich Hickey](https://www.youtube.com/watch?v=LKtk3HCgTa8)
-* [Clojure Made Simple - Rich Hickey](https://www.youtube.com/watch?v=VSdnJDO-xdg)
 * [Ousterhout's Dichotomy Isn't (Part 2 of the Simplicity/Power/Focus Series) - Stuart Halloway](https://www.youtube.com/watch?v=KZ8u_sWT9Ls)
-* [Effective Programs - 10 Years of Clojure - Rich Hickey](https://www.youtube.com/watch?v=2V1FtfBDsLU)
 * [Transducers - Rich Hickey](https://www.youtube.com/watch?v=Tq7r97G4b7Y)
 * [Inside Transducers - Rich Hickey](https://www.youtube.com/watch?v=4KqUvG8HPYo)
 * [Clojure core async - Rich Hickey](https://www.youtube.com/watch?v=yJxFPoxqzWE)
 * [Effective Programs - 10 Years of Clojure - Rich Hickey](https://www.youtube.com/watch?v=2V1FtfBDsLU)
 * [Spec-ulation Keynote - Rich Hickey](https://www.youtube.com/watch?v=oyLBGkS5ICk) - About changing and breaking software and how versioning artifacts doesn't help
 * [Maybe Not - Rich Hickey](https://www.youtube.com/watch?v=YR5WdGrpoug)
-* [The Language of the System - Rich Hickey](https://www.youtube.com/watch?v=ROor6_NGIWU)
-* [Design in Practice - Rich Hickey](https://www.youtube.com/watch?v=c5QF2HjHLSE)
-* [A History of Clojure by Rich Hickey with Q&A](https://www.youtube.com/watch?v=nD-QHbRWcoM)
+* [A History of Clojure (with Q&A) - Rich Hickey](https://www.youtube.com/watch?v=nD-QHbRWcoM)
+
+* [Java Interop Performance - Alex Miller](https://www.youtube.com/watch?v=s_xjnXB994w)
 
 * [REBL - Stuart Halloway](https://www.youtube.com/watch?v=c52QhiXsmyI)
 * [Always Be Composing - Zach Tellman](https://www.youtube.com/watch?v=3oQTSP4FngY)
@@ -366,6 +376,15 @@ Videos
 * [Bottom Up vs Top Down Design in Clojure - Mark Bastian](https://www.youtube.com/watch?v=Tb823aqgX_0)
 * [Condition Systems in an Exceptional Language - Chris Houser](https://www.youtube.com/watch?v=zp0OEDcAro0)
 
+#### Design
+* [Simplicity Ain't Easy - Stuart Halloway](https://www.youtube.com/watch?v=cidchWg74Y4)
+* [Radical Simplicity - Stuart Halloway](https://www.youtube.com/watch?v=f_Fi8YXt2fs)
+* [Simple Made Easy - Rich Hickey](https://www.youtube.com/watch?v=LKtk3HCgTa8)
+* [Clojure Made Simple - Rich Hickey](https://www.youtube.com/watch?v=VSdnJDO-xdg)
+* [Effective Programs - 10 Years of Clojure - Rich Hickey](https://www.youtube.com/watch?v=2V1FtfBDsLU)
+* [The Language of the System - Rich Hickey](https://www.youtube.com/watch?v=ROor6_NGIWU)
+* [Design in Practice - Rich Hickey](https://www.youtube.com/watch?v=c5QF2HjHLSE)
+* [On Abstraction – Zach Tellman](https://www.youtube.com/watch?v=x9pxbnFC4aQ)
 
 #### Workflow
 * [Clojure Basics: Editor and Tooling Setup](https://www.youtube.com/watch?v=kjJVfoqFj_k)
@@ -378,10 +397,12 @@ Videos
 * [Babashka and Small Clojure Interpreter: Clojure in new contexts - Michiel Borkent](https://www.youtube.com/watch?v=Nw8aN-nrdEk) - Use Clojure as a bash replacement and more
 * [Tapping into one of Clojure's superpowers with Portal by James Trunk](https://www.youtube.com/watch?v=A-QvUw5LLVU)
 * [Testing Stateful and Concurrent Systems Using test.check - Eric Normand](https://www.youtube.com/watch?v=r5i_OiZw6Sw)
+* [Running With Scissors: Live Coding With Data - Stuart Halloway](https://www.youtube.com/watch?v=Qx0-pViyIDU)
 
 ### Experience
 * [Why Clojure? - Derek Slager](https://www.youtube.com/watch?v=BThkk5zv0DE)
 * [Core.Async in Use - Timothy Baldridge](https://www.youtube.com/watch?v=096pIlA3GDo)
+* [How startups can move fast with Clojure - Bradford Cross](https://www.youtube.com/watch?v=MZy-SNswH2E)
 
 ### ClojureScript
 * [ClojureScript for Skeptics - Derek Slager](https://www.youtube.com/watch?v=gsffg5xxFQI)
@@ -390,26 +411,37 @@ Videos
 * [ClojureScript loves React Native - Peter Strömberg](https://www.youtube.com/watch?v=QsUj7HO5xDg) - Tutorial for developing React Native apps in Clojure
 * [cljfx – Bringing Clojure to the Desktop - Vlad Protsenko](https://www.youtube.com/watch?v=xcMNTKFmEgI) - Build JavaFX desktop apps with Clojure
 
+### Database
+* [Datalevin - simple durable Datalog database to embed in Clojure stateful apps - Huahai Yang](https://www.youtube.com/watch?v=-5SrIUK6k5g)
+
 ### 3D Modelling
 * [Start 3D modeling in Clojure with scad-clj and Calva - Peter Stömberg](https://www.youtube.com/watch?v=fJpDztSR53E) - Create OpenSCAD models in Clojure
+* [Using Clojure for 3D Modelling - Parametric Design with Code - Adam James](https://www.youtube.com/watch?v=EU0_I-1ROok) - Clojure/OpenSCAD, with FreeCAD Step format export script
+* [clojure.core/typing - Matt Adereth](https://www.youtube.com/watch?v=uk3A41U0iO4&t=1056s) - Building a keyboard with Clojure and OpenSCAD
 
 ### Visualization
 * [Vega & Vegalite - Christopher Small](https://www.youtube.com/watch?v=hXq5Bb40zZY) - Create interactive data visualizations in Clojure with Oz and Vega/Vegalite
 
+### Big Data/High Performance
+* [High Performance Data With Clojure - Chris Nuernberger](https://www.youtube.com/watch?v=5mUGu4RlwKE)
+* [TMD 7.0 - Higher Performance Functional Data Science - Chris Nuernberger](https://www.youtube.com/watch?v=WA5O7jNoNGE)
+* [High Performance Clojure - Chris Nuernberger](https://www.youtube.com/watch?v=ralZ4j_ruVg)
+
 ### Machine Learning and AI
 * [Vector Symbolic Architectures In Clojure - Carin Meier](https://www.youtube.com/watch?v=j7ygjfbBJD0)
+* [From data to insights: Clojure for data deep dive - Kira McLean](https://www.youtube.com/watch?v=eUFf3-og_-Y)
 
+## Books
 
-Books
------
 * [Clojure for the Brave and True](https://www.braveclojure.com/) - Complete book available online and in print
 * [Clojure Cookbook]()
   * [Clojure Cookbook Resources](https://github.com/clojure-cookbook/clojure-cookbook)
+* [Learn ClojureScript](https://www.learn-clojurescript.com/)
 
-Blog Posts
-----------
+## Blog Posts
+
 ### Clojure
-* [Why Clojure?](https://blog.cleancoder.com/uncle-bob/2019/08/22/WhyClojure.html)
+* [Why Clojure? - Robert C. Martin](https://blog.cleancoder.com/uncle-bob/2019/08/22/WhyClojure.html)
 * [Reducers, transducers and core.async in Clojure](https://eli.thegreenplace.net/2017/reducers-transducers-and-coreasync-in-clojure/)
 * [Clojure concurrency and blocking with core.async](https://eli.thegreenplace.net/2017/clojure-concurrency-and-blocking-with-coreasync/)
 
