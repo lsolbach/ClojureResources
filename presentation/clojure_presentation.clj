@@ -61,7 +61,7 @@
 ; * functional
 ;   * simple by design
 ;
-; * data driven
+; * data oriented
 ;   * values, immutable data
 ;   * information, facts don't change
 ;
@@ -82,6 +82,14 @@
 ;     * complete access to the ecosystem of the platform
 ;   * runs as shell (babashka)
 ;
+
+;;;
+;;; Data Orientation
+;;; ================
+;
+; 1. Seperate code from data
+; 2. Represent data with generic data structures
+; 3. Data is immutable
 
 ;;;
 ;;; The REPL
