@@ -349,7 +349,7 @@ I maintain this page as a personal reference of interesting Clojure related info
 * [Why Brian Goetz prefers Clojure over Scala and Kotlin (as a Java language architect)](https://www.youtube.com/watch?v=GedrGWu16_I)
 
 
-#### Clojure Basics
+### Clojure Basics
 * [Clojure for Java Programmers Part 1 - Rich Hickey](https://www.youtube.com/watch?v=P76Vbsk_3J0)
 * [Clojure for Java Programmers Part 2 - Rich Hickey](https://www.youtube.com/watch?v=hb3rurFxrZ8)
 * [Clojure for Lisp Programmers Part 1 - Rich Hickey](https://www.youtube.com/watch?v=cPNkH-7PRTk)
@@ -376,7 +376,7 @@ I maintain this page as a personal reference of interesting Clojure related info
 * [Bottom Up vs Top Down Design in Clojure - Mark Bastian](https://www.youtube.com/watch?v=Tb823aqgX_0)
 * [Condition Systems in an Exceptional Language - Chris Houser](https://www.youtube.com/watch?v=zp0OEDcAro0)
 
-#### Design
+### Design
 * [Simplicity Ain't Easy - Stuart Halloway](https://www.youtube.com/watch?v=cidchWg74Y4)
 * [Radical Simplicity - Stuart Halloway](https://www.youtube.com/watch?v=f_Fi8YXt2fs)
 * [Simple Made Easy - Rich Hickey](https://www.youtube.com/watch?v=LKtk3HCgTa8)
@@ -386,7 +386,7 @@ I maintain this page as a personal reference of interesting Clojure related info
 * [Design in Practice - Rich Hickey](https://www.youtube.com/watch?v=c5QF2HjHLSE)
 * [On Abstraction – Zach Tellman](https://www.youtube.com/watch?v=x9pxbnFC4aQ)
 
-#### Workflow
+### Workflow
 * [Clojure Basics: Editor and Tooling Setup](https://www.youtube.com/watch?v=kjJVfoqFj_k)
 * [1. Atom, Chlorine, and Cognitect's REBL - Sean Corfield](https://www.youtube.com/watch?v=ZhzMoEz4j1k)
 * [2. Clojure CLI/deps.edn - Sean Corfield](https://www.youtube.com/watch?v=CWjUccpFvrg)
@@ -410,6 +410,7 @@ I maintain this page as a personal reference of interesting Clojure related info
 ### App Development
 * [ClojureScript loves React Native - Peter Strömberg](https://www.youtube.com/watch?v=QsUj7HO5xDg) - Tutorial for developing React Native apps in Clojure
 * [cljfx – Bringing Clojure to the Desktop - Vlad Protsenko](https://www.youtube.com/watch?v=xcMNTKFmEgI) - Build JavaFX desktop apps with Clojure
+* [Portfolio: A "visual REPL" for UI Component development - Christian Johansen](https://www.youtube.com/watch?v=25JDQRFoQ_U)
 
 ### Database
 * [Datalevin - simple durable Datalog database to embed in Clojure stateful apps - Huahai Yang](https://www.youtube.com/watch?v=-5SrIUK6k5g)
