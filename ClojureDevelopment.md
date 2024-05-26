@@ -433,7 +433,6 @@ I maintain this page as a personal reference of interesting Clojure related info
 * [From data to insights: Clojure for data deep dive - Kira McLean](https://www.youtube.com/watch?v=eUFf3-og_-Y)
 
 ## Books
-
 * [Clojure for the Brave and True](https://www.braveclojure.com/) - Complete book available online and in print
 * [Clojure Cookbook]()
   * [Clojure Cookbook Resources](https://github.com/clojure-cookbook/clojure-cookbook)
