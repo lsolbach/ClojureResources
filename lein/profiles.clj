@@ -4,6 +4,9 @@
                  [com.clojure-goes-fast/clj-java-decompiler "0.3.4"]
                       ; [expound/expound "0.9.0"]
                  ]
+  :plugins [[com.github.liquidz/antq "RELEASE"]]
+     ;; optional - you can add antq options here:
+  :antq {}
   :global-vars {*warn-on-reflection* true}}
  :flowstorm
  {:dependencies [[com.github.flow-storm/clojure "1.12.0-alpha9_1"]
