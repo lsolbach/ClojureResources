@@ -282,6 +282,7 @@ I maintain this page as a personal reference of interesting Clojure related info
 * [xml.dsl](https://github.com/soulspace-org/xml.dsl) - DSLs for various XML dialects like SVG, DocBook, MathML, etc.
 * [Clostache](https://github.com/fhd/clostache) - Mustache templates for clojure
 * [Comb](https://github.com/weavejester/comb) - Small template engine with embedded clojure
+* [markdown-to-hiccup](https://github.com/mpcarolin/markdown-to-hiccup) - Converts markdown to hiccup
 
 ## Applications
 * [Metabase](https://github.com/metabase/metabase) - Data(base) analytics and visualization
