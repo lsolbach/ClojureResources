@@ -4,7 +4,8 @@
                  [com.clojure-goes-fast/clj-java-decompiler "0.3.4"]
                       ; [expound/expound "0.9.0"]
                  ]
-  :plugins [[com.github.liquidz/antq "RELEASE"]]
+  :plugins [[com.github.liquidz/antq "RELEASE"]
+            [lein-cloverage "1.2.2"]]
      ;; optional - you can add antq options here:
   :antq {}
   :global-vars {*warn-on-reflection* true}}
