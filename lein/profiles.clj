@@ -5,7 +5,8 @@
                       ; [expound/expound "0.9.0"]
                  ]
   :plugins [[com.github.liquidz/antq "RELEASE"]
-            [lein-cloverage "1.2.2"]]
+            [lein-cloverage "1.2.2"]
+            [lein-codox "0.10.8"]]
      ;; optional - you can add antq options here:
   :antq {}
   :global-vars {*warn-on-reflection* true}}
