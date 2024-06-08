@@ -161,14 +161,15 @@ I maintain this page as a personal reference of interesting Clojure related info
 * [clj-ftp](https://github.com/miner/clj-ftp) - Wrapper over Apache Commons Net to provide easy access from Clojure
 
 ### Classpath/Dependencies
-* [tools.deps](https://github.com/clojure/tools.deps) - 
-* [dynapath](https://github.com/tobias/dynapath) - library for handling the classpath programmatically
+* [tools.deps](https://github.com/clojure/tools.deps) - Deps as data and classpath generation
+* [dynapath](https://github.com/tobias/dynapath) - Library for handling the classpath programmatically
 
 ### Math
+* [fastmath](https://github.com/generateme/fastmath) - Fast primitive based math library 
 * [incanter](https://github.com/incanter/incanter) - Incanter is a Clojure-based, R-like statistical computing and graphics environment
-* [clojure.math.combinatorics](https://github.com/clojure/math.combinatorics) - 
+* [clojure.math.combinatorics](https://github.com/clojure/math.combinatorics) - Efficient, functional algorithms for generating lazy sequences for common combinatorial functions
 * [math.core](https://github.com/soulspace-org/math.core) - Clojure/ClojureScript Math library
-* [sampling](https://github.com/bigmlcom/sampling) - This library supports three flavors of random sampling: simple sampling, reservoir sampling, and stream sampling.
+* [sampling](https://github.com/bigmlcom/sampling) - This library supports three flavors of random sampling: simple sampling, reservoir sampling, and stream sampling
 
 ### Analytics/Machine Learning
 * [dtype-next](https://github.com/cnuernber/dtype-next) - A Clojure library designed to aid in the implementation of high performance algorithms and systems
@@ -184,13 +185,12 @@ I maintain this page as a personal reference of interesting Clojure related info
 * [Statistiker](https://github.com/clojurewerkz/statistiker) - Statistiker is a simple way to do Statistics in Clojure. The goal is to have an implementation of all popular algorithms for mining datasets
 
 ### Visualization
+* [clj-graphviz](https://github.com/phronmophobic/clj-graphviz) - A clojure wrapper for the libgraphviz C libraries
+* [viz.cljc](https://github.com/jebberjeb/viz.cljc) - Generate images from Graphviz dot strings in Clojure and Clojurescript
+* [dorothy](https://github.com/daveray/dorothy) - Hiccup-style generation of Graphviz graphs in Clojure
 * [oz](https://github.com/metasoarous/oz) - Data visualization and scientific document processing library for Clojure built around Vega-Lite & Vega
 * [hanami](https://github.com/jsa-aerial/hanami) - Interactive arts and charts visualizations with Clojure(Script), Vega-lite, and Vega
-* [viz.clj](https://github.com/scicloj/viz.clj) - 
 * [cmp.jfreechart](https://github.com/soulspace-org/cmp.jfreechart) - Clojure wrapper and API for JFreeChart
-* [clj-graphviz](https://github.com/phronmophobic/clj-graphviz) - A clojure wrapper for the libgraphviz c libraries
-* [dorothy](https://github.com/daveray/dorothy) - Hiccup-style generation of Graphviz graphs in Clojure
-* [viz.cljc](https://github.com/jebberjeb/viz.cljc) - Generate images from Graphviz dot strings in Clojure and Clojurescript
 
 ### Audio/Video
 * [clj-media](https://github.com/phronmophobic/clj-media) - Read, write, and transform audio and video with Clojure
@@ -201,11 +201,11 @@ I maintain this page as a personal reference of interesting Clojure related info
 
 ### I/O
 #### Network Sockets
-* [clj-sockets](https://github.com/atroche/clj-sockets)
-* [async-sockets](https://github.com/bguthrie/async-sockets)
+* [clj-sockets](https://github.com/atroche/clj-sockets) - Sockets library for Clojure
+* [async-sockets](https://github.com/bguthrie/async-sockets) - A Clojure library for working with sockets using core.async channels
 * [http-kit](https://github.com/http-kit/http-kit) - A simple, high-performance event-driven HTTP client+server for Clojure without external dependencies
 * [aleph](https://github.com/ztellman/aleph) - Fast asynchronous HTTP server based on Netty
-* [link](https://github.com/clojure-link/link)
+* [link](https://github.com/clojure-link/link) - A clojure framework for nonblocking network programming
 
 #### Email
 * [Mailer](https://github.com/clojurewerkz/mailer) - Mailer is an ActionMailer-inspired mailer library for Clojure. It combines Postal, Clostache and a number of its own features and conventions to make delivering complex template-based emails as painless as possible
