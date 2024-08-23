@@ -71,6 +71,7 @@ I maintain this page as a personal reference of interesting Clojure related info
 * [redux](https://github.com/henrygarner/redux) - A Clojure/ClojureScript library of reducing function combinators
 * [tesser](https://github.com/aphyr/tesser) - Clojure reducers, but for parallel execution: locally and on distributed systems
 * [core.memoize](https://github.com/clojure/core.memoize) - Provides memoization cache implementations and strategies like LRU or TTL
+* [specter](https://github.com/redplanetlabs/specter) - Data selection and transformation library
 
 ### Logic Programming
 * [core.logic](https://github.com/clojure/core.logic) - Prolog-like relational logic programming based on miniKanren
