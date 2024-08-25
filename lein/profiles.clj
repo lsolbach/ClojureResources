@@ -1,11 +1,11 @@
 {:user
- {:dependencies [[djblue/portal "0.55.1"]
+ {:dependencies [[djblue/portal "0.57.2"]
                  [criterium/criterium "0.4.6"]
-                 [com.clojure-goes-fast/clj-java-decompiler "0.3.4"]
+                 [com.clojure-goes-fast/clj-java-decompiler "0.3.6"]
                       ; [expound/expound "0.9.0"]
                  ]
   :plugins [[com.github.liquidz/antq "RELEASE"]
-            [lein-cloverage "1.2.2"]
+            [lein-cloverage "1.2.4"]
             [lein-codox "0.10.8"]]
      ;; optional - you can add antq options here:
   :antq {}
