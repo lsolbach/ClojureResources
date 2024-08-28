@@ -145,6 +145,7 @@ I maintain this page as a personal reference of interesting Clojure related info
 * [automat](https://github.com/ztellman/automat) - Automat is a Clojure and ClojureScript library for defining and using finite-state automata
 * [clj-java-decompiler](https://github.com/clojure-goes-fast/clj-java-decompiler) - An integrated Clojure-to-Java decompiler usable from the REPL
 * [clj-memory-meter](https://github.com/clojure-goes-fast/clj-memory-meter) - A Clojure library that allows you to inspect how much memory an object occupies at runtime
+* [fusebox](https://github.com/potetm/fusebox) - An extremely lightweight fault tolerance library for Clojure(Script)
 
 ### Testing
 * [clojure.test](https://clojure.github.io/clojure/clojure.test-api.html) - standard unit testing
