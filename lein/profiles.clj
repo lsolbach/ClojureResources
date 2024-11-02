@@ -1,5 +1,5 @@
 {:user
- {:dependencies [[djblue/portal "0.57.3"]
+ {:dependencies [[djblue/portal "0.58.2"]
                  [criterium/criterium "0.4.6"]
                  [com.clojure-goes-fast/clj-java-decompiler "0.3.6"]
                       ; [expound/expound "0.9.0"]
