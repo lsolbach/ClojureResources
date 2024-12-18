@@ -174,9 +174,12 @@ I maintain this page as a personal reference of interesting Clojure related info
 * [sampling](https://github.com/bigmlcom/sampling) - This library supports three flavors of random sampling: simple sampling, reservoir sampling, and stream sampling
 
 ### Analytics/Machine Learning
+* [noj](https://github.com/scicloj/noj) - A clojure framework for data science
+* [clay](https://github.com/scicloj/clay) - Clay is a REPL-friendly Clojure tool for a dynamic workflow of data visualization and literate programming
+* [tableplot](https://github.com/scicloj/tableplot) - Easy layered graphics with Hanami & Tablecloth
+* [tablecloth](https://github.com/scicloj/tablecloth) - A dataset manipulation library built on the top of tech.ml.dataset
 * [dtype-next](https://github.com/cnuernber/dtype-next) - A Clojure library designed to aid in the implementation of high performance algorithms and systems
 * [tech.ml.dataset](https://github.com/techascent/tech.ml.dataset) - A Clojure high performance data processing system (similar to Python Pandas or R data.table)
-* [tablecloth](https://github.com/scicloj/tablecloth) - A dataset manipulation library built on the top of tech.ml.dataset
 * [scicloj.ml](https://github.com/scicloj/scicloj.ml) - A Clojure machine learning library
 * [jutsu.ai](https://github.com/hswick/jutsu.ai) - Clojure wrapper for DeepLearning4J
 * [clojurecl](https://github.com/uncomplicate/clojurecl) - ClojureCL is a Clojure library for parallel computations with OpenCL
