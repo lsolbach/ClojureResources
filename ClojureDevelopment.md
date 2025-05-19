@@ -391,6 +391,7 @@ I maintain this page as a personal reference of interesting Clojure related info
 * [The Language of the System - Rich Hickey](https://www.youtube.com/watch?v=ROor6_NGIWU)
 * [Design in Practice - Rich Hickey](https://www.youtube.com/watch?v=c5QF2HjHLSE)
 * [On Abstraction – Zach Tellman](https://www.youtube.com/watch?v=x9pxbnFC4aQ)
+* [Transparency through Data - James Reeves](https://www.youtube.com/watch?v=zznwKCifC1A)
 
 ### Workflow
 * [Clojure Basics: Editor and Tooling Setup](https://www.youtube.com/watch?v=kjJVfoqFj_k)
