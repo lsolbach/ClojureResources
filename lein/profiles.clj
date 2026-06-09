@@ -1,6 +1,6 @@
 {:user
- {:dependencies [[nrepl/nrepl "1.4.0"]
-                 [djblue/portal "0.61.0"]
+ {:dependencies [[nrepl/nrepl "1.7.0"]
+                 [djblue/portal "0.65.0"]
                  [criterium/criterium "0.4.6"]
                  [com.clojure-goes-fast/clj-java-decompiler "0.3.7"]
                       ; [expound/expound "0.9.0"]
